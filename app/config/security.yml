@@ -1,0 +1,80 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+
+    encoders:
+        AppBundle\Entity\User:
+            algorithm: bcrypt
+            cost: 12
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    #providers:
+    #    in_memory:
+    #        memory: ~
+
+    role_hierarchy:
+        ROLE_ADMIN:       [ROLE_USER, ROLE_ALLOWED_TO_SWITCH]
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    providers:
+        users_from_db:
+            entity: { class: AppBundle:User }
+
+        api_key_user_provider:
+            id: api_key_user_provider
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        api_area:
+            pattern:   ^/api
+            anonymous: ~
+            stateless: true
+            form_login: false
+            http_basic: ~
+
+        messenger_area:
+            pattern:   ^/messenger
+            stateless: true
+            simple_preauth:
+                authenticator: apikey_authenticator
+
+        secured_area:
+            pattern: ^/
+            anonymous: true
+            provider: users_from_db
+            form_login:
+                check_path: login_check
+                login_path: homepage
+
+            logout:
+                path: /logout
+                target: /
+
+
+
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN, requires_channel: https }
+        - { path: ^/user, roles: ROLE_USER, requires_channel: https }
+        - { path: ^/api, roles: ROLE_USER, requires_channel: https }
+        - { path: ^/open_api, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/sign_up/photo, roles: ROLE_USER, requires_channel: https }
+        - { path: ^/sign_up/photos, roles: ROLE_USER, requires_channel: https }
+        - { path: ^/sign_up/activation, roles: ROLE_USER, requires_channel: https }
+        - { path: ^/sign_up, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/password, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+
+
+        #main:
+            #anonymous: ~
+            # activate different ways to authenticate
+
+            # http_basic: ~
+            # http://symfony.com/doc/current/book/security.html#a-configuring-how-your-users-will-authenticate
+
+            # form_login: ~
+            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html

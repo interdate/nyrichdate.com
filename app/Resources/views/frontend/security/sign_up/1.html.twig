@@ -1,0 +1,110 @@
+{% if errors %}
+    <div class="errors">
+        <div class="ui orange message">
+            <div class="content">
+                <div class="header">
+                    {% trans %}Please complete fields below{% endtrans %}
+                </div>
+                <p>
+                    {{ form_errors(form.agree) }}
+                    {{ form_errors(form.username) }}
+                    {{ form_errors(form.password.first) }}
+                    {{ form_errors(form.email.first) }}
+                    {{ form_errors(form.phone) }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
+<div class="inner_form_bot">
+    <div class="main_form">
+        <h1>{% trans %}Sign Up{% endtrans %}</h1>
+
+        <div class="mfrm_field cf {% if form.username.vars.errors|length %}error{% endif %}">
+            {{ form_label(form.username) }}
+            {{ form_widget(form.username) }}
+        </div>
+
+        <div class="mfrm_field cf {% if form.password.first.vars.errors|length %}error{% endif %}">
+            {{ form_label(form.password.first) }}
+            {{ form_widget(form.password.first) }}
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.password.second) }}
+            {{ form_widget(form.password.second) }}
+        </div>
+        <div class="mfrm_field cf {% if form.email.first.vars.errors|length %}error{% endif %}">
+            {{ form_label(form.email.first) }}
+            {{ form_widget(form.email.first) }}
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.email.second) }}
+            {{ form_widget(form.email.second) }}
+
+        </div>
+
+        <div class="mfrm_field cf">
+            {{ form_label(form.gender) }}
+
+            <div class="mselect1 cf">
+                {{ form_widget(form.gender) }}
+                <input type="hidden" class="graphic_data_1" value="url(images/male.png)">
+                <input type="hidden" class="graphic_data_2" value="url(images/female.png)">
+                <div class="gpic"></div>
+            </div>
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.birthday) }}
+            <div class="mselect2">
+                {{ form_widget(form.birthday.month) }}
+                {{ form_widget(form.birthday.day) }}
+                {{ form_widget(form.birthday.year) }}
+            </div>
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.region) }}
+            <div class="mselect3">
+                {{ form_widget(form.region) }}
+            </div>
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.area) }}
+            <div class="mselect3">
+                {{ form_widget(form.area) }}
+            </div>
+        </div>
+        <div class="mfrm_field cf">
+            {{ form_label(form.zipCode) }}
+            <div class="mselect3">
+                {{ form_widget(form.zipCode) }}
+            </div>
+        </div>
+        <div class="mfrm_field cf" style="display: none;">
+            {{ form_label(form.phone) }}
+            {{ form_widget(form.phone) }}
+        </div>
+        <div class="checkdiv cf">
+            <div class="left">
+                <div class="ui checkbox">
+                    {{ form_widget(form.agree) }}
+                    <label></label>
+                </div>
+            </div>
+            <div class="left"  style="width: 90%">
+                <label for="sign_up_one_agree">{% trans %} I confirm that I have read and agreed to the{% endtrans %} <a href="{{ path('pages_page', {'uri': terms.uri}) }}" target="_blank">{{ terms.name }}</a> {% trans %}of Service of membership at NYSugarDdaddy.com.{% endtrans %}</label>
+            </div>
+            <div class="clr"></div>
+        </div>
+
+        <div class="main_sub">
+            <a class="nextstage">{% trans %}Continue{% endtrans %}</a>
+            <input type="submit" id="next_stage" class="hidden">
+        </div>
+    </div>
+</div>
+
+
+
+

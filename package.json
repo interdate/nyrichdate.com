@@ -1,0 +1,19 @@
+{
+  "name": "nysugardaddy",
+  "version": "1.0.0",
+  "description": "nysugardaddy ============",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "semantic-ui": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="cc0b1ddf0cea83b0ef0baccd0c22dcb5" resname="Email already exists in the system">
+        <source>Email already exists in the system</source>
+        <target>Email already exists in the system</target>
+      </trans-unit>
+      <trans-unit id="414aa65dac53753bb790fcd4ea71dd0e" resname="Emails don't match">
+        <source>Emails don't match</source>
+        <target>Emails don't match</target>
+      </trans-unit>
+      <trans-unit id="33bc9e898617c9ddc2601be468c8e487" resname="Max 15 letters in Password">
+        <source>Max 15 letters in Password</source>
+        <target>Max 15 letters in Password</target>
+      </trans-unit>
+      <trans-unit id="97dde08062e52de927bd58075c25666c" resname="Min 10 letters in About Me">
+        <source>Min 10 letters in About Me</source>
+        <target>Min 10 letters in About Me</target>
+      </trans-unit>
+      <trans-unit id="38a8b10b175520213c79d0fb9588fa62" resname="Min 10 letters in What I'm Looking For">
+        <source>Min 10 letters in What I'm Looking For</source>
+        <target>Min 10 letters in What I'm Looking For</target>
+      </trans-unit>
+      <trans-unit id="b83cb6ee651e03256ee4edce1baff560" resname="Min 7 letters in Password">
+        <source>Min 7 letters in Password</source>
+        <target>Min 7 letters in Password</target>
+      </trans-unit>
+      <trans-unit id="e2ba330f230333cf40ad533366d9f1ce" resname="Passwords don't match">
+        <source>Passwords don't match</source>
+        <target>Passwords don't match</target>
+      </trans-unit>
+      <trans-unit id="e599dbcfb33a02baed23c8015b59c16e" resname="Phone already exists in the system">
+        <source>Phone already exists in the system</source>
+        <target>Phone already exists in the system</target>
+      </trans-unit>
+      <trans-unit id="73b41f290491eda17ee80630d52c882d" resname="Please choose Here For">
+        <source>Please choose Here For</source>
+        <target>Please choose Here For</target>
+      </trans-unit>
+      <trans-unit id="a4200a848e7231752e3e1c61ea688f81" resname="Please choose Hobbies">
+        <source>Please choose Hobbies</source>
+        <target>Please choose Hobbies</target>
+      </trans-unit>
+      <trans-unit id="60e1422934441219431a360a8c6bf1f9" resname="Please choose Languages">
+        <source>Please choose Languages</source>
+        <target>Please choose Languages</target>
+      </trans-unit>
+      <trans-unit id="a15e5cfafc2ff146b5a0301a15331938" resname="The email {{ value }} is not a valid email.">
+        <source>The email {{ value }} is not a valid email.</source>
+        <target>The email {{ value }} is not a valid email.</target>
+      </trans-unit>
+      <trans-unit id="6b002a3e6caff4bc87091cda6543d996" resname="The phone must contain only numbers">
+        <source>The phone must contain only numbers</source>
+        <target>The phone must contain only numbers</target>
+      </trans-unit>
+      <trans-unit id="d8a461e796416c76d6ea02c6bd0c251e" resname="Username already exists in the system">
+        <source>Username already exists in the system</source>
+        <target>Username already exists in the system</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,216 @@
+
+<h1 class="ui header left">
+    <i class="user icon"></i>
+    <div class="content">
+        <span class="username">{{ user.username }}</span>
+        <div class="sub header">User Profile</div>
+    </div>
+</h1>
+
+
+<div class="right close">
+    <i class="icon remove circle olive big " onclick="$.kfModal.close();"></i>
+</div>
+
+<div class="clear"></div>
+
+<div class="ui divider"></div>
+
+<div class="ui secondary menu">
+    <a class="item active" data-tab="1">
+        {#<i class="sign in icon circular"></i>#}
+        Data
+    </a>
+    <a class="item" data-tab="2">
+        {#<i class="user icon circular"></i>#}
+        Profile
+    </a>
+    <a class="item" data-tab="3">
+        {#<i class="info icon circular"></i>#}
+        About Me
+    </a>
+    <a class="item" data-tab="4">
+        {#<i class="info icon circular"></i>#}
+        Admin
+    </a>
+</div>
+<div class="ui tab segment active" data-tab="1">
+
+    <div class="ui large ribbon label">Ip of last entrance</div>
+    <p>{{ user.ip }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Username</div>
+    <p>{{ user.username }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Email</div>
+    <p>{{ user.email }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Gender</div>
+    <p>{{ user.gender.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Birthday</div>
+    <p>{{ user.birthday|date('d/m/Y') }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Area</div>
+    <p>{{ user.zipCode.area.region.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Neighborhood</div>
+    <p>{{ user.zipCode.area.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Zip Code</div>
+    <p>{{ user.zipCode.name }}</p>
+
+</div>
+
+<div class="ui tab segment" data-tab="2">
+
+
+    <div class="ui large ribbon label">Relationship Status</div>
+    <p>{{ user.relationshipStatus.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Children</div>
+    <p>{{ user.children.name }}</p><div class="ui divider"></div>
+
+
+    <div class="ui large ribbon label">Ethnicity</div>
+    <p>{{ user.ethnicity.name }}</p><div class="ui divider"></div>
+
+
+    <div class="ui large ribbon label">Religion</div>
+    <p>{{ user.religion.name }}</p><div class="ui divider"></div>
+
+
+
+    <div class="ui large ribbon label">Languages</div>
+    <p>
+        {% for language in user.languages %}
+            {{ language.name }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </p>
+    <div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Education</div>
+    <p>{{ user.education.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Occupation</div>
+    <p>{{ user.occupation }}</p><div class="ui divider"></div>
+
+
+    <div class="ui large ribbon label">Smoking</div>
+    <p>{{ user.smoking.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Drinking</div>
+    <p>{{ user.drinking.name }}</p><div class="ui divider"></div>
+
+
+    <div class="ui large ribbon label">Here For</div>
+    <p>
+        {% for purpose in user.purposes %}
+            {{ purpose.name }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </p>
+
+
+
+    {% if user.gender.id == 1 %}
+
+        <h3 class="ui horizontal divider header">
+            <i class="dollar circular icon"></i>
+            Financial Info
+        </h3>
+
+        <div class="ui large ribbon label">Status</div>
+        <p>{{ user.status.name }}</p><div class="ui divider"></div>
+
+        <div class="ui large ribbon label">Net Worth</div>
+        <p>{{ user.netWorth.name }}</p><div class="ui divider"></div>
+
+        <div class="ui large ribbon label">Income</div>
+        <p>{{ user.income.name }}</p><div class="ui divider"></div>
+
+
+        <h3 class="ui horizontal divider header">
+            <i class="unhide circular icon"></i>
+            Appearance
+        </h3>
+
+    {% else %}
+
+        <h3 class="ui horizontal divider header">
+            <i class="unhide circular icon"></i>
+            How good I look
+        </h3>
+
+    {% endif %}
+
+    <div class="ui large ribbon label">Height</div>
+    <p>{{ user.height }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Body Type</div>
+    <p>{{ user.body.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Eye Color</div>
+    <p>{{ user.eyes.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Hair Color</div>
+    <p>{{ user.hair.name }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Special Features</div>
+    <p>
+        {% for feature in user.features %}
+            {{ feature.name }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </p>
+
+
+
+
+
+</div>
+<div class="ui tab segment" data-tab="3">
+
+    <div class="ui large ribbon label">About Me</div>
+    <p>{{ user.about }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">What I'm looking for</div>
+    <p>{{ user.looking }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Phone</div>
+    <p>{{ user.phone }}</p><div class="ui divider"></div>
+
+    <div class="ui large ribbon label">Hobbies</div>
+    <p>
+        {% for hobbie in user.hobbies %}
+            {{ hobbie.name }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </p>
+
+
+</div>
+
+<div class="ui tab segment" data-tab="4">
+
+    <div class="ui large ribbon label">User shown on the homepage</div>
+    <p>{% if user.isOnHomepage %}Yes{% else %}No{% endif %}</p>
+    <div class="ui divider"></div>
+
+    {% if user.adminComments|length %}
+        <div class="ui large ribbon label">Comments</div>
+        <p>{{ user.adminComments }}</p>
+        <div class="ui divider"></div>
+    {% endif %}
+
+    {% if user.banReason|length %}
+        <div class="ui large ribbon label">Inactivation Reason</div>
+        <p>{{ user.banReason }}</p>
+        <div class="ui divider"></div>
+    {% endif %}
+
+    {% if user.freezeReason|length %}
+        <div class="ui large ribbon label">Freezing Reason</div>
+        <p>{{ user.freezeReason }}</p>
+    {% endif %}
+
+</div>
+
+<div class="clear"></div>

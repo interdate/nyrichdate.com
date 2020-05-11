@@ -1,0 +1,303 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+    target_routes:
+        male: sign_up_activation
+        female: sign_up_photos
+    excluded_routes: [user_photo, admin_users_user_photos_photo, logout]
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    api_open:
+        class: AppBundle\Controller\Api\V1\OpenController
+        arguments: ['@security.token_storage', '@doctrine.orm.entity_manager']
+
+    api_user:
+        class: AppBundle\Controller\Api\V1\UserController
+        arguments: ['@security.token_storage', '@doctrine.orm.entity_manager']
+
+    request_listener:
+        class: AppBundle\EventListener\RequestListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+
+    twig.text_extension:
+        class: Twig_Extensions_Extension_Text
+        tags:
+            - name: twig.extension
+
+    SignUpFlow:
+        class: AppBundle\Form\Type\SignUpFlow
+        parent: craue.form.flow
+
+
+    activity_listener:
+        class: AppBundle\EventListener\ActivityListener
+        arguments: ['@security.token_storage', '@doctrine.orm.entity_manager']
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }
+
+    sign_up_not_completed_listener:
+        class: AppBundle\EventListener\SignUpNotCompletedListener
+        arguments: ['@security.token_storage', '@router', '@doctrine.orm.entity_manager', '%target_routes%', '%excluded_routes%']
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }
+            #- { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+
+    login_listener:
+        class: AppBundle\EventListener\LoginListener
+        arguments: ['@security.token_storage', '@doctrine.orm.entity_manager']
+        tags:
+            - { name: kernel.event_listener, event: security.interactive_login}
+
+    ajax.listener:
+        class: AppBundle\EventListener\ApiAuthenticationListener
+        tags:
+          - { name: kernel.event_listener, event: kernel.exception, method: onCoreException, priority: 1000 }
+
+
+    app.twig_extension:
+        class: AppBundle\Twig\AppExtension
+        arguments: ["@request_stack","@doctrine","@service_container","@messenger"]
+        public: false
+        tags:
+            - { name: twig.extension }
+
+    messenger:
+        class:        AppBundle\Services\Messenger\Messenger
+        arguments: ['@doctrine.orm.entity_manager']
+
+    api_key_user_provider:
+        class: AppBundle\Security\ApiKeyUserProvider
+        arguments: ['@doctrine']
+
+    apikey_authenticator:
+        class: AppBundle\Security\ApiKeyAuthenticator
+        arguments: ['@api_key_user_provider']
+
+    sonata_admin.faq_category:
+        class: AppBundle\SonataAdmin\FaqCategoryAdmin
+        arguments: [~, AppBundle\Entity\FaqCategory, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: FAQ Category }
+
+    sonata_admin.status:
+        class: AppBundle\SonataAdmin\StatusAdmin
+        arguments: [~, AppBundle\Entity\Status, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Status }
+
+    sonata_admin.net_worth:
+        class: AppBundle\SonataAdmin\NetWorthAdmin
+        arguments: [~, AppBundle\Entity\NetWorth, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Net Worth }
+
+    sonata_admin.feature:
+        class: AppBundle\SonataAdmin\FeatureAdmin
+        arguments: [~, AppBundle\Entity\Feature, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Special Features }
+
+    sonata_admin.ethnicity:
+        class: AppBundle\SonataAdmin\EthnicityAdmin
+        arguments: [~, AppBundle\Entity\Ethnicity, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Ethnicity }
+
+    sonata_admin.religion:
+        class: AppBundle\SonataAdmin\ReligionAdmin
+        arguments: [~, AppBundle\Entity\Religion, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Religion }
+
+    sonata_admin.gender:
+        class: AppBundle\SonataAdmin\GenderAdmin
+        arguments: [~, AppBundle\Entity\Gender, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Gender }
+
+    sonata_admin.relationship_status:
+        class: AppBundle\SonataAdmin\RelationshipStatusAdmin
+        arguments: [~, AppBundle\Entity\RelationshipStatus, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Relationship Status }
+
+    sonata_admin.education:
+        class: AppBundle\SonataAdmin\EducationAdmin
+        arguments: [~, AppBundle\Entity\Education, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Education }
+
+    sonata_admin.region:
+        class: AppBundle\SonataAdmin\RegionAdmin
+        arguments: [~, AppBundle\Entity\Region, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Region }
+
+    sonata_admin.area:
+        class: AppBundle\SonataAdmin\AreaAdmin
+        arguments: [~, AppBundle\Entity\Area, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Area }
+
+    sonata_admin.zip_code:
+        class: AppBundle\SonataAdmin\ZipCodeAdmin
+        arguments: [~, AppBundle\Entity\ZipCode, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Zip Code }
+
+    sonata_admin.smoking:
+        class: AppBundle\SonataAdmin\SmokingAdmin
+        arguments: [~, AppBundle\Entity\Smoking, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Smoking }
+
+    sonata_admin.drinking:
+        class: AppBundle\SonataAdmin\DrinkingAdmin
+        arguments: [~, AppBundle\Entity\Drinking, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Drinking }
+
+    sonata_admin.income:
+        class: AppBundle\SonataAdmin\IncomeAdmin
+        arguments: [~, AppBundle\Entity\Income, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Income }
+
+    sonata_admin.children:
+        class: AppBundle\SonataAdmin\ChildrenAdmin
+        arguments: [~, AppBundle\Entity\Children, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Children }
+
+    sonata_admin.zodiac:
+        class: AppBundle\SonataAdmin\ZodiacAdmin
+        arguments: [~, AppBundle\Entity\Zodiac, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Zodiac }
+
+    sonata_admin.body:
+        class: AppBundle\SonataAdmin\BodyAdmin
+        arguments: [~, AppBundle\Entity\Body, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Body }
+
+    sonata_admin.eyes:
+        class: AppBundle\SonataAdmin\EyesAdmin
+        arguments: [~, AppBundle\Entity\Eyes, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Eyes }
+
+    sonata_admin.hair:
+        class: AppBundle\SonataAdmin\HairAdmin
+        arguments: [~, AppBundle\Entity\Hair, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Hair }
+
+    sonata_admin.purpose:
+        class: AppBundle\SonataAdmin\PurposeAdmin
+        arguments: [~, AppBundle\Entity\Purpose, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Purpose }
+
+    sonata_admin.language:
+        class: AppBundle\SonataAdmin\LanguageAdmin
+        arguments: [~, AppBundle\Entity\Language, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Language }
+
+    sonata_admin.hobby:
+        class: AppBundle\SonataAdmin\HobbyAdmin
+        arguments: [~, AppBundle\Entity\Hobby, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Hobby }
+
+    sonata_admin.homepage:
+        class: AppBundle\SonataAdmin\HomePageAdmin
+        arguments: [~, AppBundle\Entity\HomePage, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Home Page }
+
+    sonata_admin.slide:
+        class: AppBundle\SonataAdmin\SlideAdmin
+        arguments: [~, AppBundle\Entity\Slide, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Home Page Slide }
+
+    sonata_admin.seo:
+        class: AppBundle\SonataAdmin\SeoAdmin
+        arguments: [~, AppBundle\Entity\Seo, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Seo }
+
+    sonata_admin.footer_header:
+        class: AppBundle\SonataAdmin\FooterHeaderAdmin
+        arguments: [~, AppBundle\Entity\FooterHeader, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Footer Header }
+
+    sonata_admin.page:
+        class: AppBundle\SonataAdmin\PageAdmin
+        arguments: [~, AppBundle\Entity\Page, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Page }
+
+    sonata_admin.notifications:
+            class: AppBundle\SonataAdmin\NotificationsAdmin
+            arguments: [~, AppBundle\Entity\Notifications, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Notifications }
+
+    sonata_admin.email_blocked:
+            class: AppBundle\SonataAdmin\EmailBlockedAdmin
+            arguments: [~, AppBundle\Entity\EmailBlocked, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: EmailBlocked }
+
+    sonata_admin.phone_blocked:
+            class: AppBundle\SonataAdmin\PhoneBlockedAdmin
+            arguments: [~, AppBundle\Entity\PhoneBlocked, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: PhoneBlocked }
+
+    sonata_admin.word_blocked:
+                class: AppBundle\SonataAdmin\WordBlockedAdmin
+                arguments: [~, AppBundle\Entity\WordBlocked, ~]
+                tags:
+                    - { name: sonata.admin, manager_type: orm, label: WordBlocked }
+
+    sonata_admin.login_from:
+        class: AppBundle\SonataAdmin\LoginFromAdmin
+        arguments: [~, AppBundle\Entity\LoginFrom, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Last Visit From }
+
+
+
+# KernelRequest listener
+    #extension.listener:
+    #    class: AppBundle\EventListener\DoctrineExtensionListener
+    #    calls:
+    #        - [ setContainer, [ "@service_container" ] ]
+    #    tags:
+            # translatable sets locale after router processing
+    #        - { name: kernel.event_listener, event: kernel.request, method: onLateKernelRequest, priority: -10 }
+            # loggable hooks user username if one is in security context
+    #        - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+            # translatable sets locale such as default application locale before command execute
+    #        - { name: kernel.event_listener, event: console.command, method: onConsoleCommand, priority: -10 }
+
+    #gedmo.listener.translatable:
+    #    class: Gedmo\Translatable\TranslatableListener
+    #    tags:
+    #        - { name: doctrine.event_subscriber, connection: default }
+    #    calls:
+    #        - [ setAnnotationReader, [ "@annotation_reader" ] ]
+    #        - [ setDefaultLocale, [ %locale% ] ]
+    #        - [ setTranslationFallback, [ false ] ]
+

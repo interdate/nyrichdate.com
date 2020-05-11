@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/vendor/cloudinary/cloudinary_php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/craue/formflow-bundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/nelmio/cors-bundle" vcs="Git" />
+  </component>
+</project>

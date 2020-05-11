@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-02-01T10:29:49Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="6d183114493d1d4647e348df3e7c7aa0d05fa9db" resname="activation">
+        <source>/api/v1/{request}/activation.{_format}</source>
+        <target state="new">/api/v1/{request}/activation.{_format}</target>
+      </trans-unit>
+      <trans-unit id="f6e09f9e0d924df85a90d439f3acee10037b460b" resname="admin_advanced_search_helper">
+        <source>/admin/search/advanced/helper</source>
+        <target state="new">/admin/search/advanced/helper</target>
+      </trans-unit>
+      <trans-unit id="8cf4f4a9b2eddf6991481324eaa10248f60b7904" resname="admin_app_area_batch">
+        <source>/sonata-admin/app/area/batch</source>
+        <target state="new">/sonata-admin/app/area/batch</target>
+      </trans-unit>
+      <trans-unit id="db572fb681855436bf080de5b47f9f2579352f7a" resname="admin_app_area_create">
+        <source>/sonata-admin/app/area/create</source>
+        <target state="new">/sonata-admin/app/area/create</target>
+      </trans-unit>
+      <trans-unit id="5c9c044fe6130f8ce469b865bd4a96995706e725" resname="admin_app_area_delete">
+        <source>/sonata-admin/app/area/{id}/delete</source>
+        <target state="new">/sonata-admin/app/area/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="57a4f7c81b5840c0c5b3e570613e1b9b4b97d06e" resname="admin_app_area_edit">
+        <source>/sonata-admin/app/area/{id}/edit</source>
+        <target state="new">/sonata-admin/app/area/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="8a06627a1f641eb34e43ddee451129de5be6b2b2" resname="admin_app_area_export">
+        <source>/sonata-admin/app/area/export</source>
+        <target state="new">/sonata-admin/app/area/export</target>
+      </trans-unit>
+      <trans-unit id="d157905b0d173c5c5572f56c1d76a1467b56033a" resname="admin_app_area_list">
+        <source>/sonata-admin/app/area/list</source>
+        <target state="new">/sonata-admin/app/area/list</target>
+      </trans-unit>
+      <trans-unit id="ea4e66dc37ab0cfdcd4b0dc05ab6091859975219" resname="admin_app_area_show">
+        <source>/sonata-admin/app/area/{id}/show</source>
+        <target state="new">/sonata-admin/app/area/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="1f6a5e2b83625b9bd11b20a4cb9b0b5e56495a79" resname="admin_app_body_batch">
+        <source>/sonata-admin/app/body/batch</source>
+        <target state="new">/sonata-admin/app/body/batch</target>
+      </trans-unit>
+      <trans-unit id="f32e713029e86a7c29c395608a9286f86082261c" resname="admin_app_body_create">
+        <source>/sonata-admin/app/body/create</source>
+        <target state="new">/sonata-admin/app/body/create</target>
+      </trans-unit>
+      <trans-unit id="cfc4608693d8fa8129ddb94be9028c637d44f90f" resname="admin_app_body_delete">
+        <source>/sonata-admin/app/body/{id}/delete</source>
+        <target state="new">/sonata-admin/app/body/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="af5326988f7d7c7203aa845a7cc35973fde86699" resname="admin_app_body_edit">
+        <source>/sonata-admin/app/body/{id}/edit</source>
+        <target state="new">/sonata-admin/app/body/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="075d941c2f290a3543cd48c12dc3a90b4af032d8" resname="admin_app_body_export">
+        <source>/sonata-admin/app/body/export</source>
+        <target state="new">/sonata-admin/app/body/export</target>
+      </trans-unit>
+      <trans-unit id="66420672a6e0b66149486fff582f855d80d7cc7b" resname="admin_app_body_list">
+        <source>/sonata-admin/app/body/list</source>
+        <target state="new">/sonata-admin/app/body/list</target>
+      </trans-unit>
+      <trans-unit id="ac1ec89edadb4542155f53c3d7db01db3f3da76c" resname="admin_app_body_show">
+        <source>/sonata-admin/app/body/{id}/show</source>
+        <target state="new">/sonata-admin/app/body/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="3e18c95e03a8cc5c2ed088a31e7944b313eb771e" resname="admin_app_children_batch">
+        <source>/sonata-admin/app/children/batch</source>
+        <target state="new">/sonata-admin/app/children/batch</target>
+      </trans-unit>
+      <trans-unit id="19a6818ce73c69449c80683d4da543edc536806e" resname="admin_app_children_create">
+        <source>/sonata-admin/app/children/create</source>
+        <target state="new">/sonata-admin/app/children/create</target>
+      </trans-unit>
+      <trans-unit id="2b02f5232598ca60b39e6adde106af2e11b76987" resname="admin_app_children_delete">
+        <source>/sonata-admin/app/children/{id}/delete</source>
+        <target state="new">/sonata-admin/app/children/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="fe75d8e6dcedf095cde88e41e12b982356b27864" resname="admin_app_children_edit">
+        <source>/sonata-admin/app/children/{id}/edit</source>
+        <target state="new">/sonata-admin/app/children/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="f6755c31396a681367bb3d643b6a8dbe65ecde89" resname="admin_app_children_export">
+        <source>/sonata-admin/app/children/export</source>
+        <target state="new">/sonata-admin/app/children/export</target>
+      </trans-unit>
+      <trans-unit id="b1010b2072c8227181192aaf0f6f9aa7d15ef730" resname="admin_app_children_list">
+        <source>/sonata-admin/app/children/list</source>
+        <target state="new">/sonata-admin/app/children/list</target>
+      </trans-unit>
+      <trans-unit id="28b99edf58bed431eaee11ff60c4a831e56f4c70" resname="admin_app_children_show">
+        <source>/sonata-admin/app/children/{id}/show</source>
+        <target state="new">/sonata-admin/app/children/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="0d6458c64b72b857e6beb7612a4da154afec44f6" resname="admin_app_drinking_batch">
+        <source>/sonata-admin/app/drinking/batch</source>
+        <target state="new">/sonata-admin/app/drinking/batch</target>
+      </trans-unit>
+      <trans-unit id="7daa6e483b00cfcd87d2c777168a30a6e0d75aac" resname="admin_app_drinking_create">
+        <source>/sonata-admin/app/drinking/create</source>
+        <target state="new">/sonata-admin/app/drinking/create</target>
+      </trans-unit>
+      <trans-unit id="88d5d76347c76650485911d295ea93c847515ca6" resname="admin_app_drinking_delete">
+        <source>/sonata-admin/app/drinking/{id}/delete</source>
+        <target state="new">/sonata-admin/app/drinking/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="dd80d6ba63b835ea0320dcf0d45e88bb736c2f6d" resname="admin_app_drinking_edit">
+        <source>/sonata-admin/app/drinking/{id}/edit</source>
+        <target state="new">/sonata-admin/app/drinking/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="dee93ece3630f785cdd489ddc60a4da395011512" resname="admin_app_drinking_export">
+        <source>/sonata-admin/app/drinking/export</source>
+        <target state="new">/sonata-admin/app/drinking/export</target>
+      </trans-unit>
+      <trans-unit id="407d58949921f6c328019ca40eb551fabd266b98" resname="admin_app_drinking_list">
+        <source>/sonata-admin/app/drinking/list</source>
+        <target state="new">/sonata-admin/app/drinking/list</target>
+      </trans-unit>
+      <trans-unit id="89b34f152f4bb758baea603234a5a5be1bb9c3dc" resname="admin_app_drinking_show">
+        <source>/sonata-admin/app/drinking/{id}/show</source>
+        <target state="new">/sonata-admin/app/drinking/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="9ef76200dfc5e0d32347862b16828c84654c3182" resname="admin_app_education_batch">
+        <source>/sonata-admin/app/education/batch</source>
+        <target state="new">/sonata-admin/app/education/batch</target>
+      </trans-unit>
+      <trans-unit id="473e0ba521140ac9867c6ed119533950fc859d40" resname="admin_app_education_create">
+        <source>/sonata-admin/app/education/create</source>
+        <target state="new">/sonata-admin/app/education/create</target>
+      </trans-unit>
+      <trans-unit id="55b8ac53639a027c418b98a8ec533cb23c3df1f4" resname="admin_app_education_delete">
+        <source>/sonata-admin/app/education/{id}/delete</source>
+        <target state="new">/sonata-admin/app/education/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="63646b4d0caf692fb2b34116b2e81da793256e6a" resname="admin_app_education_edit">
+        <source>/sonata-admin/app/education/{id}/edit</source>
+        <target state="new">/sonata-admin/app/education/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="d09e8d415908e5ac22886aebfeb25b8616f9d454" resname="admin_app_education_export">
+        <source>/sonata-admin/app/education/export</source>
+        <target state="new">/sonata-admin/app/education/export</target>
+      </trans-unit>
+      <trans-unit id="b0370a7201763cae4245e3c12117032dd3718b3f" resname="admin_app_education_list">
+        <source>/sonata-admin/app/education/list</source>
+        <target state="new">/sonata-admin/app/education/list</target>
+      </trans-unit>
+      <trans-unit id="af3d71b6cfe344f72ee4201b37deb796ca12fb85" resname="admin_app_education_show">
+        <source>/sonata-admin/app/education/{id}/show</source>
+        <target state="new">/sonata-admin/app/education/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="bb3c3da55cbf174610112bae5108d9c2b5d4efe8" resname="admin_app_emailblocked_batch">
+        <source>/sonata-admin/app/emailblocked/batch</source>
+        <target state="new">/sonata-admin/app/emailblocked/batch</target>
+      </trans-unit>
+      <trans-unit id="aa6106d9d3ae3008453f3b19ced382b2773069bd" resname="admin_app_emailblocked_create">
+        <source>/sonata-admin/app/emailblocked/create</source>
+        <target state="new">/sonata-admin/app/emailblocked/create</target>
+      </trans-unit>
+      <trans-unit id="abc441975b9fd6bb411b22736dc61a04ae9d41a5" resname="admin_app_emailblocked_delete">
+        <source>/sonata-admin/app/emailblocked/{id}/delete</source>
+        <target state="new">/sonata-admin/app/emailblocked/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="72e65340975eb59496a60e70a9b614d96be51725" resname="admin_app_emailblocked_edit">
+        <source>/sonata-admin/app/emailblocked/{id}/edit</source>
+        <target state="new">/sonata-admin/app/emailblocked/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="7f91eadf3fec7525d59b5a235c65d803b944fa92" resname="admin_app_emailblocked_export">
+        <source>/sonata-admin/app/emailblocked/export</source>
+        <target state="new">/sonata-admin/app/emailblocked/export</target>
+      </trans-unit>
+      <trans-unit id="fda98551bb70f52a54ad3bf23f2b0b6941b9384b" resname="admin_app_emailblocked_list">
+        <source>/sonata-admin/app/emailblocked/list</source>
+        <target state="new">/sonata-admin/app/emailblocked/list</target>
+      </trans-unit>
+      <trans-unit id="94cd7642f32eb9c1c504bac12345a9d6605438f6" resname="admin_app_emailblocked_show">
+        <source>/sonata-admin/app/emailblocked/{id}/show</source>
+        <target state="new">/sonata-admin/app/emailblocked/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="ac24fa897dd72452b867d709d7b9cb095ab58ab1" resname="admin_app_ethnicity_batch">
+        <source>/sonata-admin/app/ethnicity/batch</source>
+        <target state="new">/sonata-admin/app/ethnicity/batch</target>
+      </trans-unit>
+      <trans-unit id="c6e955fba3863bde81c48b6ddf1ab5e98f70549e" resname="admin_app_ethnicity_create">
+        <source>/sonata-admin/app/ethnicity/create</source>
+        <target state="new">/sonata-admin/app/ethnicity/create</target>
+      </trans-unit>
+      <trans-unit id="434676d3d54c947e454cd39cd8bfe06c175d5752" resname="admin_app_ethnicity_delete">
+        <source>/sonata-admin/app/ethnicity/{id}/delete</source>
+        <target state="new">/sonata-admin/app/ethnicity/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="5e3bec3ee057113bb80b208ff3d0bbfd600ce6c3" resname="admin_app_ethnicity_edit">
+        <source>/sonata-admin/app/ethnicity/{id}/edit</source>
+        <target state="new">/sonata-admin/app/ethnicity/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="09fdfd372771cd9fe558102df92928b2cf056279" resname="admin_app_ethnicity_export">
+        <source>/sonata-admin/app/ethnicity/export</source>
+        <target state="new">/sonata-admin/app/ethnicity/export</target>
+      </trans-unit>
+      <trans-unit id="d0a031aac83c224a725c3c47567c7983decdc83f" resname="admin_app_ethnicity_list">
+        <source>/sonata-admin/app/ethnicity/list</source>
+        <target state="new">/sonata-admin/app/ethnicity/list</target>
+      </trans-unit>
+      <trans-unit id="03eb43c3972586ae8cd63aa75457b3492a0fd770" resname="admin_app_ethnicity_show">
+        <source>/sonata-admin/app/ethnicity/{id}/show</source>
+        <target state="new">/sonata-admin/app/ethnicity/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="5e3a77d90dba286e0745e339e5cb1fecc6cffa26" resname="admin_app_eyes_batch">
+        <source>/sonata-admin/app/eyes/batch</source>
+        <target state="new">/sonata-admin/app/eyes/batch</target>
+      </trans-unit>
+      <trans-unit id="078130f3c84ed14beafd24d4d55f47fd97a723f6" resname="admin_app_eyes_create">
+        <source>/sonata-admin/app/eyes/create</source>
+        <target state="new">/sonata-admin/app/eyes/create</target>
+      </trans-unit>
+      <trans-unit id="4fe7fc65c0130c3d5014a9ddb0df6030d344cb78" resname="admin_app_eyes_delete">
+        <source>/sonata-admin/app/eyes/{id}/delete</source>
+        <target state="new">/sonata-admin/app/eyes/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="a9f03353f9117d128b49274e748f2c709f4156e7" resname="admin_app_eyes_edit">
+        <source>/sonata-admin/app/eyes/{id}/edit</source>
+        <target state="new">/sonata-admin/app/eyes/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="46f309f2eca936e03535c79db15cd0f574373609" resname="admin_app_eyes_export">
+        <source>/sonata-admin/app/eyes/export</source>
+        <target state="new">/sonata-admin/app/eyes/export</target>
+      </trans-unit>
+      <trans-unit id="12a50e2448ba42a22b1f7d7eecefaa665078f38f" resname="admin_app_eyes_list">
+        <source>/sonata-admin/app/eyes/list</source>
+        <target state="new">/sonata-admin/app/eyes/list</target>
+      </trans-unit>
+      <trans-unit id="0e5452ef89f966b9bc93543f5434a3a628cd0754" resname="admin_app_eyes_show">
+        <source>/sonata-admin/app/eyes/{id}/show</source>
+        <target state="new">/sonata-admin/app/eyes/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="c518fe6044f5869dfce13204846faebd90d877d0" resname="admin_app_faqcategory_batch">
+        <source>/sonata-admin/app/faqcategory/batch</source>
+        <target state="new">/sonata-admin/app/faqcategory/batch</target>
+      </trans-unit>
+      <trans-unit id="cecd73b4ce59a900a8c98cf4f432b1bb64f52b85" resname="admin_app_faqcategory_create">
+        <source>/sonata-admin/app/faqcategory/create</source>
+        <target state="new">/sonata-admin/app/faqcategory/create</target>
+      </trans-unit>
+      <trans-unit id="7634be17c02de8fa1a12a552f464096bf2c54431" resname="admin_app_faqcategory_delete">
+        <source>/sonata-admin/app/faqcategory/{id}/delete</source>
+        <target state="new">/sonata-admin/app/faqcategory/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="40c020efd609426e2ced651087ecbe3f3bb1b2e9" resname="admin_app_faqcategory_edit">
+        <source>/sonata-admin/app/faqcategory/{id}/edit</source>
+        <target state="new">/sonata-admin/app/faqcategory/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="eafdd17a1f49f3e711772f28fb67da4dbd453c5f" resname="admin_app_faqcategory_export">
+        <source>/sonata-admin/app/faqcategory/export</source>
+        <target state="new">/sonata-admin/app/faqcategory/export</target>
+      </trans-unit>
+      <trans-unit id="0e48f5e09e9bd7e835acacc68f3f9af440515ca1" resname="admin_app_faqcategory_list">
+        <source>/sonata-admin/app/faqcategory/list</source>
+        <target state="new">/sonata-admin/app/faqcategory/list</target>
+      </trans-unit>
+      <trans-unit id="c3740464e12b83be445479a73c3917f049f87700" resname="admin_app_faqcategory_show">
+        <source>/sonata-admin/app/faqcategory/{id}/show</source>
+        <target state="new">/sonata-admin/app/faqcategory/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="71721fa3e35759e34697a5cec00d8ac4d0dc2326" resname="admin_app_feature_batch">
+        <source>/sonata-admin/app/feature/batch</source>
+        <target state="new">/sonata-admin/app/feature/batch</target>
+      </trans-unit>
+      <trans-unit id="5fdfecf47f63775b5779c23152a20fd93c0cf317" resname="admin_app_feature_create">
+        <source>/sonata-admin/app/feature/create</source>
+        <target state="new">/sonata-admin/app/feature/create</target>
+      </trans-unit>
+      <trans-unit id="f7690a0df4e46bb95f5cd0ec3747b14997abca7e" resname="admin_app_feature_delete">
+        <source>/sonata-admin/app/feature/{id}/delete</source>
+        <target state="new">/sonata-admin/app/feature/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="ba5fe4b1c8d0e4d2085f52d90acd1c8b6c9ac29a" resname="admin_app_feature_edit">
+        <source>/sonata-admin/app/feature/{id}/edit</source>
+        <target state="new">/sonata-admin/app/feature/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="604fb47cd3c32dc56c3559bab04a71d515db58f1" resname="admin_app_feature_export">
+        <source>/sonata-admin/app/feature/export</source>
+        <target state="new">/sonata-admin/app/feature/export</target>
+      </trans-unit>
+      <trans-unit id="22a449fad4dd963ac7e0c951db8d833f096b56bb" resname="admin_app_feature_list">
+        <source>/sonata-admin/app/feature/list</source>
+        <target state="new">/sonata-admin/app/feature/list</target>
+      </trans-unit>
+      <trans-unit id="eaa5f0a55d0a7e1ac0311fe7f3d0b78726065ea1" resname="admin_app_feature_show">
+        <source>/sonata-admin/app/feature/{id}/show</source>
+        <target state="new">/sonata-admin/app/feature/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="cdf820ffffc2bd6ef50f103e2d00009a7af3df29" resname="admin_app_footerheader_batch">
+        <source>/sonata-admin/app/footerheader/batch</source>
+        <target state="new">/sonata-admin/app/footerheader/batch</target>
+      </trans-unit>
+      <trans-unit id="4c3959786cf41ec1ca152bc4a7c0edf30635b0b9" resname="admin_app_footerheader_create">
+        <source>/sonata-admin/app/footerheader/create</source>
+        <target state="new">/sonata-admin/app/footerheader/create</target>
+      </trans-unit>
+      <trans-unit id="b89988421c81bb082f9e94ae8c494326c7a95dbe" resname="admin_app_footerheader_delete">
+        <source>/sonata-admin/app/footerheader/{id}/delete</source>
+        <target state="new">/sonata-admin/app/footerheader/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="8369bd74717462510a23be6ee833c316edb5fa8f" resname="admin_app_footerheader_edit">
+        <source>/sonata-admin/app/footerheader/{id}/edit</source>
+        <target state="new">/sonata-admin/app/footerheader/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="4fa3e6ee3728a8226362a3d34570674f36c38354" resname="admin_app_footerheader_export">
+        <source>/sonata-admin/app/footerheader/export</source>
+        <target state="new">/sonata-admin/app/footerheader/export</target>
+      </trans-unit>
+      <trans-unit id="d3c25598fd9f7282f466a9d482feee64ed2b3dab" resname="admin_app_footerheader_list">
+        <source>/sonata-admin/app/footerheader/list</source>
+        <target state="new">/sonata-admin/app/footerheader/list</target>
+      </trans-unit>
+      <trans-unit id="80290d787722a8a39fdd51ec3bca68a1f1102893" resname="admin_app_footerheader_show">
+        <source>/sonata-admin/app/footerheader/{id}/show</source>
+        <target state="new">/sonata-admin/app/footerheader/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="aa9228d7d44517e14d10a37ee2fac791721e441c" resname="admin_app_gender_batch">
+        <source>/sonata-admin/app/gender/batch</source>
+        <target state="new">/sonata-admin/app/gender/batch</target>
+      </trans-unit>
+      <trans-unit id="862d0cec28ef4c464bbd5b2f7e1711245be559b1" resname="admin_app_gender_create">
+        <source>/sonata-admin/app/gender/create</source>
+        <target state="new">/sonata-admin/app/gender/create</target>
+      </trans-unit>
+      <trans-unit id="36bbcdf4392e8aeb3e4d5166a2106ceaa9996c7c" resname="admin_app_gender_delete">
+        <source>/sonata-admin/app/gender/{id}/delete</source>
+        <target state="new">/sonata-admin/app/gender/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="618afc8caf9e17a701c10520e10f6214b36da084" resname="admin_app_gender_edit">
+        <source>/sonata-admin/app/gender/{id}/edit</source>
+        <target state="new">/sonata-admin/app/gender/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="d86e75a30b586711fcf534e4eaa3a4d97c95737f" resname="admin_app_gender_export">
+        <source>/sonata-admin/app/gender/export</source>
+        <target state="new">/sonata-admin/app/gender/export</target>
+      </trans-unit>
+      <trans-unit id="3cdd6fcf877a0a56d07af3bbcb8870addb07f95b" resname="admin_app_gender_list">
+        <source>/sonata-admin/app/gender/list</source>
+        <target state="new">/sonata-admin/app/gender/list</target>
+      </trans-unit>
+      <trans-unit id="9f9e301670da47befdd18d9b94a8569bcfd562f4" resname="admin_app_gender_show">
+        <source>/sonata-admin/app/gender/{id}/show</source>
+        <target state="new">/sonata-admin/app/gender/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="f86f83425c729dfe010a605a0d6fcf1306a8394a" resname="admin_app_hair_batch">
+        <source>/sonata-admin/app/hair/batch</source>
+        <target state="new">/sonata-admin/app/hair/batch</target>
+      </trans-unit>
+      <trans-unit id="44e11a7fb624fe860256159e1e8e0035853b327a" resname="admin_app_hair_create">
+        <source>/sonata-admin/app/hair/create</source>
+        <target state="new">/sonata-admin/app/hair/create</target>
+      </trans-unit>
+      <trans-unit id="4070a33d9710723f1611037e8407d81025ab7dfc" resname="admin_app_hair_delete">
+        <source>/sonata-admin/app/hair/{id}/delete</source>
+        <target state="new">/sonata-admin/app/hair/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="da3701bd9ec1d4e603f758882916e6c9a83f79a5" resname="admin_app_hair_edit">
+        <source>/sonata-admin/app/hair/{id}/edit</source>
+        <target state="new">/sonata-admin/app/hair/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="679fde2aae46f639402f971c9bd99526c9339d52" resname="admin_app_hair_export">
+        <source>/sonata-admin/app/hair/export</source>
+        <target state="new">/sonata-admin/app/hair/export</target>
+      </trans-unit>
+      <trans-unit id="3df0ba8854b003bdb1edd82bbf54b59d96ae5240" resname="admin_app_hair_list">
+        <source>/sonata-admin/app/hair/list</source>
+        <target state="new">/sonata-admin/app/hair/list</target>
+      </trans-unit>
+      <trans-unit id="cf821bdf6db182b97a69c5a891f08914b2f22836" resname="admin_app_hair_show">
+        <source>/sonata-admin/app/hair/{id}/show</source>
+        <target state="new">/sonata-admin/app/hair/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="5fb0b4abab4531710d8ea8a9568330510e373d84" resname="admin_app_hobby_batch">
+        <source>/sonata-admin/app/hobby/batch</source>
+        <target state="new">/sonata-admin/app/hobby/batch</target>
+      </trans-unit>
+      <trans-unit id="6e1934eecd2eab3547304bdda6a186db49d37574" resname="admin_app_hobby_create">
+        <source>/sonata-admin/app/hobby/create</source>
+        <target state="new">/sonata-admin/app/hobby/create</target>
+      </trans-unit>
+      <trans-unit id="f7e8f77d288accb1630ed0bfedcc7332b91f4d10" resname="admin_app_hobby_delete">
+        <source>/sonata-admin/app/hobby/{id}/delete</source>
+        <target state="new">/sonata-admin/app/hobby/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="1ca1307c87d9d2b11fcae508b6eb634194625129" resname="admin_app_hobby_edit">
+        <source>/sonata-admin/app/hobby/{id}/edit</source>
+        <target state="new">/sonata-admin/app/hobby/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="8210161f095f5ee209d14715f7e9f94a3b32aa3a" resname="admin_app_hobby_export">
+        <source>/sonata-admin/app/hobby/export</source>
+        <target state="new">/sonata-admin/app/hobby/export</target>
+      </trans-unit>
+      <trans-unit id="0920895a7c376903da528b22225241bcb1782d08" resname="admin_app_hobby_list">
+        <source>/sonata-admin/app/hobby/list</source>
+        <target state="new">/sonata-admin/app/hobby/list</target>
+      </trans-unit>
+      <trans-unit id="b427aec29507dfad725288af86bae4fddd911e3c" resname="admin_app_hobby_show">
+        <source>/sonata-admin/app/hobby/{id}/show</source>
+        <target state="new">/sonata-admin/app/hobby/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="f13a376503347ba2c637aa9921beb26047572671" resname="admin_app_homepage_batch">
+        <source>/sonata-admin/app/homepage/batch</source>
+        <target state="new">/sonata-admin/app/homepage/batch</target>
+      </trans-unit>
+      <trans-unit id="f7dac508605ee1bd8604b32a9beb1ed6afc0ec74" resname="admin_app_homepage_create">
+        <source>/sonata-admin/app/homepage/create</source>
+        <target state="new">/sonata-admin/app/homepage/create</target>
+      </trans-unit>
+      <trans-unit id="d2032581e8390e048b7355013476bcdd9c2a3c8d" resname="admin_app_homepage_delete">
+        <source>/sonata-admin/app/homepage/{id}/delete</source>
+        <target state="new">/sonata-admin/app/homepage/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="bab16611d9e15609928c2c14d16bf0f318ba84a0" resname="admin_app_homepage_edit">
+        <source>/sonata-admin/app/homepage/{id}/edit</source>
+        <target state="new">/sonata-admin/app/homepage/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="e58c78050b8a7ed1839593526f394dca9eecd237" resname="admin_app_homepage_export">
+        <source>/sonata-admin/app/homepage/export</source>
+        <target state="new">/sonata-admin/app/homepage/export</target>
+      </trans-unit>
+      <trans-unit id="e1028970f08509a64fcc47b84886d4621c66d763" resname="admin_app_homepage_list">
+        <source>/sonata-admin/app/homepage/list</source>
+        <target state="new">/sonata-admin/app/homepage/list</target>
+      </trans-unit>
+      <trans-unit id="ea2cf88dc12495af81594c92850f855c5637f593" resname="admin_app_homepage_show">
+        <source>/sonata-admin/app/homepage/{id}/show</source>
+        <target state="new">/sonata-admin/app/homepage/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="8fbd3d94c3e26622055b26808c635cfbde206ab6" resname="admin_app_income_batch">
+        <source>/sonata-admin/app/income/batch</source>
+        <target state="new">/sonata-admin/app/income/batch</target>
+      </trans-unit>
+      <trans-unit id="16cdbda1ad62bbc60b3bdda5254ff19baf10c422" resname="admin_app_income_create">
+        <source>/sonata-admin/app/income/create</source>
+        <target state="new">/sonata-admin/app/income/create</target>
+      </trans-unit>
+      <trans-unit id="f836f399bb1f225fedecaddb56aeebee829afa3b" resname="admin_app_income_delete">
+        <source>/sonata-admin/app/income/{id}/delete</source>
+        <target state="new">/sonata-admin/app/income/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="354f36426b5dad09bf55b7429e23fc25917bc485" resname="admin_app_income_edit">
+        <source>/sonata-admin/app/income/{id}/edit</source>
+        <target state="new">/sonata-admin/app/income/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="7fd562d6aded9561ec7e409b763607aeb09aa1b0" resname="admin_app_income_export">
+        <source>/sonata-admin/app/income/export</source>
+        <target state="new">/sonata-admin/app/income/export</target>
+      </trans-unit>
+      <trans-unit id="3a193c5410867d4705dea5b5f833d3aba3c33d95" resname="admin_app_income_list">
+        <source>/sonata-admin/app/income/list</source>
+        <target state="new">/sonata-admin/app/income/list</target>
+      </trans-unit>
+      <trans-unit id="334f363632ffaf9c24df5c1a99c4d7478be9451c" resname="admin_app_income_show">
+        <source>/sonata-admin/app/income/{id}/show</source>
+        <target state="new">/sonata-admin/app/income/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="69c2763875b5f60f93f42a1c31a513f2746bb553" resname="admin_app_language_batch">
+        <source>/sonata-admin/app/language/batch</source>
+        <target state="new">/sonata-admin/app/language/batch</target>
+      </trans-unit>
+      <trans-unit id="f5494355b5ac780aa7cd72e525b10cf77d1093ba" resname="admin_app_language_create">
+        <source>/sonata-admin/app/language/create</source>
+        <target state="new">/sonata-admin/app/language/create</target>
+      </trans-unit>
+      <trans-unit id="97f6c33492023054ae12334e44c35b021c0665ca" resname="admin_app_language_delete">
+        <source>/sonata-admin/app/language/{id}/delete</source>
+        <target state="new">/sonata-admin/app/language/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="ed4b031341e8ccbc38b4b1e2546b0f3a2bca0baa" resname="admin_app_language_edit">
+        <source>/sonata-admin/app/language/{id}/edit</source>
+        <target state="new">/sonata-admin/app/language/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="a3e37e08e002c0218b6b2d67dd5866134dd76b36" resname="admin_app_language_export">
+        <source>/sonata-admin/app/language/export</source>
+        <target state="new">/sonata-admin/app/language/export</target>
+      </trans-unit>
+      <trans-unit id="577b5dccb64dc9d401f398f58102fcc06c321520" resname="admin_app_language_list">
+        <source>/sonata-admin/app/language/list</source>
+        <target state="new">/sonata-admin/app/language/list</target>
+      </trans-unit>
+      <trans-unit id="0fe3388f049a4833ac71c56254b03ee7afe01795" resname="admin_app_language_show">
+        <source>/sonata-admin/app/language/{id}/show</source>
+        <target state="new">/sonata-admin/app/language/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="a01cfca9d6c625edb3a876da25bd8fefc55cbdf8" resname="admin_app_loginfrom_batch">
+        <source>/sonata-admin/app/loginfrom/batch</source>
+        <target state="new">/sonata-admin/app/loginfrom/batch</target>
+      </trans-unit>
+      <trans-unit id="e0dca83b7748e37e2dac63e46dd72c0a74cfb322" resname="admin_app_loginfrom_create">
+        <source>/sonata-admin/app/loginfrom/create</source>
+        <target state="new">/sonata-admin/app/loginfrom/create</target>
+      </trans-unit>
+      <trans-unit id="f176368d50e8aaa135602dbe081c21e03f21b269" resname="admin_app_loginfrom_delete">
+        <source>/sonata-admin/app/loginfrom/{id}/delete</source>
+        <target state="new">/sonata-admin/app/loginfrom/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="71bd68700e07bc062402ce1605d04b8901a7d2d7" resname="admin_app_loginfrom_edit">
+        <source>/sonata-admin/app/loginfrom/{id}/edit</source>
+        <target state="new">/sonata-admin/app/loginfrom/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="79168fec1b792330843a2f84dd463d70bf0b4e95" resname="admin_app_loginfrom_export">
+        <source>/sonata-admin/app/loginfrom/export</source>
+        <target state="new">/sonata-admin/app/loginfrom/export</target>
+      </trans-unit>
+      <trans-unit id="ba84d3d95e0081cb81ad549fe924a3fc0dfd5a37" resname="admin_app_loginfrom_list">
+        <source>/sonata-admin/app/loginfrom/list</source>
+        <target state="new">/sonata-admin/app/loginfrom/list</target>
+      </trans-unit>
+      <trans-unit id="a8099dd2d29319a348b1e391a0022f1959ad9e6f" resname="admin_app_loginfrom_show">
+        <source>/sonata-admin/app/loginfrom/{id}/show</source>
+        <target state="new">/sonata-admin/app/loginfrom/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="633170c3f0160c7d99869691dbd037e651357f79" resname="admin_app_networth_batch">
+        <source>/sonata-admin/app/networth/batch</source>
+        <target state="new">/sonata-admin/app/networth/batch</target>
+      </trans-unit>
+      <trans-unit id="cadd529b7be248393ebf6a037e366060146577a7" resname="admin_app_networth_create">
+        <source>/sonata-admin/app/networth/create</source>
+        <target state="new">/sonata-admin/app/networth/create</target>
+      </trans-unit>
+      <trans-unit id="50fa5b6171c0054f20dd953f195895962699e532" resname="admin_app_networth_delete">
+        <source>/sonata-admin/app/networth/{id}/delete</source>
+        <target state="new">/sonata-admin/app/networth/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="b5c6ed9b4400bf46af83d2311874f60393ca717e" resname="admin_app_networth_edit">
+        <source>/sonata-admin/app/networth/{id}/edit</source>
+        <target state="new">/sonata-admin/app/networth/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="07d80ae5b011aa4a25c78e4b5b8c86068015e4e6" resname="admin_app_networth_export">
+        <source>/sonata-admin/app/networth/export</source>
+        <target state="new">/sonata-admin/app/networth/export</target>
+      </trans-unit>
+      <trans-unit id="6c7f403ffaa8f540cef1c92059cbcd95f23e9f5c" resname="admin_app_networth_list">
+        <source>/sonata-admin/app/networth/list</source>
+        <target state="new">/sonata-admin/app/networth/list</target>
+      </trans-unit>
+      <trans-unit id="2bd649c5b2a4115e7d73ae948b07443eb3045291" resname="admin_app_networth_show">
+        <source>/sonata-admin/app/networth/{id}/show</source>
+        <target state="new">/sonata-admin/app/networth/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="ac4162c4494e19774ad13f74089f2dddf8e56df8" resname="admin_app_notifications_batch">
+        <source>/sonata-admin/app/notifications/batch</source>
+        <target state="new">/sonata-admin/app/notifications/batch</target>
+      </trans-unit>
+      <trans-unit id="272331dbc525e4c56211bd0d12b0938e17217a3b" resname="admin_app_notifications_create">
+        <source>/sonata-admin/app/notifications/create</source>
+        <target state="new">/sonata-admin/app/notifications/create</target>
+      </trans-unit>
+      <trans-unit id="57f80a673fc6f7e4ccec8c058350edeb4c9c2707" resname="admin_app_notifications_delete">
+        <source>/sonata-admin/app/notifications/{id}/delete</source>
+        <target state="new">/sonata-admin/app/notifications/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="4dc2145fc39ccba67d0dcedf5d02538b1029c02a" resname="admin_app_notifications_edit">
+        <source>/sonata-admin/app/notifications/{id}/edit</source>
+        <target state="new">/sonata-admin/app/notifications/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="f425d0ae2822b207c69c8912fe9b85969afb74f0" resname="admin_app_notifications_export">
+        <source>/sonata-admin/app/notifications/export</source>
+        <target state="new">/sonata-admin/app/notifications/export</target>
+      </trans-unit>
+      <trans-unit id="0bc5e8771ead1f43851e21c06cfdbb62cb74583d" resname="admin_app_notifications_list">
+        <source>/sonata-admin/app/notifications/list</source>
+        <target state="new">/sonata-admin/app/notifications/list</target>
+      </trans-unit>
+      <trans-unit id="a46cdf423da752a6819ca28341b7729ef406e7a9" resname="admin_app_notifications_show">
+        <source>/sonata-admin/app/notifications/{id}/show</source>
+        <target state="new">/sonata-admin/app/notifications/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="7700d89e9c860ff415cc1183c3a74124430813d2" resname="admin_app_page_batch">
+        <source>/sonata-admin/app/page/batch</source>
+        <target state="new">/sonata-admin/app/page/batch</target>
+      </trans-unit>
+      <trans-unit id="69c050291e0a9df3bdc0d1a0be0cc5964630928f" resname="admin_app_page_create">
+        <source>/sonata-admin/app/page/create</source>
+        <target state="new">/sonata-admin/app/page/create</target>
+      </trans-unit>
+      <trans-unit id="f566bee405b38e4ed36fb1bc51071fbcb764f202" resname="admin_app_page_delete">
+        <source>/sonata-admin/app/page/{id}/delete</source>
+        <target state="new">/sonata-admin/app/page/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="d847eccc38aa687b5d40543e14237432920f811e" resname="admin_app_page_edit">
+        <source>/sonata-admin/app/page/{id}/edit</source>
+        <target state="new">/sonata-admin/app/page/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="3aac311981d213aa23dfb76afb41718fd4796c1b" resname="admin_app_page_export">
+        <source>/sonata-admin/app/page/export</source>
+        <target state="new">/sonata-admin/app/page/export</target>
+      </trans-unit>
+      <trans-unit id="2a8e8797ef3be39f5a1c3768bd5f1aef12615504" resname="admin_app_page_list">
+        <source>/sonata-admin/app/page/list</source>
+        <target state="new">/sonata-admin/app/page/list</target>
+      </trans-unit>
+      <trans-unit id="360ec36e24dc46191daf5637ba9dc1ecc15a0f38" resname="admin_app_page_show">
+        <source>/sonata-admin/app/page/{id}/show</source>
+        <target state="new">/sonata-admin/app/page/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="23ebe211c32c42635f57455931446f69d32eabc9" resname="admin_app_phoneblocked_batch">
+        <source>/sonata-admin/app/phoneblocked/batch</source>
+        <target state="new">/sonata-admin/app/phoneblocked/batch</target>
+      </trans-unit>
+      <trans-unit id="5037569c505716f0d7957e484b003b3317dc5545" resname="admin_app_phoneblocked_create">
+        <source>/sonata-admin/app/phoneblocked/create</source>
+        <target state="new">/sonata-admin/app/phoneblocked/create</target>
+      </trans-unit>
+      <trans-unit id="a1fc415a3053381ae6fa0475fd75e2e1134f0e62" resname="admin_app_phoneblocked_delete">
+        <source>/sonata-admin/app/phoneblocked/{id}/delete</source>
+        <target state="new">/sonata-admin/app/phoneblocked/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="aa806b6df4d973a6efd0f8a2202c94998778723c" resname="admin_app_phoneblocked_edit">
+        <source>/sonata-admin/app/phoneblocked/{id}/edit</source>
+        <target state="new">/sonata-admin/app/phoneblocked/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="2b562ed41b41d509c4d3cd01cff1f2b6702b41d9" resname="admin_app_phoneblocked_export">
+        <source>/sonata-admin/app/phoneblocked/export</source>
+        <target state="new">/sonata-admin/app/phoneblocked/export</target>
+      </trans-unit>
+      <trans-unit id="4497c53fbf5eef081576a441b9a339cd4311f3f0" resname="admin_app_phoneblocked_list">
+        <source>/sonata-admin/app/phoneblocked/list</source>
+        <target state="new">/sonata-admin/app/phoneblocked/list</target>
+      </trans-unit>
+      <trans-unit id="15245aa096375a74e5ac61a111294e7dbaa9313d" resname="admin_app_phoneblocked_show">
+        <source>/sonata-admin/app/phoneblocked/{id}/show</source>
+        <target state="new">/sonata-admin/app/phoneblocked/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="330795f8be81435821baf3cc2153887cf7b53a63" resname="admin_app_purpose_batch">
+        <source>/sonata-admin/app/purpose/batch</source>
+        <target state="new">/sonata-admin/app/purpose/batch</target>
+      </trans-unit>
+      <trans-unit id="f3aba47e8109d1a0b487b51a6c65402eb605e0b7" resname="admin_app_purpose_create">
+        <source>/sonata-admin/app/purpose/create</source>
+        <target state="new">/sonata-admin/app/purpose/create</target>
+      </trans-unit>
+      <trans-unit id="006fb857ebaf605bf353c49a47bb1f2fb8cf0df4" resname="admin_app_purpose_delete">
+        <source>/sonata-admin/app/purpose/{id}/delete</source>
+        <target state="new">/sonata-admin/app/purpose/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="02b77a654e4c4a4347c4c2b686ba02ef403921d4" resname="admin_app_purpose_edit">
+        <source>/sonata-admin/app/purpose/{id}/edit</source>
+        <target state="new">/sonata-admin/app/purpose/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="893a02d40ca3b8a4d2ce37369923178a3c1cad8c" resname="admin_app_purpose_export">
+        <source>/sonata-admin/app/purpose/export</source>
+        <target state="new">/sonata-admin/app/purpose/export</target>
+      </trans-unit>
+      <trans-unit id="9194ce6f82ccc7da50215b8639ebc4225544328e" resname="admin_app_purpose_list">
+        <source>/sonata-admin/app/purpose/list</source>
+        <target state="new">/sonata-admin/app/purpose/list</target>
+      </trans-unit>
+      <trans-unit id="f6ec35344b28e94519854f19e4666a8993ab6e2c" resname="admin_app_purpose_show">
+        <source>/sonata-admin/app/purpose/{id}/show</source>
+        <target state="new">/sonata-admin/app/purpose/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="99e1919155ca44b5486a36c01c231ca21e83ff73" resname="admin_app_region_batch">
+        <source>/sonata-admin/app/region/batch</source>
+        <target state="new">/sonata-admin/app/region/batch</target>
+      </trans-unit>
+      <trans-unit id="1fd148664b731c68c147ba4b349648bcd9107d16" resname="admin_app_region_create">
+        <source>/sonata-admin/app/region/create</source>
+        <target state="new">/sonata-admin/app/region/create</target>
+      </trans-unit>
+      <trans-unit id="9b674cd4d2dfaae3c39048b4cb46551b1d0e0874" resname="admin_app_region_delete">
+        <source>/sonata-admin/app/region/{id}/delete</source>
+        <target state="new">/sonata-admin/app/region/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="190178db865b6d6e2458a52d6db342b5258b97d6" resname="admin_app_region_edit">
+        <source>/sonata-admin/app/region/{id}/edit</source>
+        <target state="new">/sonata-admin/app/region/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="11de5ce9c1e5097400d20b27fa22d790ea00e62b" resname="admin_app_region_export">
+        <source>/sonata-admin/app/region/export</source>
+        <target state="new">/sonata-admin/app/region/export</target>
+      </trans-unit>
+      <trans-unit id="bf6e36c54b726ad74beca65e37eaafc91016f8c9" resname="admin_app_region_list">
+        <source>/sonata-admin/app/region/list</source>
+        <target state="new">/sonata-admin/app/region/list</target>
+      </trans-unit>
+      <trans-unit id="e9cf9ea8d9796fa52ef5b373b1e4e4db4e482ffa" resname="admin_app_region_show">
+        <source>/sonata-admin/app/region/{id}/show</source>
+        <target state="new">/sonata-admin/app/region/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="336b2f0ba455a4c69f238551a27aaea4fe618bd7" resname="admin_app_relationshipstatus_batch">
+        <source>/sonata-admin/app/relationshipstatus/batch</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/batch</target>
+      </trans-unit>
+      <trans-unit id="859cba0687305d21428841ea1197482ed208ea9f" resname="admin_app_relationshipstatus_create">
+        <source>/sonata-admin/app/relationshipstatus/create</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/create</target>
+      </trans-unit>
+      <trans-unit id="59b1a4ba56b8c2c10d5b63ee0cd316eef23a898c" resname="admin_app_relationshipstatus_delete">
+        <source>/sonata-admin/app/relationshipstatus/{id}/delete</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="af759632e4c0616fdf02af7a4a08c11e5146d0f4" resname="admin_app_relationshipstatus_edit">
+        <source>/sonata-admin/app/relationshipstatus/{id}/edit</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="f891acb9c401840731d52987f9e06f16b14cd928" resname="admin_app_relationshipstatus_export">
+        <source>/sonata-admin/app/relationshipstatus/export</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/export</target>
+      </trans-unit>
+      <trans-unit id="52418d6c3bd9e77934705d7e26407d46152fa4ff" resname="admin_app_relationshipstatus_list">
+        <source>/sonata-admin/app/relationshipstatus/list</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/list</target>
+      </trans-unit>
+      <trans-unit id="367852e05606dd769163819585c3974f94f6cf5c" resname="admin_app_relationshipstatus_show">
+        <source>/sonata-admin/app/relationshipstatus/{id}/show</source>
+        <target state="new">/sonata-admin/app/relationshipstatus/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="a272bc6bdc6e772c0bc40ee734210cc1c82079b9" resname="admin_app_religion_batch">
+        <source>/sonata-admin/app/religion/batch</source>
+        <target state="new">/sonata-admin/app/religion/batch</target>
+      </trans-unit>
+      <trans-unit id="be12f9fc219c9b5d1dacc0f40a037062ede6633f" resname="admin_app_religion_create">
+        <source>/sonata-admin/app/religion/create</source>
+        <target state="new">/sonata-admin/app/religion/create</target>
+      </trans-unit>
+      <trans-unit id="e81155c889b0a53494b1fc86b7993da78e3d289f" resname="admin_app_religion_delete">
+        <source>/sonata-admin/app/religion/{id}/delete</source>
+        <target state="new">/sonata-admin/app/religion/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="d0977bb6d42d0e3d756ce6d03173882d9d0ff15e" resname="admin_app_religion_edit">
+        <source>/sonata-admin/app/religion/{id}/edit</source>
+        <target state="new">/sonata-admin/app/religion/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="eba0dd5cfabeca6cba45e3d41462b3452d91a3f3" resname="admin_app_religion_export">
+        <source>/sonata-admin/app/religion/export</source>
+        <target state="new">/sonata-admin/app/religion/export</target>
+      </trans-unit>
+      <trans-unit id="46f93e3a4b061bf2b84dc96978c2570427693d3d" resname="admin_app_religion_list">
+        <source>/sonata-admin/app/religion/list</source>
+        <target state="new">/sonata-admin/app/religion/list</target>
+      </trans-unit>
+      <trans-unit id="71cf61776410badb8360f23aca28a4a510684ac4" resname="admin_app_religion_show">
+        <source>/sonata-admin/app/religion/{id}/show</source>
+        <target state="new">/sonata-admin/app/religion/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="dfb29041a1713402abbff53da2b39e1e2d230792" resname="admin_app_seo_batch">
+        <source>/sonata-admin/app/seo/batch</source>
+        <target state="new">/sonata-admin/app/seo/batch</target>
+      </trans-unit>
+      <trans-unit id="0033e51ca1e066a7eff89c19232c07315f8107d5" resname="admin_app_seo_create">
+        <source>/sonata-admin/app/seo/create</source>
+        <target state="new">/sonata-admin/app/seo/create</target>
+      </trans-unit>
+      <trans-unit id="6177f138c0ca0a560646ea4cfc819f04229d9cfc" resname="admin_app_seo_delete">
+        <source>/sonata-admin/app/seo/{id}/delete</source>
+        <target state="new">/sonata-admin/app/seo/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="724b6a8992f32bde704d4314a52473676d89eedb" resname="admin_app_seo_edit">
+        <source>/sonata-admin/app/seo/{id}/edit</source>
+        <target state="new">/sonata-admin/app/seo/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="079378892194d5fd55e60afffd4fe0f2d25cf360" resname="admin_app_seo_export">
+        <source>/sonata-admin/app/seo/export</source>
+        <target state="new">/sonata-admin/app/seo/export</target>
+      </trans-unit>
+      <trans-unit id="17484cfa431b3e8e3c2d10405baecb59cff20d90" resname="admin_app_seo_list">
+        <source>/sonata-admin/app/seo/list</source>
+        <target state="new">/sonata-admin/app/seo/list</target>
+      </trans-unit>
+      <trans-unit id="2fc05f48f42985580af8bd633e6f4ec5ce396a72" resname="admin_app_seo_show">
+        <source>/sonata-admin/app/seo/{id}/show</source>
+        <target state="new">/sonata-admin/app/seo/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="7ff382205b5773ea35a9aeeb68a6f16c887d3d24" resname="admin_app_slide_batch">
+        <source>/sonata-admin/app/slide/batch</source>
+        <target state="new">/sonata-admin/app/slide/batch</target>
+      </trans-unit>
+      <trans-unit id="8c81603b1e1106e771cace13a32abf686ffde59b" resname="admin_app_slide_create">
+        <source>/sonata-admin/app/slide/create</source>
+        <target state="new">/sonata-admin/app/slide/create</target>
+      </trans-unit>
+      <trans-unit id="efba1d3b7f3289abee0c662df7dd74efb613b190" resname="admin_app_slide_delete">
+        <source>/sonata-admin/app/slide/{id}/delete</source>
+        <target state="new">/sonata-admin/app/slide/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="0b9ab203f0ef5d4b6abdb7811e700cd590b1c062" resname="admin_app_slide_edit">
+        <source>/sonata-admin/app/slide/{id}/edit</source>
+        <target state="new">/sonata-admin/app/slide/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="21e2d2b0c1cb5b8d1172421480651627f5e0ae2b" resname="admin_app_slide_export">
+        <source>/sonata-admin/app/slide/export</source>
+        <target state="new">/sonata-admin/app/slide/export</target>
+      </trans-unit>
+      <trans-unit id="da412d9c4eb27eb8ca9c11959f4a374eee9e2a85" resname="admin_app_slide_list">
+        <source>/sonata-admin/app/slide/list</source>
+        <target state="new">/sonata-admin/app/slide/list</target>
+      </trans-unit>
+      <trans-unit id="5e9befa0ce44b9921b8465867b64c6932dbc7c62" resname="admin_app_slide_show">
+        <source>/sonata-admin/app/slide/{id}/show</source>
+        <target state="new">/sonata-admin/app/slide/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="73277dd33750bae49973d4a0194f856eec1f534b" resname="admin_app_smoking_batch">
+        <source>/sonata-admin/app/smoking/batch</source>
+        <target state="new">/sonata-admin/app/smoking/batch</target>
+      </trans-unit>
+      <trans-unit id="41bdbd079c06da63b8c438ef1d6afeb9a9bf3a1c" resname="admin_app_smoking_create">
+        <source>/sonata-admin/app/smoking/create</source>
+        <target state="new">/sonata-admin/app/smoking/create</target>
+      </trans-unit>
+      <trans-unit id="09d690cbc9485674841f523d76d543d15ebd5602" resname="admin_app_smoking_delete">
+        <source>/sonata-admin/app/smoking/{id}/delete</source>
+        <target state="new">/sonata-admin/app/smoking/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="3af4f3f5304f6be8113fdedc9fe7dceddfab4dd2" resname="admin_app_smoking_edit">
+        <source>/sonata-admin/app/smoking/{id}/edit</source>
+        <target state="new">/sonata-admin/app/smoking/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="cf9ae028502c419db9563bc803f91f4e702b4393" resname="admin_app_smoking_export">
+        <source>/sonata-admin/app/smoking/export</source>
+        <target state="new">/sonata-admin/app/smoking/export</target>
+      </trans-unit>
+      <trans-unit id="4a88ed0236d0ad90ac548a40e53823bde4b2c7bf" resname="admin_app_smoking_list">
+        <source>/sonata-admin/app/smoking/list</source>
+        <target state="new">/sonata-admin/app/smoking/list</target>
+      </trans-unit>
+      <trans-unit id="79cc68c8390af17f770bb3cbd4b9ba295fddbcd2" resname="admin_app_smoking_show">
+        <source>/sonata-admin/app/smoking/{id}/show</source>
+        <target state="new">/sonata-admin/app/smoking/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="f532b421a589daf6e87c5980315e812f835ae315" resname="admin_app_status_batch">
+        <source>/sonata-admin/app/status/batch</source>
+        <target state="new">/sonata-admin/app/status/batch</target>
+      </trans-unit>
+      <trans-unit id="edd9d075839b0ef110021f922831d349d550a6b2" resname="admin_app_status_create">
+        <source>/sonata-admin/app/status/create</source>
+        <target state="new">/sonata-admin/app/status/create</target>
+      </trans-unit>
+      <trans-unit id="6f3af3558e43f6391673eea7e8437d240887b895" resname="admin_app_status_delete">
+        <source>/sonata-admin/app/status/{id}/delete</source>
+        <target state="new">/sonata-admin/app/status/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="846a811aca6452006912ba16d0e167e3225ac923" resname="admin_app_status_edit">
+        <source>/sonata-admin/app/status/{id}/edit</source>
+        <target state="new">/sonata-admin/app/status/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="d367dc08d9ebc28d4769fd38a30790e31088e18d" resname="admin_app_status_export">
+        <source>/sonata-admin/app/status/export</source>
+        <target state="new">/sonata-admin/app/status/export</target>
+      </trans-unit>
+      <trans-unit id="f46405530adcf0402fbac5f73766c680c248d1ec" resname="admin_app_status_list">
+        <source>/sonata-admin/app/status/list</source>
+        <target state="new">/sonata-admin/app/status/list</target>
+      </trans-unit>
+      <trans-unit id="04d15644e4d18788f98d660eb9800c4bc3b2d3f7" resname="admin_app_status_show">
+        <source>/sonata-admin/app/status/{id}/show</source>
+        <target state="new">/sonata-admin/app/status/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="f675d343e57e6741c52a8d264b2c356f0f26c7ac" resname="admin_app_wordblocked_batch">
+        <source>/sonata-admin/app/wordblocked/batch</source>
+        <target state="new">/sonata-admin/app/wordblocked/batch</target>
+      </trans-unit>
+      <trans-unit id="a303a9c3a098b1d1a42d61358ad5d3dc6330f646" resname="admin_app_wordblocked_create">
+        <source>/sonata-admin/app/wordblocked/create</source>
+        <target state="new">/sonata-admin/app/wordblocked/create</target>
+      </trans-unit>
+      <trans-unit id="4536d3e3e54a64083e2dd766d40569fec417c834" resname="admin_app_wordblocked_delete">
+        <source>/sonata-admin/app/wordblocked/{id}/delete</source>
+        <target state="new">/sonata-admin/app/wordblocked/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="904defc0b59fef201b71ebcd42249b4a7873ecdb" resname="admin_app_wordblocked_edit">
+        <source>/sonata-admin/app/wordblocked/{id}/edit</source>
+        <target state="new">/sonata-admin/app/wordblocked/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="697819a44f5f6611c59b6ba0cf05310bb0969585" resname="admin_app_wordblocked_export">
+        <source>/sonata-admin/app/wordblocked/export</source>
+        <target state="new">/sonata-admin/app/wordblocked/export</target>
+      </trans-unit>
+      <trans-unit id="4d7cf5934d961286d3ff191409421c85ae9116db" resname="admin_app_wordblocked_list">
+        <source>/sonata-admin/app/wordblocked/list</source>
+        <target state="new">/sonata-admin/app/wordblocked/list</target>
+      </trans-unit>
+      <trans-unit id="be0fdea14e47c6750c03b477d78f90cbbb293d23" resname="admin_app_wordblocked_show">
+        <source>/sonata-admin/app/wordblocked/{id}/show</source>
+        <target state="new">/sonata-admin/app/wordblocked/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="1f1f9c50515c162de8085f51399faeaf9f141d73" resname="admin_app_zipcode_batch">
+        <source>/sonata-admin/app/zipcode/batch</source>
+        <target state="new">/sonata-admin/app/zipcode/batch</target>
+      </trans-unit>
+      <trans-unit id="354a79b0e6175fe5ce982be34cbe5fdc1d4158c8" resname="admin_app_zipcode_create">
+        <source>/sonata-admin/app/zipcode/create</source>
+        <target state="new">/sonata-admin/app/zipcode/create</target>
+      </trans-unit>
+      <trans-unit id="113077c6c2b325d01711f726de1be396cc5fe47c" resname="admin_app_zipcode_delete">
+        <source>/sonata-admin/app/zipcode/{id}/delete</source>
+        <target state="new">/sonata-admin/app/zipcode/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="dc38b12487d64f5e39f08e0e922c2a2656838037" resname="admin_app_zipcode_edit">
+        <source>/sonata-admin/app/zipcode/{id}/edit</source>
+        <target state="new">/sonata-admin/app/zipcode/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="5ed7ce11dc1af2748fae46d25456bacfdcfbf432" resname="admin_app_zipcode_export">
+        <source>/sonata-admin/app/zipcode/export</source>
+        <target state="new">/sonata-admin/app/zipcode/export</target>
+      </trans-unit>
+      <trans-unit id="2028cb35a1f8896a06c50d59e5f32600839343ab" resname="admin_app_zipcode_list">
+        <source>/sonata-admin/app/zipcode/list</source>
+        <target state="new">/sonata-admin/app/zipcode/list</target>
+      </trans-unit>
+      <trans-unit id="93fd7e6ed375b7dd42fc96f41dd7346772b6d8fc" resname="admin_app_zipcode_show">
+        <source>/sonata-admin/app/zipcode/{id}/show</source>
+        <target state="new">/sonata-admin/app/zipcode/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="e28f973cbdc2619e90cc422fdec92d0a7937e9d5" resname="admin_app_zodiac_batch">
+        <source>/sonata-admin/app/zodiac/batch</source>
+        <target state="new">/sonata-admin/app/zodiac/batch</target>
+      </trans-unit>
+      <trans-unit id="22784c4b02ea97042453d66ad8d8ab1bcd2fb037" resname="admin_app_zodiac_create">
+        <source>/sonata-admin/app/zodiac/create</source>
+        <target state="new">/sonata-admin/app/zodiac/create</target>
+      </trans-unit>
+      <trans-unit id="3ce8753787e06729d3553902e7868c4be762a586" resname="admin_app_zodiac_delete">
+        <source>/sonata-admin/app/zodiac/{id}/delete</source>
+        <target state="new">/sonata-admin/app/zodiac/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="29244858ba4a13566e9c7cf832acdb7e9e8275a2" resname="admin_app_zodiac_edit">
+        <source>/sonata-admin/app/zodiac/{id}/edit</source>
+        <target state="new">/sonata-admin/app/zodiac/{id}/edit</target>
+      </trans-unit>
+      <trans-unit id="af4d20d54b35c797434cc5dca696737516d23cb1" resname="admin_app_zodiac_export">
+        <source>/sonata-admin/app/zodiac/export</source>
+        <target state="new">/sonata-admin/app/zodiac/export</target>
+      </trans-unit>
+      <trans-unit id="bc41728608e9154d6ee1ba3084ffb8d55cad99ff" resname="admin_app_zodiac_list">
+        <source>/sonata-admin/app/zodiac/list</source>
+        <target state="new">/sonata-admin/app/zodiac/list</target>
+      </trans-unit>
+      <trans-unit id="a48a90b74f2ccd355f4f345eeadaa9aeaa201c52" resname="admin_app_zodiac_show">
+        <source>/sonata-admin/app/zodiac/{id}/show</source>
+        <target state="new">/sonata-admin/app/zodiac/{id}/show</target>
+      </trans-unit>
+      <trans-unit id="903f5d79a7ab3c68cfd17350fe9d8093bd5f4447" resname="admin_content">
+        <source>/admin/content</source>
+        <target state="new">/admin/content</target>
+      </trans-unit>
+      <trans-unit id="30756849fc7e40a3d8a76258714449d311b0cdbd" resname="admin_content_faq">
+        <source>/admin/content/faq</source>
+        <target state="new">/admin/content/faq</target>
+      </trans-unit>
+      <trans-unit id="c8939aa730f0f4f073edac4a5e037987280c9d2b" resname="admin_content_faq_category">
+        <source>/admin/content/faq/category</source>
+        <target state="new">/admin/content/faq/category</target>
+      </trans-unit>
+      <trans-unit id="c1e7a3ef4a4b8a5a72821a97a17579e04a262dc0" resname="admin_content_faq_category_delete">
+        <source>/admin/content/faq/category/{id}/delete</source>
+        <target state="new">/admin/content/faq/category/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="d3b3adbbb1cf8c9b862eee93678b84cd3651b4e0" resname="admin_content_faq_category_edit">
+        <source>/admin/content/faq/category/{id}</source>
+        <target state="new">/admin/content/faq/category/{id}</target>
+      </trans-unit>
+      <trans-unit id="2855f532e1b7b72d5513ba259e84fd06323b826a" resname="admin_content_faq_category_set_property">
+        <source>/admin/content/faq/category/{id}/{property}/{value}</source>
+        <target state="new">/admin/content/faq/category/{id}/{property}/{value}</target>
+      </trans-unit>
+      <trans-unit id="fb4bfab58d347321e10ad431093c1b1f387af0b0" resname="admin_content_faq_delete">
+        <source>/admin/content/faq/{id}/delete</source>
+        <target state="new">/admin/content/faq/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="713699e4ce6176527170d4b2768b966e002d41a0" resname="admin_content_faq_edit">
+        <source>/admin/content/faq/{id}</source>
+        <target state="new">/admin/content/faq/{id}</target>
+      </trans-unit>
+      <trans-unit id="bf031ea069874ca6475b52b67e643d65536d3109" resname="admin_content_footer_header_edit">
+        <source>/admin/content/footer/header/{id}</source>
+        <target state="new">/admin/content/footer/header/{id}</target>
+      </trans-unit>
+      <trans-unit id="25eca62f557980121ca635705b16706e32f23004" resname="admin_content_homepage_block_edit">
+        <source>/admin/content/homepage/block/{id}</source>
+        <target state="new">/admin/content/homepage/block/{id}</target>
+      </trans-unit>
+      <trans-unit id="91b220bbcb26375b19eed35b0837972186f825ab" resname="admin_content_page">
+        <source>/admin/content/page</source>
+        <target state="new">/admin/content/page</target>
+      </trans-unit>
+      <trans-unit id="b7556be51f2d6ccf4deecfaad8e9b43b21cec56b" resname="admin_content_page_delete">
+        <source>/admin/content/page/{id}/delete</source>
+        <target state="new">/admin/content/page/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="801f35ab970776824345579b2d0d470d84aa8467" resname="admin_content_page_edit">
+        <source>/admin/content/page/{id}</source>
+        <target state="new">/admin/content/page/{id}</target>
+      </trans-unit>
+      <trans-unit id="58d10c4100aeb7c02c780255767502482fbe1e6e" resname="admin_content_page_seo">
+        <source>/admin/content/pages/seo</source>
+        <target state="new">/admin/content/pages/seo</target>
+      </trans-unit>
+      <trans-unit id="a9d2cc7479948e344b28d8ea767b5f51cbda8836" resname="admin_content_set_page_property">
+        <source>/admin/content/page/{id}/{property}/{value}</source>
+        <target state="new">/admin/content/page/{id}/{property}/{value}</target>
+      </trans-unit>
+      <trans-unit id="3c9e555daee30e98562f709bba90b7ad1abecfe9" resname="admin_content_slide_edit">
+        <source>/admin/content/slide/{id}</source>
+        <target state="new">/admin/content/slide/{id}</target>
+      </trans-unit>
+      <trans-unit id="9241abe45963be1df766619a00d900115a340b92" resname="admin_content_slide_image_edit">
+        <source>/admin/content/slide/image/{id}</source>
+        <target state="new">/admin/content/slide/image/{id}</target>
+      </trans-unit>
+      <trans-unit id="566fe0067a0323ca3e83f8102a544b7dd2f88e18" resname="admin_magazine">
+        <source>/admin/magazine/list/{page}</source>
+        <target state="new">/admin/magazine/list/{page}</target>
+      </trans-unit>
+      <trans-unit id="bcfb1cb20a406097d02829039d982fb151a004d7" resname="admin_magazine_article">
+        <source>/admin/magazine/article</source>
+        <target state="new">/admin/magazine/article</target>
+      </trans-unit>
+      <trans-unit id="c8b52721aab8ba1a145855b05c9123eb99e5f0ba" resname="admin_magazine_article_edit">
+        <source>/admin/magazine/article/{id}</source>
+        <target state="new">/admin/magazine/article/{id}</target>
+      </trans-unit>
+      <trans-unit id="dd857492c8b8140e68051d3020e3d7baebc7fcef" resname="admin_magazine_articles_delete">
+        <source>/admin/magazine/article/{id}/delete</source>
+        <target state="new">/admin/magazine/article/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="55363dc0365f3a259c514a86107a0f46cecd05b7" resname="admin_magazine_set_article_property">
+        <source>/admin/magazine/article/{id}/{property}/{value}</source>
+        <target state="new">/admin/magazine/article/{id}/{property}/{value}</target>
+      </trans-unit>
+      <trans-unit id="24fbd3c1d7c75aa94740b06e87f78c2f8fefc761" resname="admin_messenger">
+        <source>/admin/messenger/list/{page}</source>
+        <target state="new">/admin/messenger/list/{page}</target>
+      </trans-unit>
+      <trans-unit id="8e87f8419ca5575a320fc978fe2616b5d5790375" resname="admin_messenger_messages_delete">
+        <source>/admin/messenger/messages/delete</source>
+        <target state="new">/admin/messenger/messages/delete</target>
+      </trans-unit>
+      <trans-unit id="ed6d2f676e8a1f8719aa4d0393b85ba8658d848c" resname="admin_messenger_user">
+        <source>/admin/messenger/user/{userId}/{page}</source>
+        <target state="new">/admin/messenger/user/{userId}/{page}</target>
+      </trans-unit>
+      <trans-unit id="7776e3f533c39ce7f28d7fbec56fde73715b8659" resname="admin_search_advanced">
+        <source>/admin/search/advanced</source>
+        <target state="new">/admin/search/advanced</target>
+      </trans-unit>
+      <trans-unit id="a037015bc5b8f076056698050186afc304a82e2e" resname="admin_settings">
+        <source>/admin/settings</source>
+        <target state="new">/admin/settings</target>
+      </trans-unit>
+      <trans-unit id="c4b2167d62ae6835e9515f8f179e34620de67360" resname="admin_user_active">
+        <source>/admin/user/{id}/{property}/{value}</source>
+        <target state="new">/admin/user/{id}/{property}/{value}</target>
+      </trans-unit>
+      <trans-unit id="8645627926372cfefa51f5bd1461d1f2e296a26d" resname="admin_user_delete">
+        <source>/admin/user/{id}/delete</source>
+        <target state="new">/admin/user/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="907fe184306e8e49c6ab8d9381eda106b7465c63" resname="admin_user_profile_helper">
+        <source>/admin/users/edit/profile/{id}/{tab}/profile_helper</source>
+        <target state="new">/admin/users/edit/profile/{id}/{tab}/profile_helper</target>
+      </trans-unit>
+      <trans-unit id="eefbe35ebfb17bdfebbe2fa285078feed170431c" resname="admin_users">
+        <source>/admin/users/list/{filter}/{page}</source>
+        <target state="new">/admin/users/list/{filter}/{page}</target>
+      </trans-unit>
+      <trans-unit id="af28c2f0c694f847eff99059130c8a270ab80523" resname="admin_users_edit_profile">
+        <source>/admin/users/edit/profile/{id}/{tab}</source>
+        <target state="new">/admin/users/edit/profile/{id}/{tab}</target>
+      </trans-unit>
+      <trans-unit id="7932772f478600836d8decf8547d2aad39ac29f0" resname="admin_users_export">
+        <source>/admin/users/export</source>
+        <target state="new">/admin/users/export</target>
+      </trans-unit>
+      <trans-unit id="470b3e213a5110801aa3029684c81b0a8ad8842b" resname="admin_users_login">
+        <source>/admin/users/login/{id}</source>
+        <target state="new">/admin/users/login/{id}</target>
+      </trans-unit>
+      <trans-unit id="a7cc3e01038fcffd25418883e7650ac2ac0629ca" resname="admin_users_photos_waiting">
+        <source>/admin/users/photos/waiting</source>
+        <target state="new">/admin/users/photos/waiting</target>
+      </trans-unit>
+      <trans-unit id="94178becf02429d7e299ec4ed4f612af5aa3af61" resname="admin_users_photos_waiting_approve">
+        <source>/admin/users/photos/waiting/{id}/approve/{state}</source>
+        <target state="new">/admin/users/photos/waiting/{id}/approve/{state}</target>
+      </trans-unit>
+      <trans-unit id="15adb72a66b5db5ef35580fa73eaecae9deac921" resname="admin_users_point">
+        <source>/admin/users/point/{toAll}</source>
+        <target state="new">/admin/users/point/{toAll}</target>
+      </trans-unit>
+      <trans-unit id="d341d5d9bfc592ff44c324b7509d25211c7a999a" resname="admin_users_reports">
+        <source>/admin/users/reports</source>
+        <target state="new">/admin/users/reports</target>
+      </trans-unit>
+      <trans-unit id="ef50ddf3e8540f531a4a62dc463092baf5285baa" resname="admin_users_reports_create">
+        <source>/admin/users/reports/create</source>
+        <target state="new">/admin/users/reports/create</target>
+      </trans-unit>
+      <trans-unit id="44fe875e88558666ac2c8bca6d4ba3967fe48bd8" resname="admin_users_reports_delete">
+        <source>/admin/users/reports/{id}/delete</source>
+        <target state="new">/admin/users/reports/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="debd629e9f7a6541bec1b30b157c3386ff29ab21" resname="admin_users_reports_show_on_main_page">
+        <source>/admin/users/reports/{id}/show_on_main_page/{state}</source>
+        <target state="new">/admin/users/reports/{id}/show_on_main_page/{state}</target>
+      </trans-unit>
+      <trans-unit id="41f36899e2e4f62653399c184132b97b200002da" resname="admin_users_save_ban_reason">
+        <source>/admin/users/save/ban/reason</source>
+        <target state="new">/admin/users/save/ban/reason</target>
+      </trans-unit>
+      <trans-unit id="dd2d697857d7c29406bf226867f77e04ed85825b" resname="admin_users_user_photo_delete">
+        <source>/admin/users/user/photos/{id}/delete</source>
+        <target state="new">/admin/users/user/photos/{id}/delete</target>
+      </trans-unit>
+      <trans-unit id="629926896cc15eeb162d6363821b62c2e56eb8da" resname="admin_users_user_photos">
+        <source>/admin/users/user/{id}/photos</source>
+        <target state="new">/admin/users/user/{id}/photos</target>
+      </trans-unit>
+      <trans-unit id="9bdff5a0ec8fd505e8b4863878ad9b557d8de070" resname="admin_users_user_photos_photo">
+        <source>/admin/users/user/{id}/photos/photo</source>
+        <target state="new">/admin/users/user/{id}/photos/photo</target>
+      </trans-unit>
+      <trans-unit id="92040af75b8b6266aaedd6c8dd8f683804bac96c" resname="admin_users_user_photos_photo_data">
+        <source>/admin/users/user/{id}/photos/photo/data</source>
+        <target state="new">/admin/users/user/{id}/photos/photo/data</target>
+      </trans-unit>
+      <trans-unit id="116e8e50cf72d9d7b4111a126f5a3df865241481" resname="admin_users_user_photos_property">
+        <source>/admin/users/user/photos/{id}/{property}/{value}</source>
+        <target state="new">/admin/users/user/photos/{id}/{property}/{value}</target>
+      </trans-unit>
+      <trans-unit id="ec1f896b6f705c09b939b8778d5c518375aa084c" resname="admin_users_user_subscription">
+        <source>/admin/users/user/{id}/subscription</source>
+        <target state="new">/admin/users/user/{id}/subscription</target>
+      </trans-unit>
+      <trans-unit id="0495bd50231f365b305da12d3264d6ef7339652d" resname="admin_users_view_profile">
+        <source>/admin/users/view/profile/{id}</source>
+        <target state="new">/admin/users/view/profile/{id}</target>
+      </trans-unit>
+      <trans-unit id="54a09639c8aacd5816feb23be2752f2db006051a" resname="advanced_search_helper">
+        <source>/user/advanced_search_helper</source>
+        <target state="new">/user/advanced_search_helper</target>
+      </trans-unit>
+      <trans-unit id="1a73af9e7ae00182733b2292511b814be66f065f" resname="contact">
+        <source>/contact</source>
+        <target state="new">/contact</target>
+      </trans-unit>
+      <trans-unit id="e75bc04532a5639ed1e96d1a467f9ce694094864" resname="faq">
+        <source>/faq</source>
+        <target state="new">/faq</target>
+      </trans-unit>
+      <trans-unit id="d00b39815c187d832cef3239eb7a77580728dc47" resname="form">
+        <source>/form</source>
+        <target state="new">/form</target>
+      </trans-unit>
+      <trans-unit id="dda4e30cc399f5ea02a9bc96c4d9cba7b4bcc4e9" resname="get_activation">
+        <source>/api/v1/activations/{json}.{_format}</source>
+        <target state="new">/api/v1/activations/{json}.{_format}</target>
+      </trans-unit>
+      <trans-unit id="e2c1d964e807e80d87259bbe030ee6034ba5e388" resname="get_bingo">
+        <source>/api/v1/bingo.{_format}</source>
+        <target state="new">/api/v1/bingo.{_format}</target>
+      </trans-unit>
+      <trans-unit id="ac1fa5c3a988af8093445924d587937a6cd7ccfe" resname="get_contact">
+        <source>/open_api/contact.{_format}</source>
+        <target state="new">/open_api/contact.{_format}</target>
+      </trans-unit>
+      <trans-unit id="d48b77fcd0baf1a2dd51e935f4d374e1a6f32526" resname="get_login">
+        <source>/open_api/login.{_format}</source>
+        <target state="new">/open_api/login.{_format}</target>
+      </trans-unit>
+      <trans-unit id="0bd302a96fbf1caa08798a100dd97d2d0cdd34ad" resname="get_menu">
+        <source>/api/v1/menu.{_format}</source>
+        <target state="new">/api/v1/menu.{_format}</target>
+      </trans-unit>
+      <trans-unit id="106b50c12befc75fd0586ca15fc688f3c13ef3bf" resname="get_page">
+        <source>/open_api/pages/{page}.{_format}</source>
+        <target state="new">/open_api/pages/{page}.{_format}</target>
+      </trans-unit>
+      <trans-unit id="eafbf116770083e76ca6ae724a63def2f040f28d" resname="get_password">
+        <source>/open_api/password.{_format}</source>
+        <target state="new">/open_api/password.{_format}</target>
+      </trans-unit>
+      <trans-unit id="3eae6a83f7b480dfc39dd1f5244295a0ed1c2788" resname="get_photos">
+        <source>/api/v1/photos/{json}.{_format}</source>
+        <target state="new">/api/v1/photos/{json}.{_format}</target>
+      </trans-unit>
+      <trans-unit id="0f62f88829f17f4ba209c9b86ef689bf1f8611bf" resname="get_search">
+        <source>/api/v1/search.{_format}</source>
+        <target state="new">/api/v1/search.{_format}</target>
+      </trans-unit>
+      <trans-unit id="a29562f1728b49eab9d220ccf03f51bfeff9c251" resname="get_sign_up">
+        <source>/open_api/sign/up.{_format}</source>
+        <target state="new">/open_api/sign/up.{_format}</target>
+      </trans-unit>
+      <trans-unit id="f54f2ce88ba7545f8db2eafa2f66f005817fdaa8" resname="get_statistics">
+        <source>/api/v1/statistics.{_format}</source>
+        <target state="new">/api/v1/statistics.{_format}</target>
+      </trans-unit>
+      <trans-unit id="c526db7e2b84b6a30e5920108d4874881332f00d" resname="get_translations">
+        <source>/open_api/translations.{_format}</source>
+        <target state="new">/open_api/translations.{_format}</target>
+      </trans-unit>
+      <trans-unit id="a4606e02015975bf41e24cd7e4414d312785ce24" resname="get_user">
+        <source>/api/v1/users/{user}.{_format}</source>
+        <target state="new">/api/v1/users/{user}.{_format}</target>
+      </trans-unit>
+      <trans-unit id="c0ea1c37ad867681f285e71cab26e2bdbea1ecfe" resname="get_users_result">
+        <source>/api/v1/users/result.{_format}</source>
+        <target state="new">/api/v1/users/result.{_format}</target>
+      </trans-unit>
+      <trans-unit id="568be0fa2023d1a447e7bd150dda7068ece26898" resname="homepage">
+        <source>/</source>
+        <target state="new">/</target>
+      </trans-unit>
+      <trans-unit id="29a2e327c88850e83538b45de33a16b13d6375da" resname="liip_imagine_filter">
+        <source>/media/cache/resolve/{filter}/{path}</source>
+        <target state="new">/media/cache/resolve/{filter}/{path}</target>
+      </trans-unit>
+      <trans-unit id="cc9da47695fc3217da654fdf973462ef7c25ab02" resname="liip_imagine_filter_runtime">
+        <source>/media/cache/resolve/{filter}/rc/{hash}/{path}</source>
+        <target state="new">/media/cache/resolve/{filter}/rc/{hash}/{path}</target>
+      </trans-unit>
+      <trans-unit id="28d0a05f740a9ea14d454c9040a3ad29c22f61e2" resname="login_check">
+        <source>/login_check</source>
+        <target state="new">/login_check</target>
+      </trans-unit>
+      <trans-unit id="55525e1b3dfd8787fd202aed45fb04494e3242d0" resname="logout">
+        <source>/logout</source>
+        <target state="new">/logout</target>
+      </trans-unit>
+      <trans-unit id="2c26d6e2c55feff46194ffa42008709beff1d481" resname="magazine">
+        <source>/blog/{page}</source>
+        <target state="new">/blog/{page}</target>
+      </trans-unit>
+      <trans-unit id="bb17c9e904317ff189717ef4f883492d304878be" resname="magazine_article">
+        <source>/blog/{uri}</source>
+        <target state="new">/blog/{uri}</target>
+      </trans-unit>
+      <trans-unit id="5df9221d482c3262846af57f37b948de8cc30ea4" resname="messenger">
+        <source>/user/messenger</source>
+        <target state="new">/user/messenger</target>
+      </trans-unit>
+      <trans-unit id="aa740d355ca4d5ff63a9ad16c95dcf7d1631a60c" resname="messenger_dialog_open">
+        <source>/user/messenger/dialog/open/userId:{userId}/contactId:{contactId}</source>
+        <target state="new">/user/messenger/dialog/open/userId:{userId}/contactId:{contactId}</target>
+      </trans-unit>
+      <trans-unit id="81f6200eaa908e0d2237f05c9f1bdb6a4a3c073f" resname="mobile_user_account">
+        <source>/user/account</source>
+        <target state="new">/user/account</target>
+      </trans-unit>
+      <trans-unit id="0e3d921c0886420e3fba4e2876163614d10d3351" resname="mobile_user_lists">
+        <source>/user/lists</source>
+        <target state="new">/user/lists</target>
+      </trans-unit>
+      <trans-unit id="1b6510f54c751b5979410ad21213ccb25abf99b6" resname="nelmio_api_doc_index">
+        <source>/api/doc/{view}</source>
+        <target state="new">/api/doc/{view}</target>
+      </trans-unit>
+      <trans-unit id="d60215c3b81238826895da4bf11e1f0d145e65da" resname="pages_page">
+        <source>/pages/{uri}</source>
+        <target state="new">/pages/{uri}</target>
+      </trans-unit>
+      <trans-unit id="bdd42d519e0df014fb6d46867ffe40729bd11bea" resname="password_recovery">
+        <source>/password</source>
+        <target state="new">/password</target>
+      </trans-unit>
+      <trans-unit id="2e58e0c1ea673cd22bd3a55a2fc1177945495215" resname="photos">
+        <source>/api/v1/{request}/photos.{_format}</source>
+        <target state="new">/api/v1/{request}/photos.{_format}</target>
+      </trans-unit>
+      <trans-unit id="a53453672ca2cddfe91b1ba7138b2f3727cc22ae" resname="post_activation">
+        <source>/api/v1/activations.{_format}</source>
+        <target state="new">/api/v1/activations.{_format}</target>
+      </trans-unit>
+      <trans-unit id="3803702e9a2d1f50f3618baa6adb56ba64bc1cad" resname="post_contact">
+        <source>/open_api/contacts.{_format}</source>
+        <target state="new">/open_api/contacts.{_format}</target>
+      </trans-unit>
+      <trans-unit id="9865cbbea36c3b63ba328a15af5260349e685b37" resname="post_like">
+        <source>/api/v1/likes/{toUser}.{_format}</source>
+        <target state="new">/api/v1/likes/{toUser}.{_format}</target>
+      </trans-unit>
+      <trans-unit id="c7eb7a78fbcd0dae9ce2bacc9e015fdf9d2a3751" resname="post_login">
+        <source>/api/v1/logins.{_format}</source>
+        <target state="new">/api/v1/logins.{_format}</target>
+      </trans-unit>
+      <trans-unit id="f5c770f9fa9309313edf53fc0b7bcad497999ede" resname="post_notification">
+        <source>/api/v1/notifications.{_format}</source>
+        <target state="new">/api/v1/notifications.{_format}</target>
+      </trans-unit>
+      <trans-unit id="0e6efd1bd90b330633a87f0804ad2bf72639e8ed" resname="post_password">
+        <source>/open_api/passwords.{_format}</source>
+        <target state="new">/open_api/passwords.{_format}</target>
+      </trans-unit>
+      <trans-unit id="e87a0a888f522e81193c103a05c8b6233211d989" resname="post_photo">
+        <source>/api/v1/photos.{_format}</source>
+        <target state="new">/api/v1/photos.{_format}</target>
+      </trans-unit>
+      <trans-unit id="5010e000c5852bcf05e19e41dc72c8fe803404dd" resname="post_settings">
+        <source>/api/v1/settings.{_format}</source>
+        <target state="new">/api/v1/settings.{_format}</target>
+      </trans-unit>
+      <trans-unit id="96008260d8a91f6659bd2e5a6f9a0469e53f5c42" resname="post_sign_up">
+        <source>/open_api/signs/ups.{_format}</source>
+        <target state="new">/open_api/signs/ups.{_format}</target>
+      </trans-unit>
+      <trans-unit id="601da5f3b1bba36cd4a6b496500c69c2b7e3b5fa" resname="post_sign_up_helper">
+        <source>/open_api/signs/ups/helpers.{_format}</source>
+        <target state="new">/open_api/signs/ups/helpers.{_format}</target>
+      </trans-unit>
+      <trans-unit id="b4060cf90b00681acde06a4ba28812095740ffc6" resname="public_search_results">
+        <source>/public/search/results/{page}</source>
+        <target state="new">/public/search/results/{page}</target>
+      </trans-unit>
+      <trans-unit id="100661d3c691ccba1b3277103494a458bdf2be59" resname="quick_search_helper">
+        <source>/user/quick_search_helper</source>
+        <target state="new">/user/quick_search_helper</target>
+      </trans-unit>
+      <trans-unit id="397784e6fe615439bfa4730e530df6dafee6481f" resname="quick_search_sidebar_helper">
+        <source>/user/quick_search_sidebar_helper</source>
+        <target state="new">/user/quick_search_sidebar_helper</target>
+      </trans-unit>
+      <trans-unit id="e1de88598adc9a417d08d8efae3b8b90697af771" resname="sign_up">
+        <source>/sign_up</source>
+        <target state="new">/sign_up</target>
+      </trans-unit>
+      <trans-unit id="5d111cf55c335661da5c1f4ec29f2e12a5b0f978" resname="sign_up_activation">
+        <source>/sign_up/activation</source>
+        <target state="new">/sign_up/activation</target>
+      </trans-unit>
+      <trans-unit id="d256147aa90c89b8484d9822e420aee4af60ce85" resname="sign_up_helper">
+        <source>/sign_up/helper</source>
+        <target state="new">/sign_up/helper</target>
+      </trans-unit>
+      <trans-unit id="c77ec557fc21f7fd0060a34faee524fc5b9b784e" resname="sign_up_photo">
+        <source>/sign_up/photo</source>
+        <target state="new">/sign_up/photo</target>
+      </trans-unit>
+      <trans-unit id="45679eebe9541a02990ace24430eaff7ae2cf244" resname="sign_up_photos">
+        <source>/sign_up/photos</source>
+        <target state="new">/sign_up/photos</target>
+      </trans-unit>
+      <trans-unit id="04a323eaf4b555f3ca15619a7d4d2b2eeb9527af" resname="sonata_admin_append_form_element">
+        <source>/sonata-admin/core/append-form-field-element</source>
+        <target state="new">/sonata-admin/core/append-form-field-element</target>
+      </trans-unit>
+      <trans-unit id="9b9a4b5e261b7bc6a7e83332811b28d362aaad89" resname="sonata_admin_dashboard">
+        <source>/sonata-admin/dashboard</source>
+        <target state="new">/sonata-admin/dashboard</target>
+      </trans-unit>
+      <trans-unit id="9377b6a268d95eb843045165fd433e0b4f7bcee6" resname="sonata_admin_redirect">
+        <source>/sonata-admin/</source>
+        <target state="new">/sonata-admin/</target>
+      </trans-unit>
+      <trans-unit id="0991ce5c547d6187b372b3799e5694e0471c01e6" resname="sonata_admin_retrieve_autocomplete_items">
+        <source>/sonata-admin/core/get-autocomplete-items</source>
+        <target state="new">/sonata-admin/core/get-autocomplete-items</target>
+      </trans-unit>
+      <trans-unit id="c1f8c0683377fcc919a326b66c14411d8cbb13b6" resname="sonata_admin_retrieve_form_element">
+        <source>/sonata-admin/core/get-form-field-element</source>
+        <target state="new">/sonata-admin/core/get-form-field-element</target>
+      </trans-unit>
+      <trans-unit id="c4fe33bf68363259adbe9c28c24bc3abc63bbe18" resname="sonata_admin_search">
+        <source>/sonata-admin/search</source>
+        <target state="new">/sonata-admin/search</target>
+      </trans-unit>
+      <trans-unit id="bffdaa97ccfe1e7f01f72dcabeb5d4dbbdfa6f9b" resname="sonata_admin_set_object_field_value">
+        <source>/sonata-admin/core/set-object-field-value</source>
+        <target state="new">/sonata-admin/core/set-object-field-value</target>
+      </trans-unit>
+      <trans-unit id="9d2f0bcd80379e8ce7f6a72aace38539b1ee8b9e" resname="sonata_admin_short_object_information">
+        <source>/sonata-admin/core/get-short-object-description.{_format}</source>
+        <target state="new">/sonata-admin/core/get-short-object-description.{_format}</target>
+      </trans-unit>
+      <trans-unit id="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3" resname="test">
+        <source>/test</source>
+        <target state="new">/test</target>
+      </trans-unit>
+      <trans-unit id="d26662c89bc978fb057d1a0d4dd10f89ecbf247b" resname="trans_form">
+        <source>/trans_form</source>
+        <target state="new">/trans_form</target>
+      </trans-unit>
+      <trans-unit id="5b5d897346e5c8ae2eb5f842a934025634ff4efa" resname="user_change_password">
+        <source>/user/password</source>
+        <target state="new">/user/password</target>
+      </trans-unit>
+      <trans-unit id="5b46cbfbd75d212a7cb23c412f25bd76f8308f1c" resname="user_freeze_account">
+        <source>/user/freeze_account</source>
+        <target state="new">/user/freeze_account</target>
+      </trans-unit>
+      <trans-unit id="b576bccf9e31d32ade55bd77a87db5325f23441b" resname="user_get_new_messages">
+        <source>/user/newMessages</source>
+        <target state="new">/user/newMessages</target>
+      </trans-unit>
+      <trans-unit id="4c883e17143ba201f576f2198975b7ac44a9d710" resname="user_homepage">
+        <source>/user</source>
+        <target state="new">/user</target>
+      </trans-unit>
+      <trans-unit id="a5e03e98fb0e034415a05ff4329303a196b507dc" resname="user_like">
+        <source>/user/like/{id}</source>
+        <target state="new">/user/like/{id}</target>
+      </trans-unit>
+      <trans-unit id="f8d69356d89d7852cf153cda4edb639470ed6f7e" resname="user_like_bingo">
+        <source>/user/like/bingo/</source>
+        <target state="new">/user/like/bingo/</target>
+      </trans-unit>
+      <trans-unit id="01eed41763c4f054b3beafd3ca085d0a57dbba56" resname="user_list_black_listed">
+        <source>/user/list/black_listed/{page}</source>
+        <target state="new">/user/list/black_listed/{page}</target>
+      </trans-unit>
+      <trans-unit id="10fc992f4be0c9ead8733daad3970816112b5a6b" resname="user_list_connected">
+        <source>/user/list/connected/{page}</source>
+        <target state="new">/user/list/connected/{page}</target>
+      </trans-unit>
+      <trans-unit id="f24baba66c8efba0a6716bfd2c235984b5a0e6af" resname="user_list_connected_me">
+        <source>/user/list/connectedMe/{page}</source>
+        <target state="new">/user/list/connectedMe/{page}</target>
+      </trans-unit>
+      <trans-unit id="fde885ea4d4ee2b39dc52ad63b2bd58ae4b2cd8f" resname="user_list_favorited">
+        <source>/user/list/favorited/{page}</source>
+        <target state="new">/user/list/favorited/{page}</target>
+      </trans-unit>
+      <trans-unit id="4787b0ea20c472a5b6ef3eeff16b6812019e715c" resname="user_list_favorited_me">
+        <source>/user/list/favorited_me/{page}</source>
+        <target state="new">/user/list/favorited_me/{page}</target>
+      </trans-unit>
+      <trans-unit id="0b7416b1077930ec77d4c31e042c007592a908ea" resname="user_list_viewed">
+        <source>/user/list/viewed/{page}</source>
+        <target state="new">/user/list/viewed/{page}</target>
+      </trans-unit>
+      <trans-unit id="7325b6f6e2a2616c48a89da491499845a6150ae8" resname="user_list_viewed_me">
+        <source>/user/list/viewed_me/{page}</source>
+        <target state="new">/user/list/viewed_me/{page}</target>
+      </trans-unit>
+      <trans-unit id="11e3088727f108313bc0dd579abd91530cca8234" resname="user_manage_list_black_listed">
+        <source>/user/manage/list/black_listed/{page}</source>
+        <target state="new">/user/manage/list/black_listed/{page}</target>
+      </trans-unit>
+      <trans-unit id="6cab6f63ee92ff17685fd3382bbae999190d4455" resname="user_manage_list_favorited">
+        <source>/user/manage/list/favorited/{page}</source>
+        <target state="new">/user/manage/list/favorited/{page}</target>
+      </trans-unit>
+      <trans-unit id="0c0e6f5a2bb76e4b4849d6379555c81dc5766a2d" resname="user_messenger_active_chats_new_messages">
+        <source>/messenger/activeChats/newMessages/userId:{userId}/contactId:{contactId}/{checkForDialogAlso}</source>
+        <target state="new">/messenger/activeChats/newMessages/userId:{userId}/contactId:{contactId}/{checkForDialogAlso}</target>
+      </trans-unit>
+      <trans-unit id="571c5bea54b026d364c84922ffc01bae6ba948cd" resname="user_messenger_check_messages_if_read">
+        <source>/messenger/checkMessagesIfRead/userId:{userId}</source>
+        <target state="new">/messenger/checkMessagesIfRead/userId:{userId}</target>
+      </trans-unit>
+      <trans-unit id="be1e8ec0c9b83bfd1ed1a908bced8a63414ef16b" resname="user_messenger_message_notify">
+        <source>/messenger/message/notify/messageId:{messageId}/userId:{userId}</source>
+        <target state="new">/messenger/message/notify/messageId:{messageId}/userId:{userId}</target>
+      </trans-unit>
+      <trans-unit id="67b97c772cdf9c6e0263b14dfb5225997d4386fe" resname="user_messenger_message_read">
+        <source>/messenger/message/read/messageId:{messageId}/userId:{userId}/contactId:{contactId}</source>
+        <target state="new">/messenger/message/read/messageId:{messageId}/userId:{userId}/contactId:{contactId}</target>
+      </trans-unit>
+      <trans-unit id="97193460dd851b6f5708e47bfb720c6aed7b5210" resname="user_messenger_message_send">
+        <source>/messenger/message/send/userId:{userId}/contactId:{contactId}</source>
+        <target state="new">/messenger/message/send/userId:{userId}/contactId:{contactId}</target>
+      </trans-unit>
+      <trans-unit id="47bd866d9142b32455e6e27aa3c272780963e8d8" resname="user_messenger_new_messages">
+        <source>/messenger/newMessages/userId:{userId}</source>
+        <target state="new">/messenger/newMessages/userId:{userId}</target>
+      </trans-unit>
+      <trans-unit id="5403527b17f19d7d95d7544fa3e387e6e45e62f3" resname="user_messenger_new_messages_mobile">
+        <source>/messenger/newMessagesMobile/{userId}/{contactId}</source>
+        <target state="new">/messenger/newMessagesMobile/{userId}/{contactId}</target>
+      </trans-unit>
+      <trans-unit id="7d3fb28e03e8ad6b83f0d9e1702974b68ec2bbd1" resname="user_mobile_base">
+        <source>/user/base_links</source>
+        <target state="new">/user/base_links</target>
+      </trans-unit>
+      <trans-unit id="c9aa18b27e7bedb3c9f6d277d7500ee7183947eb" resname="user_mobile_interests">
+        <source>/user/interests</source>
+        <target state="new">/user/interests</target>
+      </trans-unit>
+      <trans-unit id="f88d8225998e735fc20b6cd0a2262f98ee0e3477" resname="user_mobile_my_profile">
+        <source>/user/my_profile</source>
+        <target state="new">/user/my_profile</target>
+      </trans-unit>
+      <trans-unit id="cfef61bd44952bd7869e486814fa9dfd6d0a28dd" resname="user_mobile_search">
+        <source>/user/search_</source>
+        <target state="new">/user/search_</target>
+      </trans-unit>
+      <trans-unit id="ffa63a4c280b1c3ae1dfa30a8df63d68a5c3c74d" resname="user_notes">
+        <source>/user/notes/{id}</source>
+        <target state="new">/user/notes/{id}</target>
+      </trans-unit>
+      <trans-unit id="990f4dfebf5f2b7624f855fc6c8fca2dc1399168" resname="user_notification_read">
+        <source>/user/notification/read/{id}</source>
+        <target state="new">/user/notification/read/{id}</target>
+      </trans-unit>
+      <trans-unit id="37821c276874a00ebd2547c633579d319a00d82d" resname="user_notifications">
+        <source>/user/notifications</source>
+        <target state="new">/user/notifications</target>
+      </trans-unit>
+      <trans-unit id="2ca4287be6514df9dc12a9d850c5be09b8c0a877" resname="user_photo">
+        <source>/user/photo</source>
+        <target state="new">/user/photo</target>
+      </trans-unit>
+      <trans-unit id="6b4d189639db5ad8780fe71a3f3031b9df3e2253" resname="user_photo_delete">
+        <source>/user/photo/delete/{id}</source>
+        <target state="new">/user/photo/delete/{id}</target>
+      </trans-unit>
+      <trans-unit id="3536716a8b146aece3c6155af04e1710fc67f648" resname="user_profile">
+        <source>/user/profile/{tab}</source>
+        <target state="new">/user/profile/{tab}</target>
+      </trans-unit>
+      <trans-unit id="c5782c4931eab520fc3f9df82d594fc601c5f5f5" resname="user_profile_helper">
+        <source>/user/profile_helper</source>
+        <target state="new">/user/profile_helper</target>
+      </trans-unit>
+      <trans-unit id="7ac2e5ef51ab53fe1c7588607887192ef6de72dc" resname="user_report_abuse">
+        <source>/user/report/abuse/{id}</source>
+        <target state="new">/user/report/abuse/{id}</target>
+      </trans-unit>
+      <trans-unit id="93553f38eebdaabaaaabd7f07e9873d6bc5c2409" resname="user_search_advanced">
+        <source>/user/search/advanced</source>
+        <target state="new">/user/search/advanced</target>
+      </trans-unit>
+      <trans-unit id="f5c43e8700e589e6c7f132dc88dd644cc5bc7f17" resname="user_search_results">
+        <source>/user/search/results/{page}</source>
+        <target state="new">/user/search/results/{page}</target>
+      </trans-unit>
+      <trans-unit id="f22b8c2641997f4bcb876011dbd1c3b0fb61e7eb" resname="user_send_like">
+        <source>/user/like/send/{id}</source>
+        <target state="new">/user/like/send/{id}</target>
+      </trans-unit>
+      <trans-unit id="9cebbd438f5ced281b8dd0a2d384f4337e578ddb" resname="user_set_main_photo">
+        <source>/user/photo/main/{id}</source>
+        <target state="new">/user/photo/main/{id}</target>
+      </trans-unit>
+      <trans-unit id="d0e1b436dc91f70d15286439bd6ef184f3e83422" resname="user_settings">
+        <source>/user/settings</source>
+        <target state="new">/user/settings</target>
+      </trans-unit>
+      <trans-unit id="8b502a773d864a62835f07d0a6b0ebd544cddf85" resname="user_use_free_point_to_read">
+        <source>/messenger/message/messageId:{messageId}/userId:{userId}/useFreePointToRead</source>
+        <target state="new">/messenger/message/messageId:{messageId}/userId:{userId}/useFreePointToRead</target>
+      </trans-unit>
+      <trans-unit id="64cba7363b7a5d57db74890ff33fcec2bf83cb46" resname="user_users_black_list">
+        <source>/user/users/black_list/{id}</source>
+        <target state="new">/user/users/black_list/{id}</target>
+      </trans-unit>
+      <trans-unit id="f7b5331e328e480adf93d0fc830de795ea5fa63d" resname="user_users_black_list_delete">
+        <source>/user/users/black_list/delete/{id}</source>
+        <target state="new">/user/users/black_list/delete/{id}</target>
+      </trans-unit>
+      <trans-unit id="b835a90646fcc9b248da3d5978041c24b085c938" resname="user_users_favorite">
+        <source>/user/users/favorite/{id}</source>
+        <target state="new">/user/users/favorite/{id}</target>
+      </trans-unit>
+      <trans-unit id="0876f0af7d17e2b492f9364120445dafe412a0c8" resname="user_users_favorite_delete">
+        <source>/user/users/favorite/delete/{id}</source>
+        <target state="new">/user/users/favorite/delete/{id}</target>
+      </trans-unit>
+      <trans-unit id="03a8947bc2606ec19cbb514370d7f7a2eb4a2871" resname="user_users_online">
+        <source>/user/users/online/{page}</source>
+        <target state="new">/user/users/online/{page}</target>
+      </trans-unit>
+      <trans-unit id="139bd7efbeeccddc8393ef153c7abe28653115e6" resname="users_like_bingo_show">
+        <source>/user/like/bingo/show/{likeMeId}</source>
+        <target state="new">/user/like/bingo/show/{likeMeId}</target>
+      </trans-unit>
+      <trans-unit id="599fd65788ba9cec59f928c2a10f4bd3513aad46" resname="users_public_list">
+        <source>/members/{page}</source>
+        <target state="new">/members/{page}</target>
+      </trans-unit>
+      <trans-unit id="d945c2db1ffea31143ada32e5270774748b20e7d" resname="users_public_list_user">
+        <source>/members/profile/{id}</source>
+        <target state="new">/members/profile/{id}</target>
+      </trans-unit>
+      <trans-unit id="c61645aa73f01534db3fd663d4e865576ca9d43d" resname="view_user">
+        <source>/user/users/{id}</source>
+        <target state="new">/user/users/{id}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

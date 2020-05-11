@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-02-01T10:33:19Z" source-language="en" target-language="ru" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+        <trans-unit id="Follow us" resname="Follow us">
+             <source>Follow us</source>
+             <target>Follow us</target>
+        </trans-unit>
+        <trans-unit id="Get it on Google Play" resname="Get it on Google Play">
+             <source>Get it on Google Play</source>
+             <target>Get it on Google Play</target>
+        </trans-unit>
+      <trans-unit id="Join Now" resname="Join Now">
+        <source>Join Now</source>
+        <target>Join Now</target>
+      </trans-unit>
+      <trans-unit id="03c7f01f9b34f8f849f0a3070dee6bbe12c2ebbc" resname="* About Me &lt;span style=&quot;display: inline-block;&quot;&gt;(min 10 characters)&lt;/span&gt;">
+        <source><![CDATA[* About Me <span style="display: inline-block;">(min 10 characters)</span>]]></source>
+        <target><![CDATA[* About Me <span style="display: inline-block;">(min 10 characters)</span>]]></target>
+        <jms:reference-file line="19">./src/AppBundle/Form/Type/SignUpThreeType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="468d69082678a1f51d13051277c990ded4264755" resname="* Activation Code">
+        <source>* Activation Code</source>
+        <target state="new">* Activation Code</target>
+        <jms:reference-file line="781">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e86d54d08a24cfad3c3555ef980ac9f4626b6cc8" resname="* Area">
+        <source>* Area</source>
+        <target>* Area</target>
+        <jms:reference-file line="46">./src/AppBundle/Form/Type/QuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="78">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8af170e3e084ee34d65d381944b6bcdefbffa644" resname="* Birthday">
+        <source>* Birthday</source>
+        <target>* Birthday</target>
+        <jms:reference-file line="70">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d67edb60e868154a76feac6313ca52338947f434" resname="* Body Type">
+        <source>* Body Type</source>
+        <target>* Body Type</target>
+        <jms:reference-file line="162">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="01c8fc7cc6938b58c278ae4f3f32d37f4fd7724d" resname="* Children">
+        <source>* Children</source>
+        <target>* Children</target>
+        <jms:reference-file line="30">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="825e91f6b8fc355bf53773540cf791e36450de8a" resname="* Drinking">
+        <source>* Drinking</source>
+        <target>* Drinking</target>
+        <jms:reference-file line="87">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="27893f2cafddc506e6239695a2f3d2b86db718aa" resname="* E-mail">
+        <source>* E-mail</source>
+        <target>* E-mail</target>
+        <jms:reference-file line="17">./src/AppBundle/Form/Type/ContactType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bfc09dd7054f8c056e5bbc0b94928a6037e793dc" resname="* Education">
+        <source>* Education</source>
+        <target>* Education</target>
+        <jms:reference-file line="65">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="722012e74940fd546eb5dfc17efce4f168f42f7d" resname="* Email">
+        <source>* Email</source>
+        <target>* Email RU</target>
+        <jms:reference-file line="57">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="280f9d41f9109849cbe3a999bb015d07d738d2f8" resname="* Ethnicity">
+        <source>* Ethnicity</source>
+        <target>* Ethnicity</target>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="469e213e37b9e389084431ee99264ad769b862fb" resname="* Eye Color">
+        <source>* Eye Color</source>
+        <target>* Eye Color</target>
+        <jms:reference-file line="170">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9e19d7cb66d0e837ee70be7fb0a08ad8a910b15a" resname="* Hair Color">
+        <source>* Hair Color</source>
+        <target>* Hair Color</target>
+        <jms:reference-file line="178">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e56600b05218589815eae29d46ad0a57b35038e3" resname="* Height">
+        <source>* Height</source>
+        <target>* Height</target>
+        <jms:reference-file line="155">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="11d7882e89cadbd5a0ddf5cd3f99acc027792d1d" resname="* Here For">
+        <source>* Here For</source>
+        <target>* Here For</target>
+        <jms:reference-file line="96">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5a3c80c8f2a12b179c4d0023ef8f97ce0ac7ec0d" resname="* Hobbies">
+        <source>* Hobbies</source>
+        <target>* Hobbies</target>
+        <jms:reference-file line="30">./src/AppBundle/Form/Type/SignUpThreeType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6a59a2f3b9ea152bb0e1316cbbfaa420bb8b6eb" resname="* I'm a">
+        <source>* I'm a</source>
+        <target>* I'm a</target>
+        <jms:reference-file line="63">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6ec30ad937ed117a00eea73dfcb9da91e254143d" resname="* Income">
+        <source>* Income</source>
+        <target>* Income</target>
+        <jms:reference-file line="128">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b8c6ad9a5b3d027b4e4cacd727b680244b12fa62" resname="* Language">
+        <source>* Language</source>
+        <target>* Language</target>
+        <jms:reference-file line="54">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e65c0f48caa7739a5fb58510d0425b0f12582e11" resname="* Message">
+        <source>* Message</source>
+        <target>* Message</target>
+        <jms:reference-file line="39">./src/AppBundle/Form/Type/ContactType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1a295a9c819303315f93e31b42c0335ac7c98d2d" resname="* Neighborhood">
+        <source>* Neighborhood</source>
+        <target>* Neighborhood</target>
+        <jms:reference-file line="119">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a06a1a013e5faaadc542ad219d9e45a9189cc215" resname="* Net Worth">
+        <source>* Net Worth</source>
+        <target>* Net Worth</target>
+        <jms:reference-file line="120">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="36a2ec6a484c237ec86896976601965a79d202c9" resname="* Password">
+        <source>* Password</source>
+        <target>* Пароль</target>
+        <jms:reference-file line="393">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+        <jms:reference-file line="37">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+        <jms:reference-file line="49">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="50bca71531f5dbb2185ed893b137ff7b69dddf27" resname="* Phone">
+        <source>* Phone</source>
+        <target state="new">* Phone</target>
+        <jms:reference-file line="772">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="215">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7810031cc41d01a1344256454b9ba096c6772b05" resname="* Relationship Status">
+        <source>* Relationship Status</source>
+        <target>* Relationship Status</target>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8543355cbb8902abaa58801727ea29e1a155f4a5" resname="* Religion">
+        <source>* Religion</source>
+        <target>* Religion</target>
+        <jms:reference-file line="46">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4532c98671a90815d07d515d4548ec66621b319a" resname="* Retype Email">
+        <source>* Retype Email</source>
+        <target>* Retype Email</target>
+        <jms:reference-file line="58">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="983d9f21f97f212835554ec0b67a4a8fd89f593d" resname="* Retype Password">
+        <source>* Retype Password</source>
+        <target>* Retype Password</target>
+        <jms:reference-file line="50">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7c7875c471f2eb4073542a1b75c320077157c1e8" resname="* Smoking">
+        <source>* Smoking</source>
+        <target>* Smoking</target>
+        <jms:reference-file line="79">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="da112c6f4a123343fcadc16308fd686a363b5f5b" resname="* Status">
+        <source>* Status</source>
+        <target>* Status</target>
+        <jms:reference-file line="112">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="105bb1793d392a3026c1d9519904eeab2e181499" resname="* Subject">
+        <source>* Subject</source>
+        <target>* Тема</target>
+        <jms:reference-file line="29">./src/AppBundle/Form/Type/ContactType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="781f4f59582500456cf004663bfb68d3dd6c707b" resname="* Username">
+        <source>* Username</source>
+        <target>* Имя</target>
+        <jms:reference-file line="388">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+        <jms:reference-file line="33">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f0dbc91848c2dc202b404c5a323bf8c4c330b654" resname="* What I'm Looking For &lt;span style=&quot;display: inline-block;&quot;&gt;(min 10 characters)&lt;/span&gt;">
+        <source><![CDATA[* What I'm Looking For <span style="display: inline-block;">(min 10 characters)</span>]]></source>
+        <target><![CDATA[* What I'm Looking For <span style="display: inline-block;">(min 10 characters)</span>]]></target>
+        <jms:reference-file line="24">./src/AppBundle/Form/Type/SignUpThreeType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9aabd3575b9144fdfca85224079220e11ec95035" resname="* Zip Code">
+        <source>* Zip Code</source>
+        <target>* Zip Code</target>
+        <jms:reference-file line="105">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e3ba4ef34d2947832917f86d7a9bdac5d5b2bfa5" resname="About me">
+        <source>About me</source>
+        <target state="new">About me</target>
+        <jms:reference-file line="426">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="67be75972fc8ac260f56a83ad7cf13963bebd7b7" resname="Abuse report target email">
+        <source>Abuse report target email</source>
+        <target>Abuse report target email</target>
+        <jms:reference-file line="16">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4529f067b9518ca66e3ad0efeb9ce8837e700cd4" resname="Account has been blocked by the Administrator">
+        <source>Account has been blocked by the Administrator</source>
+        <target>__Account has been blocked by the Administrator</target>
+        <jms:reference-file line="403">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="92ef08325a4813563a3110359906076374683282" resname="Activate">
+        <source>Activate</source>
+        <target state="new">Activate</target>
+        <jms:reference-file line="785">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="01122d15acab19f3c58265b3febac11cd712f075" resname="Activation code has been successfully sent">
+        <source>Activation code has been successfully sent</source>
+        <target state="new">Activation code has been successfully sent</target>
+        <jms:reference-file line="743">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6780b1d97c909543627591764b6117f3dd24e38e" resname="Activation code is incorrect, please try again">
+        <source>Activation code is incorrect, please try again</source>
+        <target>Activation code is incorrect, please try again</target>
+        <jms:reference-file line="369">./src/AppBundle/Controller/Frontend/SecurityController.php</jms:reference-file>
+        <jms:reference-file line="758">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a733b809d2f1233496ab516eed0f3ef75cf3791a" resname="Active">
+        <source>Active</source>
+        <target>Active</target>
+        <jms:reference-file line="34">./src/AppBundle/Form/Type/FaqType.php</jms:reference-file>
+        <jms:reference-file line="19">./src/AppBundle/Form/Type/FaqCategoryType.php</jms:reference-file>
+        <jms:reference-file line="69">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="42">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+        <jms:reference-file line="53">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+        <jms:reference-file line="56">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="560a4bd0f479d191fedd2889898116b5240acbcd" resname="Add Photo">
+        <source>Add Photo</source>
+        <target state="new">Add Photo</target>
+        <jms:reference-file line="506">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="229">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ff9f1ff32120d8b893c1ded522d49590353b29a6" resname="Age">
+        <source>Age</source>
+        <target>Age</target>
+        <jms:reference-file line="24">./src/AppBundle/Form/Type/QuickSearchSidebarType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e30eff925100b7c3e119ed678e39009e962455b0" resname="Alt">
+        <source>Alt</source>
+        <target>Alt</target>
+        <jms:reference-file line="43">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c62d555e025b858bd8e242212acb966b297c8cea" resname="Annual Income">
+        <source>Annual Income</source>
+        <target state="new">Annual Income</target>
+        <jms:reference-file line="450">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a16a4eda7cb2c8e91d7edd25e809ae9d392c7498" resname="Answer">
+        <source>Answer</source>
+        <target>Answer</target>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/FaqType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="41b81eb8db1b97e812a8fc182e3a5b3ce0f3aacb" resname="Approved">
+        <source>Approved</source>
+        <target state="new">Approved</target>
+        <jms:reference-file line="500">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="223">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2745debaa64a20eedb49d9f14a0b807c87aa2d2a" resname="Area">
+        <source>Area</source>
+        <target>Area</target>
+        <jms:reference-file line="18">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="19">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="26">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d6b23a46b95caf6bf6223bc11903362888f5b37c" resname="Body Type">
+        <source>Body Type</source>
+        <target>Body Type</target>
+        <jms:reference-file line="429">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="118">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="230e0f8d137ec77a1e1a3c0c830fc94580404f3a" resname="Brief">
+        <source>Brief</source>
+        <target>Brief</target>
+        <jms:reference-file line="34">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="77dfd2135f4db726c47299bb55be26f7f4525a46" resname="Cancel">
+        <source>Cancel</source>
+        <target state="new">Cancel</target>
+        <jms:reference-file line="503">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="226">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a3c686e711e4720f99b4562bb3dbaae7ab658cf2" resname="Category">
+        <source>Category</source>
+        <target>Category</target>
+        <jms:reference-file line="27">./src/AppBundle/Form/Type/FaqType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dcf75191c585bfb6059ad203f7ce5630a589a405" resname="Children">
+        <source>Children</source>
+        <target>Children</target>
+        <jms:reference-file line="434">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="217">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="78b7c9f6d6d7dfc01a2bb1d952d2bd0adbdfae98" resname="Choose">
+        <source>Choose</source>
+        <target>Choose</target>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/QuickSearchHomePageType.php</jms:reference-file>
+        <jms:reference-file line="33">./src/AppBundle/Form/Type/QuickSearchHomePageType.php</jms:reference-file>
+        <jms:reference-file line="29">./src/AppBundle/Form/Type/FaqType.php</jms:reference-file>
+        <jms:reference-file line="24">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="32">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="40">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="48">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="59">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="67">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="81">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="89">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="101">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="114">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="122">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="130">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="157">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="164">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="172">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="180">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="61">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+        <jms:reference-file line="58">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="69">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="81">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="92">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="103">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="182">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="65">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+        <jms:reference-file line="80">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+        <jms:reference-file line="107">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+        <jms:reference-file line="121">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+        <jms:reference-file line="28">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="102">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="110">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="219">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="33a97534e82bb9f8b6ba1a2c25d1bf636d0fa01f" resname="Choose from Camera">
+        <source>Choose from Camera</source>
+        <target state="new">Choose from Camera</target>
+        <jms:reference-file line="507">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="230">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5b17ab38110186e4c7afac922a3e49d9c46f2ed8" resname="Choose from Gallery">
+        <source>Choose from Gallery</source>
+        <target state="new">Choose from Gallery</target>
+        <jms:reference-file line="508">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="231">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fce06e20e5f7f74aacccab40b59b75a56c8f7305" resname="Comments">
+        <source>Comments</source>
+        <target>Comments</target>
+        <jms:reference-file line="21">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7b8cdc10e7ffe0a2f17727d4bb19830cb85808e5" resname="Contact form target email">
+        <source>Contact form target email</source>
+        <target>Contact form target email</target>
+        <jms:reference-file line="20">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4f9be057f0ea5d2ba72fd2c810e8d7b9aa98b469" resname="Content">
+        <source>Content</source>
+        <target>Content</target>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="32">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="987b9ced08d4ac5d11d286ca4b54b99a4f69164b" resname="Day">
+        <source>Day</source>
+        <target>Day</target>
+        <jms:reference-file line="72">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6fdbe48dc54dd86f63097a03bd24094dedd713a" resname="Delete">
+        <source>Delete</source>
+        <target state="new">Delete</target>
+        <jms:reference-file line="502">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="225">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf65ede00d3ee077c14b767f78624560f53387fd" resname="Drinking">
+        <source>Drinking</source>
+        <target>Drinking</target>
+        <jms:reference-file line="210">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cd3fe5575c6eaf4fb25c348d9e572ea24263c91a" resname="Drinks">
+        <source>Drinks</source>
+        <target state="new">Drinks</target>
+        <jms:reference-file line="436">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="aaf87fe57ae6d323db5496e6e27b7bc55f15827c" resname="Education">
+        <source>Education</source>
+        <target>Education</target>
+        <jms:reference-file line="433">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="178">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="84add5b2952787581cb9a8851eef63d1ec75d22b" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+        <jms:reference-file line="481">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+        <jms:reference-file line="31">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="32">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0467de4e6aa97e6fbcdab86e63f4476c7ea3091b" resname="Email already exists in the system">
+        <source>Email already exists in the system</source>
+        <target state="new">Email already exists in the system</target>
+        <jms:reference-file line="94">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b05513a721cbc70b32c1c27af4ebd31ce9eb6be4" resname="Email doesn't exist">
+        <source>Email doesn't exist</source>
+        <target state="new">Email doesn't exist</target>
+        <jms:reference-file line="540">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4c4e6b2d1d9f5f35cb7e500e38d9bfeb0e328524" resname="Email:">
+        <source>Email:</source>
+        <target>Email:</target>
+        <jms:reference-file line="46">./src/AppBundle/Controller/Frontend/SecurityController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d66c9981835f913c8f44f923f46cba8b7a5a66f6" resname="End Paying Date">
+        <source>End Paying Date</source>
+        <target>End Paying Date</target>
+        <jms:reference-file line="137">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a18a7cc7c9b885e7914f73be8fae4a83d8a19d17" resname="Ethnicity">
+        <source>Ethnicity</source>
+        <target>Ethnicity</target>
+        <jms:reference-file line="430">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="266">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="68a34a10ab39ab14778888988863f7113c0382a1" resname="Eye Color">
+        <source>Eye Color</source>
+        <target state="new">Eye Color</target>
+        <jms:reference-file line="432">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="358e807a21f97c7055b8b8298854a99544fd6b81" resname="Eyes Color">
+        <source>Eyes Color</source>
+        <target>Eyes Color</target>
+        <jms:reference-file line="227">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f99d98e85f9064a9b39c10c0d10fa2151df4a764" resname="Forgot Password">
+        <source>Forgot Password</source>
+        <target state="new">Forgot Password</target>
+        <jms:reference-file line="397">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="98329769828fcfdb7a28099365a21761caf262f4" resname="Freezing Reason">
+        <source>Freezing Reason</source>
+        <target>Freezing Reason</target>
+        <jms:reference-file line="31">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="939f868537a1088b70c53e0adbb068379bfb2aa8" resname="Frozen">
+        <source>Frozen</source>
+        <target>Frozen</target>
+        <jms:reference-file line="67">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="525fa8d8d795757d8ac67b5c215f6cd960d71f5e" resname="Gender:">
+        <source>Gender:</source>
+        <target>Gender:</target>
+        <jms:reference-file line="180">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9667e8ea57916e541aa28607221b2c49e22fd76d" resname="H1">
+        <source>H1</source>
+        <target>H1</target>
+        <jms:reference-file line="26">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="25">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="462283b75d291bb64865b6b85994f212b2581e9c" resname="H2">
+        <source>H2</source>
+        <target>H2</target>
+        <jms:reference-file line="27">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="26">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5c1d5c839819ca5f962bcb7356673e36933c680e" resname="Hair Color">
+        <source>Hair Color</source>
+        <target>Hair Color</target>
+        <jms:reference-file line="431">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="235">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="31341c6f0c7af677ffb8fadcb92038e8ac2b6193" resname="Header">
+        <source>Header</source>
+        <target>Header</target>
+        <jms:reference-file line="20">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="21">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+        <jms:reference-file line="19">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f5b620911a3831503f7ac0116b2ef2d83dc865a5" resname="Header Type">
+        <source>Header Type</source>
+        <target>Header Type</target>
+        <jms:reference-file line="24">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="25">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+        <jms:reference-file line="23">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3f608b4935ead643d43b2642dc4ec863d170aa1d" resname="Height">
+        <source>Height</source>
+        <target state="new">Height</target>
+        <jms:reference-file line="428">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0a4d55a8d778e5022fab701977c5d840bbc486d0" resname="Hello World">
+        <source>Hello World</source>
+        <target state="new">Hello World</target>
+        <jms:reference-file line="384">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="00f644e8974b9e6733cd289b2208845574f3c9be" resname="Here For">
+        <source>Here For</source>
+        <target>Here For</target>
+        <jms:reference-file line="427">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="194">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="499906f6c93652c43ff747571f43ee3a69498063" resname="Hobbies">
+        <source>Hobbies</source>
+        <target>Hobbies</target>
+        <jms:reference-file line="439">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="251">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="40eb4e45b03c644b4880d4354e0aa75ec6eb2290" resname="I confirm that I have read and agreed to the">
+        <source>I confirm that I have read and agreed to the</source>
+        <target state="new">I confirm that I have read and agreed to the</target>
+        <jms:reference-file line="603">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="89f89c02cf47e091e726a4e07b88af0966806897" resname="ID">
+        <source>ID</source>
+        <target>ID</target>
+        <jms:reference-file line="25">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="26">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ea424d38af72dd1366a08aad1f47eca3e7ec3d24" resname="IP">
+        <source>IP</source>
+        <target>IP</target>
+        <jms:reference-file line="174">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3c8d8b817f472ca51d910bf99f9f2c1366df731c" resname="In:">
+        <source>In:</source>
+        <target>In:</target>
+        <jms:reference-file line="20">./src/AppBundle/Form/Type/QuickSearchHomePageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="276fd574f4a7383399d703d55a8ad97bde57ca8d" resname="Inactivation Reason">
+        <source>Inactivation Reason</source>
+        <target>Inactivation Reason</target>
+        <jms:reference-file line="26">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1c89b1f2aaab85e28db26b0b64b79c9f8e7be805" resname="Income">
+        <source>Income</source>
+        <target>Income</target>
+        <jms:reference-file line="150">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="acb352f79e0b1c410bfa4354162face6f12edffa" resname="Incorrect username or password">
+        <source>Incorrect username or password</source>
+        <target>__Incorrect username or password</target>
+        <jms:reference-file line="402">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3a5684681b402f6bd77ccf6041dd8de5f5c3b514" resname="Is the site in PAYING mode">
+        <source>Is the site in PAYING mode</source>
+        <target>Is the site in PAYING mode</target>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="69b66e20f3d31b4e1036498cf4cc2de351f64774" resname="Join Free">
+        <source>Join Free</source>
+        <target state="new">Join Free</target>
+        <jms:reference-file line="398">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="db07be184479f34078cd4fc76d248dc0975720e9" resname="Languages">
+        <source>Languages</source>
+        <target>Languages</target>
+        <jms:reference-file line="438">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="166">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="29133a199dfcbb50df696a59b9949d6260637b06" resname="Last Login From">
+        <source>Last Login From</source>
+        <target>Last Login From</target>
+        <jms:reference-file line="46">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4885d48dfaa5418fbc4ed1534911093c0121d0bd" resname="Last Visit Date">
+        <source>Last Visit Date</source>
+        <target>Last Visit Date</target>
+        <jms:reference-file line="160">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4e5a2893bdcc7d239c1db72e4c4ffbe4bea73174" resname="Login">
+        <source>Login</source>
+        <target state="new">Login</target>
+        <jms:reference-file line="399">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9f1d74278d3e68d00f87742e436c88a139cdef2c" resname="Looking for">
+        <source>Looking for</source>
+        <target state="new">Looking for</target>
+        <jms:reference-file line="425">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="85deb2c44c0aa8399021bff68960ea0a620ed435" resname="MAXIMUM number of DAYS message will remain in the system BEFORE being DELETED">
+        <source>MAXIMUM number of DAYS message will remain in the system BEFORE being DELETED</source>
+        <target>MAXIMUM number of DAYS message will remain in the system BEFORE being DELETED</target>
+        <jms:reference-file line="24">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="824deea687b11ffecccf64b08eaf1eae75f3d6d2" resname="MAXIMUM number of MEMBERS a single member can address through site messages PER DAY">
+        <source>MAXIMUM number of MEMBERS a single member can address through site messages PER DAY</source>
+        <target>MAXIMUM number of MEMBERS a single member can address through site messages PER DAY</target>
+        <jms:reference-file line="29">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e65f73600961af1c5a4703e1fa25d1c6274b41fd" resname="Marital Status">
+        <source>Marital Status</source>
+        <target>Marital Status</target>
+        <jms:reference-file line="126">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="13273741eaddf28c6ae107bf719b905293dd86cc" resname="Meta Description">
+        <source>Meta Description</source>
+        <target>Meta Description</target>
+        <jms:reference-file line="59">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="48">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/SeoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="70e0977e62ec40b705eb11acf6ef1b75db4f5342" resname="Min 10 letters in About Me">
+        <source>Min 10 letters in About Me</source>
+        <target state="new">Min 10 letters in About Me</target>
+        <jms:reference-file line="132">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7e2ce2b790720149cf147b78cb302992ebc2cf43" resname="Min 10 letters in What I'm Looking For">
+        <source>Min 10 letters in What I'm Looking For</source>
+        <target state="new">Min 10 letters in What I'm Looking For</target>
+        <jms:reference-file line="136">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="082bc378cd60e17a38d99898b21955299c5b60c8" resname="Month">
+        <source>Month</source>
+        <target>Month</target>
+        <jms:reference-file line="72">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="709a23220f2c3d64d1e1d6d18c4d5280f8d82fca" resname="Name">
+        <source>Name</source>
+        <target>Name</target>
+        <jms:reference-file line="15">./src/AppBundle/Form/Type/FaqCategoryType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d2b782f85ff8d3a899735862a62f9dcb5db694d3" resname="Neighborhood">
+        <source>Neighborhood</source>
+        <target>Neighborhood</target>
+        <jms:reference-file line="44">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="329352e2d2035ad18b5827f694043cc8ccb82023" resname="Net Worth">
+        <source>Net Worth</source>
+        <target>Net Worth</target>
+        <jms:reference-file line="449">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="142">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4894cb39ee419a77b480060f3e4a6d0a4d0fa01f" resname="New Password">
+        <source>New Password</source>
+        <target>New Password</target>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/ChangePasswordType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ee7d311fb0fc0e72f5f437196838236131d15f1" resname="New password was sent to the email you entered.">
+        <source>New password was sent to the email you entered.</source>
+        <target state="new">New password was sent to the email you entered.</target>
+        <jms:reference-file line="538">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="816c52fd2bdd94a63cd0944823a6c0aa9384c103" resname="No">
+        <source>No</source>
+        <target>No</target>
+        <jms:reference-file line="60">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="71">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="83">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="94">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="105">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="220">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="da3a0b6b0647ab2c9870ef1db3201ae1538dabba" resname="Number of DAYS member is still in NEW status">
+        <source>Number of DAYS member is still in NEW status</source>
+        <target>Number of DAYS member is still in NEW status</target>
+        <jms:reference-file line="51">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="40ac016daaa4aff38153daba5d0c275acc58c81f" resname="Number of minutes after last access to site member is still &quot;ONLINE&quot;">
+        <source>Number of minutes after last access to site member is still "ONLINE"</source>
+        <target>Number of minutes after last access to site member is still "ONLINE"</target>
+        <jms:reference-file line="47">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="385db4c5b9a075c502ade043cd2e5106def23d99" resname="Number of results on page on a Listing mode">
+        <source>Number of results on page on a Listing mode</source>
+        <target>Number of results on page on a Listing mode</target>
+        <jms:reference-file line="34">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5ea1f83d38b9f6620e056239a8f176c5edbc5021" resname="Occupation">
+        <source>Occupation</source>
+        <target>Occupation</target>
+        <jms:reference-file line="445">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="72">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5cad355de5b5f85fe9e779388218f8ba9b4a00ac" resname="Old Password">
+        <source>Old Password</source>
+        <target>Old Password</target>
+        <jms:reference-file line="17">./src/AppBundle/Form/Type/ChangePasswordType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a87af020ff36af8d481fd9e8527091958c7b6045" resname="Oldest message in DAYS to measure user POPULARITY">
+        <source>Oldest message in DAYS to measure user POPULARITY</source>
+        <target>Oldest message in DAYS to measure user POPULARITY</target>
+        <jms:reference-file line="43">./src/AppBundle/Form/Type/SettingsType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9d75e060dd876d9a5cc92a5c7203db6635941b65" resname="Paying">
+        <source>Paying</source>
+        <target>Paying</target>
+        <jms:reference-file line="90">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="77064d5265236e0ac252f3fc4a5ba7b274b6a583" resname="Phone">
+        <source>Phone</source>
+        <target>Phone</target>
+        <jms:reference-file line="43">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="44">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="41">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cf0936c4f6daece7864fb0bc7fae8aad55049fe0" resname="Phone already exists in the system">
+        <source>Phone already exists in the system</source>
+        <target state="new">Phone already exists in the system</target>
+        <jms:reference-file line="718">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="101">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ab59c37f9862295bdf2e9f851b108f027cfad3fa" resname="Phone number is incorrect, please try again">
+        <source>Phone number is incorrect, please try again</source>
+        <target>Phone number is incorrect, please try again</target>
+        <jms:reference-file line="357">./src/AppBundle/Controller/Frontend/SecurityController.php</jms:reference-file>
+        <jms:reference-file line="746">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="002ff598115d84595ffeee6219cb5c03d3a1d4a6" resname="Question">
+        <source>Question</source>
+        <target>Question</target>
+        <jms:reference-file line="18">./src/AppBundle/Form/Type/FaqType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b04d58c69dc5b8bc7ddd5259768dfe506efa3d4e" resname="Religion">
+        <source>Religion</source>
+        <target>Religion</target>
+        <jms:reference-file line="437">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="186">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7ce98879cec564fb8c4702af747cde4e6bfe300e" resname="Retype New Password">
+        <source>Retype New Password</source>
+        <target>Retype New Password</target>
+        <jms:reference-file line="23">./src/AppBundle/Form/Type/ChangePasswordType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="efc007a393f66cdb14d57d385822a3d9e36ef873" resname="Save">
+        <source>Save</source>
+        <target state="new">Save</target>
+        <jms:reference-file line="247">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="976">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bce06414177f72ab70e6387b6af9f8ceef0d6049" resname="Search">
+        <source>Search</source>
+        <target state="new">Search</target>
+        <jms:reference-file line="918">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f96c2486615fc003319cbe35856f072a73308e05" resname="Search by Username">
+        <source>Search by Username</source>
+        <target>Search by Username</target>
+        <jms:reference-file line="15">./src/AppBundle/Form/Type/QuickSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bc0fb929afb21739763794b06cbdab2703c006ea" resname="Seeking a:">
+        <source>Seeking a:</source>
+        <target>Seeking a:</target>
+        <jms:reference-file line="31">./src/AppBundle/Form/Type/QuickSearchHomePageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9bc2575c3930437e80555f78757b783c842e8e66" resname="Send">
+        <source>Send</source>
+        <target state="new">Send</target>
+        <jms:reference-file line="612">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d622b353d552f976dc4930b637fa576b4ab3ece0" resname="Send Me SMS">
+        <source>Send Me SMS</source>
+        <target state="new">Send Me SMS</target>
+        <jms:reference-file line="776">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="219">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="468f4a0e08e48f9de26f0b94011cc7c678becad8" resname="Sent me notification on E-mail">
+        <source>Sent me notification on E-mail</source>
+        <target state="new">Sent me notification on E-mail</target>
+        <jms:reference-file line="236">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c69d54592bb1f3d4c4f62f1cdd289302bcd0d452" resname="Sent me push notification">
+        <source>Sent me push notification</source>
+        <target state="new">Sent me push notification</target>
+        <jms:reference-file line="242">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="967289478e2a6f9a5dc42eaec8b1d6941fe54df1" resname="Sent to user notification on E-mail?">
+        <source>Sent to user notification on E-mail?</source>
+        <target>Sent to user notification on E-mail?</target>
+        <jms:reference-file line="36">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4aeaa672aee0c5fd2c877079595e5e1751d21e83" resname="Sent to user push notification?">
+        <source>Sent to user push notification?</source>
+        <target>Sent to user push notification?</target>
+        <jms:reference-file line="41">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8f72ebd6c729f3f5845643b73d8ac97050224d53" resname="Set as Main Photo">
+        <source>Set as Main Photo</source>
+        <target state="new">Set as Main Photo</target>
+        <jms:reference-file line="505">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="228">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5deda4977262bc9b08ac8371fea07d3eb3bafcee" resname="Shown in footer under">
+        <source>Shown in footer under</source>
+        <target>Shown in footer under</target>
+        <jms:reference-file line="59">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cf95e12a8732b2f2c049cbc0eb2f439a05feca53" resname="Shown on the homepage">
+        <source>Shown on the homepage</source>
+        <target>Shown on the homepage</target>
+        <jms:reference-file line="64">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fdaca15f9bb9474252a9f733ba270d70c60d0d16" resname="Sign Up Date">
+        <source>Sign Up Date</source>
+        <target>Sign Up Date</target>
+        <jms:reference-file line="149">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="990db19e0eceb5e06499ad41b746ee23c337d724" resname="Smokes">
+        <source>Smokes</source>
+        <target state="new">Smokes</target>
+        <jms:reference-file line="435">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7b3d0b443ce4a8405de90ed439b33999c90d489e" resname="Smoking">
+        <source>Smoking</source>
+        <target>Smoking</target>
+        <jms:reference-file line="202">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c76fda9f2e1b7ee8fdc4c0390ad6fbec7b73cfe0" resname="Special Features">
+        <source>Special Features</source>
+        <target>Special Features</target>
+        <jms:reference-file line="440">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="187">./src/AppBundle/Form/Type/SignUpTwoType.php</jms:reference-file>
+        <jms:reference-file line="158">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="243">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2a359090a085095e86df809565f931ff7fce88c3" resname="Start Paying Date">
+        <source>Start Paying Date</source>
+        <target>Start Paying Date</target>
+        <jms:reference-file line="126">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bae7d5be70820ed56467bd9a63744e23b47bd711" resname="Status">
+        <source>Status</source>
+        <target>Status</target>
+        <jms:reference-file line="448">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="501">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="224">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+        <jms:reference-file line="134">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6bac23c6dfc3b1372d6c716fd7e26a124fa33b35" resname="Step 1">
+        <source>Step 1</source>
+        <target>Step 1</target>
+        <jms:reference-file line="15">./src/AppBundle/Form/Type/SignUpFlow.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="aefbadf9176e8b04a9c6bae3b469d2ad2c20b5f5" resname="Step 2">
+        <source>Step 2</source>
+        <target>Step 2</target>
+        <jms:reference-file line="22">./src/AppBundle/Form/Type/SignUpFlow.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="27030a62f7c332e0255651a98eba33b992aa684c" resname="Step 3">
+        <source>Step 3</source>
+        <target>Step 3</target>
+        <jms:reference-file line="29">./src/AppBundle/Form/Type/SignUpFlow.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="894031ed8d341b5ecab5e23002585055f0b7ee4d" resname="Terms and Conditions">
+        <source>Terms and Conditions</source>
+        <target state="new">Terms and Conditions</target>
+        <jms:reference-file line="605">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c3328c39b0e29f78e9ff45db674248b1d245887d" resname="Text">
+        <source>Text</source>
+        <target>Text</target>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5bed8f968947928f5e5c2ba04a1d08cdb7e0f21d" resname="Thanks! the message was sent successfully.">
+        <source>Thanks! the message was sent successfully.</source>
+        <target state="new">Thanks! the message was sent successfully.</target>
+        <jms:reference-file line="335">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="992c8c1081257034c89be6cca630063dd0157396" resname="The phone must contain only numbers">
+        <source>The phone must contain only numbers</source>
+        <target state="new">The phone must contain only numbers</target>
+        <jms:reference-file line="703">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="768e0c1c69573fb588f61f1308a015c11468e05f" resname="Title">
+        <source>Title</source>
+        <target>Title</target>
+        <jms:reference-file line="55">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="44">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+        <jms:reference-file line="18">./src/AppBundle/Form/Type/SeoType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cb371c93c5aa0e62198efd303ae2c17474416d1a" resname="URI">
+        <source>URI</source>
+        <target>URI</target>
+        <jms:reference-file line="50">./src/AppBundle/Form/Type/ArticleType.php</jms:reference-file>
+        <jms:reference-file line="39">./src/AppBundle/Form/Type/PageType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0e6b4695225383468880983fbb80673458baac5b" resname="User shown on the homepage">
+        <source>User shown on the homepage</source>
+        <target>User shown on the homepage</target>
+        <jms:reference-file line="16">./src/AppBundle/Form/Type/AdminPropertiesType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="84c29015de33e5d22422382a372caba5c58f8c01" resname="Username">
+        <source>Username</source>
+        <target>Username</target>
+        <jms:reference-file line="37">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/AdminQuickSearchSidebarType.php</jms:reference-file>
+        <jms:reference-file line="54">./src/AppBundle/Form/Type/QuickSearchSidebarType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0a1ea5282f05b18d7baf7014152c943cdd1936b8" resname="Waiting for approval">
+        <source>Waiting for approval</source>
+        <target state="new">Waiting for approval</target>
+        <jms:reference-file line="504">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+        <jms:reference-file line="227">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ad644af0b0728f348f49e82a3da8ce05fa845aa1" resname="With Photo">
+        <source>With Photo</source>
+        <target>With Photo</target>
+        <jms:reference-file line="79">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ab7f153572d27033f9d6b39531f4829361e6d77c" resname="With Points">
+        <source>With Points</source>
+        <target>With Points</target>
+        <jms:reference-file line="101">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="068b57b3e98c843934c21325b1060e62f6cbceb3" resname="With Profile Photo">
+        <source>With Profile Photo</source>
+        <target>With Profile Photo</target>
+        <jms:reference-file line="258">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="879e32326c5217968ac8e3a14e4a8a5214957264" resname="Year">
+        <source>Year</source>
+        <target>Year</target>
+        <jms:reference-file line="72">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5397e0583f14f6c88de06b1ef28f460a1fb5b0ae" resname="Yes">
+        <source>Yes</source>
+        <target>Yes</target>
+        <jms:reference-file line="59">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="70">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="82">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="93">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="104">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="221">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="aff3f9763fa6f95bb619b83f138a63d6d2ceac2f" resname="You need to comfirm Term and Conditions">
+        <source>You need to comfirm Term and Conditions</source>
+        <target state="new">You need to comfirm Term and Conditions</target>
+        <jms:reference-file line="107">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e0917013e3f646c7427427d7959833ca1d21f1da" resname="Your account has been successfully activated">
+        <source>Your account has been successfully activated</source>
+        <target state="new">Your account has been successfully activated</target>
+        <jms:reference-file line="754">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fbf9e427d6911907f7e3973f7f87da61f0c3f0be" resname="Your settings saved successfully">
+        <source>Your settings saved successfully</source>
+        <target state="new">Your settings saved successfully</target>
+        <jms:reference-file line="230">./src/AppBundle/Controller/Api/V1/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d1628e5e6e4ec9631753d9b8fe2b3c351c5e8563" resname="Zodiac">
+        <source>Zodiac</source>
+        <target>Zodiac</target>
+        <jms:reference-file line="38">./src/AppBundle/Form/Type/AdminAdvancedSearchType.php</jms:reference-file>
+        <jms:reference-file line="278">./src/AppBundle/Form/Type/AdvancedSearchType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ac4ae97285c19b13201deb9b192d921316db3447" resname="h1">
+        <source>h1</source>
+        <target>h1</target>
+        <jms:reference-file line="27">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf1c365741a4bfb5fee5c3150335ab4f867a4d9a" resname="h2">
+        <source>h2</source>
+        <target>h2</target>
+        <jms:reference-file line="28">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8dbc6058e03353809813416c6830708abaf9d223" resname="h3">
+        <source>h3</source>
+        <target>h3</target>
+        <jms:reference-file line="29">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4f92c044d819a16c426f859755d06090e1903b42" resname="h4">
+        <source>h4</source>
+        <target>h4</target>
+        <jms:reference-file line="30">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="36e20656918e0a9ee13c113115a777c6c365d358" resname="h5">
+        <source>h5</source>
+        <target>h5</target>
+        <jms:reference-file line="31">./src/AppBundle/Form/Type/SlideType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f146ccf9016c1895e807115a62ce397e05e1b27e" resname="of Service of membership at NYSugarDdaddy.com.">
+        <source>of Service of membership at NYSugarDdaddy.com.</source>
+        <target state="new">of Service of membership at NYSugarDdaddy.com.</target>
+        <jms:reference-file line="606">./src/AppBundle/Controller/Api/V1/OpenController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4374aaee247fb237ce6c97d5c8d64bbe474d16de" resname="to">
+        <source>to</source>
+        <target>to</target>
+        <jms:reference-file line="34">./src/AppBundle/Form/Type/QuickSearchSidebarType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cef76b5f56a23ebe1ec1f8409b0b22d550a74b4a" resname="עמוד">
+        <source>עמוד</source>
+        <target>עמוד</target>
+        <jms:reference-file line="27">./src/AppBundle/Form/Type/SeoType.php</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,181 @@
+' ': ' '
+'* About Me <span style="display: inline-block;">(min 10 characters)</span>': '* About Me <span style="display: inline-block;">(min 10 characters)</span>'
+'* Activation Code': '* Activation Code'
+'* Area': '* Area'
+'* Birthday': '* Birthday'
+'* Body Type': '* Body Type'
+'* Children': '* Children'
+'* Drinking': '* Drinking'
+'* E-mail': '* E-mail'
+'* Education': '* Education'
+'* Email': '* Email'
+'* Ethnicity': '* Ethnicity'
+'* Eye Color': '* Eye Color'
+'* Hair Color': '* Hair Color'
+'* Height': '* Height'
+'* Here For': '* Here For'
+'* Hobbies': '* Hobbies'
+'* I''m a': '* I''m a'
+'* Income': '* Income'
+'* Language': '* Language'
+'* Message': '* Message'
+'* Neighborhood': '* Neighborhood'
+'* Net Worth': '* Net Worth'
+'* Password': '* Password'
+'* Phone': '* Phone'
+'* Relationship Status': '* Relationship Status'
+'* Religion': '* Religion'
+'* Retype Email': '* Retype Email'
+'* Retype Password': '* Retype Password'
+'* Smoking': '* Smoking'
+'* Status': '* Status'
+'* Subject': '* Subject'
+'* Username': '* Username'
+'* What I''m Looking For <span style="display: inline-block;">(min 10 characters)</span>': '* What I''m Looking For <span style="display: inline-block;">(min 10 characters)</span>'
+'* Zip Code': '* Zip Code'
+'About me': 'About me'
+'Abuse report target email': 'Abuse report target email'
+'Account has been blocked by the Administrator': 'Account has been blocked by the Administrator'
+Activate: Activate
+'Activation code has been successfully sent': 'Activation code has been successfully sent'
+'Activation code is incorrect, please try again': 'Activation code is incorrect, please try again'
+Active: Active
+'Add Photo': 'Add Photo'
+Age: Age
+Alt: Alt
+'Annual Income': 'Annual Income'
+Answer: Answer
+Approved: Approved
+Area: Area
+'Body Type': 'Body Type'
+Brief: Brief
+Cancel: Cancel
+Category: Category
+Children: Children
+Choose: Choose
+'Choose from Camera': 'Choose from Camera'
+'Choose from Gallery': 'Choose from Gallery'
+Comments: Comments
+'Contact form target email': 'Contact form target email'
+Content: Content
+Day: Day
+Delete: Delete
+Drinking: Drinking
+Drinks: Drinks
+Education: Education
+Email: Email
+'Email already exists in the system': 'Email already exists in the system'
+'Email doesn''t exist': 'Email doesn''t exist'
+'Email:': 'Email:'
+'End Paying Date': 'End Paying Date'
+Ethnicity: Ethnicity
+'Eye Color': 'Eye Color'
+'Eyes Color': 'Eyes Color'
+'Forgot Password': 'Forgot Password'
+'Freezing Reason': 'Freezing Reason'
+Frozen: Frozen
+'Gender:': 'Gender:'
+H1: H1
+H2: H2
+'Hair Color': 'Hair Color'
+Header: Header
+'Header Type': 'Header Type'
+Height: Height
+'Hello World': 'Hello World'
+'Here For': 'Here For'
+Hobbies: Hobbies
+'I confirm that I have read and agreed to the': 'I confirm that I have read and agreed to the'
+ID: ID
+IP: IP
+'In:': 'In:'
+'Inactivation Reason': 'Inactivation Reason'
+Income: Income
+'Incorrect username or password': 'Incorrect username or password'
+'Is the site in PAYING mode': 'Is the site in PAYING mode'
+'Join Free': 'Join Free'
+Languages: Languages
+'Last Login From': 'Last Login From'
+'Last Visit Date': 'Last Visit Date'
+Login: Login
+'Looking for': 'Looking for'
+'MAXIMUM number of DAYS message will remain in the system BEFORE being DELETED': 'MAXIMUM number of DAYS message will remain in the system BEFORE being DELETED'
+'MAXIMUM number of MEMBERS a single member can address through site messages PER DAY': 'MAXIMUM number of MEMBERS a single member can address through site messages PER DAY'
+'Marital Status': 'Marital Status'
+'Meta Description': 'Meta Description'
+'Min 10 letters in About Me': 'Min 10 letters in About Me'
+'Min 10 letters in What I''m Looking For': 'Min 10 letters in What I''m Looking For'
+Month: Month
+Name: Name
+Neighborhood: Neighborhood
+'Net Worth': 'Net Worth'
+'New Password': 'New Password'
+'No': 'No'
+'Number of DAYS member is still in NEW status': 'Number of DAYS member is still in NEW status'
+'Number of minutes after last access to site member is still "ONLINE"': 'Number of minutes after last access to site member is still "ONLINE"'
+'Number of results on page on a Listing mode': 'Number of results on page on a Listing mode'
+Occupation: Occupation
+'Old Password': 'Old Password'
+'Oldest message in DAYS to measure user POPULARITY': 'Oldest message in DAYS to measure user POPULARITY'
+Paying: Paying
+Phone: Phone
+'Phone already exists in the system': 'Phone already exists in the system'
+'Phone number is incorrect, please try again': 'Phone number is incorrect, please try again'
+Question: Question
+Religion: Religion
+'Retype New Password': 'Retype New Password'
+Save: Save
+Search: Search
+'Search by Username': 'Search by Username'
+'Seeking a:': 'Seeking a:'
+Send: Send
+'Send Me SMS': 'Send Me SMS'
+'Sent me notification on E-mail': 'Sent me notification on E-mail'
+'Sent me push notification': 'Sent me push notification'
+'Sent to user notification on E-mail?': 'Sent to user notification on E-mail?'
+'Sent to user push notification?': 'Sent to user push notification?'
+'Set as Main Photo': 'Set as Main Photo'
+'Shown in footer under': 'Shown in footer under'
+'Shown on the homepage': 'Shown on the homepage'
+'Sign Up Date': 'Sign Up Date'
+Smokes: Smokes
+Smoking: Smoking
+'Special Features': 'Special Features'
+'Start Paying Date': 'Start Paying Date'
+Status: Status
+'Step 1': 'Step 1'
+'Step 2': 'Step 2'
+'Step 3': 'Step 3'
+'Terms and Conditions': 'Terms and Conditions'
+Text: Text
+'The phone must contain only numbers': 'The phone must contain only numbers'
+Title: Title
+URI: URI
+'User shown on the homepage': 'User shown on the homepage'
+Username: Username
+'Waiting for approval': 'Waiting for approval'
+'With Photo': 'With Photo'
+'With Points': 'With Points'
+'With Profile Photo': 'With Profile Photo'
+Year: Year
+'Yes': 'Yes'
+'You need to comfirm Term and Conditions': 'You need to comfirm Term and Conditions'
+'Your account has been successfully activated': 'Your account has been successfully activated'
+'Your settings saved successfully': 'Your settings saved successfully'
+Zodiac: Zodiac
+h1: h1
+h2: h2
+h3: h3
+h4: h4
+h5: h5
+to: to
+עמוד: עמוד
+'New password was sent to the email you entered.': 'New password was sent to the email you entered.'
+'Thanks! the message was sent successfully.': 'Thanks! the message was sent successfully.'
+'of Service of membership at NYSugarDdaddy.com.': 'of Service of membership at NYSugarDdaddy.com.'
+'Follow us': '__Follow us'
+'Join Now': '__Join Now'
+'Quick Search': '__Quick Search'
+'Get it on App Store': '__Get it on App Store'
+'Get it on Google Play': '__Get it on Google Play'
+'Or visit the mobile site': '__Or visit the mobile site'
+'Join Free Today!': '__Join Free Today!'

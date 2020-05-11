@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        {% block meta %}{% endblock %}
+        <title>{% block title %}{% trans %}Welcome!{% endtrans %}{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        {% block js %}{% endblock %}
+        <link rel="icon" href="{{ asset('favicon.ico') }}" />
+        <meta name="apple-mobile-web-app-title" content="NYRichdate">
+        <meta name="application-name" content="NYRichdate">
+        <link rel="apple-touch-icon" href="{{ asset('images/icon.png') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/icon.png') }}">
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+        <!-- Add additional services that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-messaging.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDi16gW5tPMtX_K6QVDfZjEuEQAmdtQnqc",
+                authDomain: "interdate-ltd-co-il-api-project-48205136182.firebaseapp.com",
+                databaseURL: "https://interdate-ltd-co-il-api-project-48205136182.firebaseio.com",
+                projectId: "interdate-ltd.co.il:api-project-48205136182",
+                storageBucket: "",
+                messagingSenderId: "48205136182"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script>
+            //$(document).ready(function () {
+                messaging = firebase.messaging();
+                //BDI1kzY-7iL9NeQE0ofjV1s68_CPeCWsbvkY6E1IxnNuk1ZSTqW89GpdCm0loAS5MQIW8UJR3MS8HJzKNZrVTfY
+                //BEM_SOAC6SjHhZcroNqy15UnlSiTt7E3SLY9f_IyIx8wto_TWq4KNDgI3VB6gC7j0xPtEbfDTISI0tKLi0nSBYw
+                messaging.usePublicVapidKey("BEM_SOAC6SjHhZcroNqy15UnlSiTt7E3SLY9f_IyIx8wto_TWq4KNDgI3VB6gC7j0xPtEbfDTISI0tKLi0nSBYw");
+
+                getToken();
+
+            //});
+            function getPermition() {
+                messaging.requestPermission().then(function() {
+                    console.log('Notification permission granted.');
+                    // TODO(developer): Retrieve an Instance ID token for use with FCM.
+                    getToken();
+
+                }).catch(function(err) {
+                    console.log('Unable to get permission to notify.', err);
+                });
+            }
+            function getToken(){
+                messaging.getToken().then(function(currentToken) {
+                    if (currentToken) {
+                        console.log('Token ' + currentToken);
+                        {% if app.user %}
+                            sendToServer(currentToken);
+                        {% endif %}
+                        //sendTokenToServer(currentToken);
+                        //updateUIForPushEnabled(currentToken);
+                    } else {
+                        // Show permission request.
+                        console.log('No Instance ID token available. Request permission to generate one.');
+                        // Show permission UI.
+                        getPermition();
+                        //setTokenSentToServer(false);
+                    }
+                }).catch(function(err) {
+                    console.log('An error occurred while retrieving token. ', err);
+                    //showToken('Error retrieving Instance ID token. ', err);
+                    //setTokenSentToServer(false);
+                });
+            }
+            messaging.onTokenRefresh(function() {
+                getToken();
+            });
+
+            function sendToServer(token) {
+                //console.log("Send token browser");
+                $.ajax({
+                    type: "POST",
+                    url: '/open_api/browsers/tokens/saves',
+                    dataType: 'json',
+                    data:{"id": "{{ (app.user) ? app.user.id : 0 }}", "token": token },
+                    success: function(res){
+                        console.log(res);
+                    }
+                });
+            }
+
+
+
+        </script>
+        <link rel="manifest" href="/manifest.json">
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('{{ asset('firebase-messaging-sw.js') }}').then(() => { console.log('service worker installed')}).catch((err) => {console.error('Error', err)});
+            }
+        </script>
+        <script src="{{ asset('js/custom_lib.js') }}"></script>
+        <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getKey"></script>
+
+        <script type="application/javascript">
+            $(document).ready(function () {
+
+                {% if app.user %}
+                $.ajax({
+                    type: "POST",
+                    url: '/open_api/browsers/hashes',
+                    dataType: 'json',
+                    data:{"id": "{{ app.user.id }}", "hash": browserKey },
+                    success: function(res){
+                        console.log(res);
+                    }
+                });
+                {% else %}
+                $.ajax({
+                    type: "GET",
+                    url: '/open_api/find/user/hash',
+                    dataType: 'json',
+                    data:{"hash": browserKey, 'route': '{{ app.request.attributes.get('_route') }}' },
+                    success: function(res){
+                        console.log(res);
+                        if(res.href) {
+                            if(res.message) {
+                                alert(res.message);
+                            }
+                            window.location.href = res.href;
+                        }
+                    }
+                });
+                {% endif %}
+            });
+        </script>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

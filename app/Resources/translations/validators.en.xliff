@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-02-01T10:29:49Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="0467de4e6aa97e6fbcdab86e63f4476c7ea3091b" resname="Email already exists in the system">
+        <source>Email already exists in the system</source>
+        <target>Email already exists in the system</target>
+      </trans-unit>
+      <trans-unit id="b45ca128213de0f9091dfc2fa52d430d0d5226de" resname="Emails don't match">
+        <source>Emails don't match</source>
+        <target>Emails don't match</target>
+        <jms:reference-file line="55">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5a9414dcba88829e008b78727d1e6e3904079365" resname="Max 15 letters in Password">
+        <source>Max 15 letters in Password</source>
+        <target>Max 15 letters in Password</target>
+      </trans-unit>
+      <trans-unit id="70e0977e62ec40b705eb11acf6ef1b75db4f5342" resname="Min 10 letters in About Me">
+        <source>Min 10 letters in About Me</source>
+        <target>Min 10 letters in About Me</target>
+      </trans-unit>
+      <trans-unit id="7e2ce2b790720149cf147b78cb302992ebc2cf43" resname="Min 10 letters in What I'm Looking For">
+        <source>Min 10 letters in What I'm Looking For</source>
+        <target>Min 10 letters in What I'm Looking For</target>
+      </trans-unit>
+      <trans-unit id="acd70d2fc3e7d1489bbaf54262c2460947665a98" resname="Min 7 letters in Password">
+        <source>Min 7 letters in Password</source>
+        <target>Min 7 letters in Password</target>
+      </trans-unit>
+      <trans-unit id="5f087918ec4a52f0cf4d34e19c48b017ade682c6" resname="Passwords don't match">
+        <source>Passwords don't match</source>
+        <target>Passwords don't match</target>
+        <jms:reference-file line="20">./src/AppBundle/Form/Type/ChangePasswordType.php</jms:reference-file>
+        <jms:reference-file line="47">./src/AppBundle/Form/Type/SignUpOneType.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cf0936c4f6daece7864fb0bc7fae8aad55049fe0" resname="Phone already exists in the system">
+        <source>Phone already exists in the system</source>
+        <target>Phone already exists in the system</target>
+      </trans-unit>
+      <trans-unit id="357f535678c79e70832c0294532cc110c9a6e0ab" resname="Please choose Here For">
+        <source>Please choose Here For</source>
+        <target>Please choose Here For</target>
+      </trans-unit>
+      <trans-unit id="03ae7c5f723b99c09189a601ed955bb42f1ce059" resname="Please choose Hobbies">
+        <source>Please choose Hobbies</source>
+        <target>Please choose Hobbies</target>
+      </trans-unit>
+      <trans-unit id="4758d5d3fb47cae00188371dc89258dc4c47ab22" resname="Please choose Languages">
+        <source>Please choose Languages</source>
+        <target>Please choose Languages</target>
+      </trans-unit>
+      <trans-unit id="f92fd4fa0ec7f819028e67c2c93d953efb2bf9e4" resname="The email {{ value }} is not a valid email.">
+        <source>The email {{ value }} is not a valid email.</source>
+        <target>The email {{ value }} is incorrect.</target>
+      </trans-unit>
+      <trans-unit id="992c8c1081257034c89be6cca630063dd0157396" resname="The phone must contain only numbers">
+        <source>The phone must contain only numbers</source>
+        <target>The phone must contain only numbers</target>
+      </trans-unit>
+      <trans-unit id="b1eb26b0151530c66fd1cd3d8808776829426923" resname="Username already exists in the system">
+        <source>Username already exists in the system</source>
+        <target>Username already exists in the system</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

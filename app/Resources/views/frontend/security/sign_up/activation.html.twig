@@ -1,0 +1,73 @@
+{% extends "frontend/main_layout.html.twig" %}
+
+{% block container %}
+
+    <!-- Mid Container -->
+    <div class="inner_content">
+        <div class="wrap">
+            <div class="inner_form">
+
+                <form action="{{ path('sign_up_activation') }}" method="post" enctype="multipart/form-data" id="sign_up_activation_form" novalidate>
+
+                    <div class="inner_form_bot">
+                        <div class="main_form">
+                            <h1>{% trans %}Account Activation{% endtrans %}</h1>
+
+                            {% if app.user.isActivated %}
+                                <div class="ui olive tiny message">{% trans %}Your account has been successfully activated{% endtrans %}</div>
+                                <div class="div4" style="padding: 0px;">
+                                    <a href="{{ path('homepage') }}">{% trans %}Enter{% endtrans %}</a>
+                                </div>
+                            {% else %}
+
+                                {% if error %}
+                                    <div class="ui red tiny message">{{ errorMessage }}</div>
+                                {% endif %}
+
+                                {% if (app.user.phone == null or resent == true) and app.user.smsCount < 3 %}
+                                    <div class="ui tiny message">{% trans %}Activation code will be sent by SMS{% endtrans %}</div>
+                                    <div class="mfrm_field cf">
+                                        <label>{% trans %}* Phone{% endtrans %}</label>
+                                        <input type="text" name="phone">
+                                    </div>
+                                    <div class="div4" style="padding: 0px;">
+                                        <a href="#" id="send_sms">{% trans %}Send Me SMS{% endtrans %}</a>
+                                    </div>
+                                {% else %}
+
+                                    {% if not error and sent %}
+                                        <div class="ui olive tiny message">{% trans %}Activation code has been successfully sent{% endtrans %}</div>
+                                    {% endif %}
+
+                                    <div class="mfrm_field cf">
+                                        <label>{% trans %}* Activation Code{% endtrans %}</label>
+                                        <input type="text" name="code">
+                                    </div>
+                                    <div class="div4" style="padding: 0px;">
+                                        <a href="#" id="activate">{% trans %}Activate{% endtrans %}</a>
+                                    </div>
+                                    {% if app.user.smsCount < 3 %}
+                                        <div class="div4" style="padding: 0px;margin-left: 8px;">
+                                            <a href="#" onclick="$('#sign_up_activation_resent').submit();return false;">{% trans %}Resend SMS{% endtrans %}</a>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+
+                            {% endif %}
+
+                        </div>
+                    </div>
+
+                </form>
+                {% if not (app.user.phone == null or resent == true) and app.user.smsCount < 3 %}
+                    <form action="{{ path('sign_up_activation') }}" method="post" enctype="multipart/form-data" id="sign_up_activation_resent" novalidate>
+                        <input type="hidden" name="resent" value="1">
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

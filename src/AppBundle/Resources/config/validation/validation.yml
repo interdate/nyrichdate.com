@@ -1,0 +1,121 @@
+AppBundle\Entity\User:
+    properties:
+        username:
+            - NotBlank:
+               groups: [sign_up_one, profile_one]
+        email:
+            - Email:
+                message: The email {{ value }} is not a valid email.
+                checkMX: true
+                groups: [sign_up_one, profile_one]
+            - NotBlank:
+                groups: [sign_up_one, profile_one]
+
+        password:
+            - Length:
+                min: 7
+                minMessage: Min 7 letters in Password
+                max: 15
+                maxMessage: Max 15 letters in Password
+                groups: [sign_up_one, change_password]
+            - NotBlank:
+                groups: [sign_up_one, change_password]
+
+        gender:
+            - NotBlank:
+                groups: [sign_up_one]
+
+        birthday:
+            - NotBlank:
+                groups: [sign_up_one, profile_one]
+
+        zipCode:
+            - NotBlank:
+                groups: [sign_up_one, profile_one]
+
+        relationshipStatus:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        children:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        ethnicity:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+
+        religion:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+
+        education:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        smoking:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        drinking:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        height:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        body:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        eyes:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+        hair:
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+
+        languages:
+            - Count:
+                min: 1
+                minMessage: Please choose Languages
+                groups: [sign_up_two, profile_two]
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+
+        purposes:
+            - Count:
+                min: 1
+                minMessage: Please choose Here For
+                groups: [sign_up_two, profile_two]
+            - NotBlank:
+                groups: [sign_up_two, profile_two]
+
+        about:
+            - Length:
+                min: 10
+                minMessage: Min 10 letters in About Me
+                groups: [sign_up_three, profile_three]
+
+        looking:
+            - Length:
+                min: 10
+                minMessage: Min 10 letters in What I'm Looking For
+                groups: [sign_up_three, profile_three]
+
+        phone:
+            - Regex:
+                pattern: '/[^0-9]/'
+                match:   false
+                message: The phone must contain only numbers
+                groups: [sign_up_one, profile_one]
+
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [username]
+            message: Username already exists in the system
+            groups: [sign_up_one, profile_one]
+
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [email]
+            message: Email already exists in the system
+            groups: [sign_up_one, profile_one]
+
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [phone]
+            message: Phone already exists in the system
+            groups: [sign_up_one, profile_three]

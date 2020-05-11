@@ -1,0 +1,14 @@
+{% extends 'frontend/layout.html.twig' %}
+
+{% block container %}
+    <div class="inner_content">
+        <div class="wrap error-page">
+            <p class="status">404</p>
+            <h1>Page not found</h1>
+            <p>
+                The requested page couldn't be located. Checkout for any URL
+                misspelling or <a href="{{ path('homepage') }}">return to the homepage</a>.
+            </p>
+        </div>
+    </div>
+{% endblock %}

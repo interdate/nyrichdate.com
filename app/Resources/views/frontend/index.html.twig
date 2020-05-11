@@ -1,0 +1,218 @@
+{% extends 'frontend/layout.html.twig' %}
+
+{% block title %}{{ seo.title|raw }}{% endblock %}
+{% block meta_description %}{{ seo.description }}{% endblock %}
+{% block container %}
+
+
+    <!-- middile containt -->
+    <div class="mid-container">
+        <!-- join section -->
+        <div class="join-section">
+            <div class="wrap">
+                <{{ homePageBlocks[0].headerType }}>{{ homePageBlocks[0].name }}</{{ homePageBlocks[0].headerType }}>
+                <ul class="clearfix">
+                    <li>
+                        <div class="join-icon"><img src="/images/mobilefrendly.png" alt="mobile"/></div>
+                        <{{ homePageBlocks[0].children[0].headerType }}>{{ homePageBlocks[0].children[0].name }}</{{ homePageBlocks[0].children[0].headerType }}>
+                        <p>{{ homePageBlocks[0].children[0].block1 }}</p>
+                    </li>
+                    <li>
+                        <div class="join-icon"><img src="/images/luxury.png" alt="luxury"/></div>
+                        <{{ homePageBlocks[0].children[1].headerType }}>{{ homePageBlocks[0].children[1].name }}</{{ homePageBlocks[0].children[1].headerType }}>
+                        <p>{{ homePageBlocks[0].children[1].block1 }}</p>
+                    </li>
+                    <li>
+                        <div class="join-icon"><img src="/images/string.png" alt="string"/></div>
+                        <{{ homePageBlocks[0].children[2].headerType }}>{{ homePageBlocks[0].children[2].name }}</{{ homePageBlocks[0].children[2].headerType }}>
+                        <p>{{ homePageBlocks[0].children[2].block1 }}</p>
+                    </li>
+                    <li>
+                        <div class="join-icon"><img src="/images/beautiful.png" alt="beautiful"/></div>
+                        <{{ homePageBlocks[0].children[3].headerType }}>{{ homePageBlocks[0].children[3].name }}</{{ homePageBlocks[0].children[3].headerType }}>
+                        <p>{{ homePageBlocks[0].children[3].block1 }}</p>
+                    </li>
+                </ul>
+                <div class="regis-btn"><a href="{{ path('sign_up') }}">{% trans %}Join Now{% endtrans %}</a></div>
+
+            </div>
+        </div>
+        <!-- search section -->
+        <div class="search-section">
+            <div class="wrap">
+
+                <{{ homePageBlocks[1].headerType }}>{{ homePageBlocks[1].name }}</{{ homePageBlocks[1].headerType }}>
+
+                <form action="{{ path('public_search_results') }}" method="post">
+
+                    <div class="serch-form clearfix">
+
+                        <div class="sfield clearfix">
+                            {{ form_label(form.gender) }}
+                            {{ form_widget(form.gender) }}
+                        </div>
+                        <div class="sfield clearfix">
+                            {{ form_label(form.region) }}
+                            {{ form_widget(form.region) }}
+                        </div>
+                        <div class="sfield clearfix">
+                            <label for="bgilai">Age between: </label>
+                            <div class="sfield2 clearfix">
+                                {{ form_widget(form.ageFrom) }}
+                                <div class="sand">&amp;</div>
+                                {{ form_widget(form.ageTo) }}
+                                <div class="age">(ages)</div>
+                            </div>
+                        </div>
+
+                        {{ form_rest(form) }}
+
+                        <div class="send-btn"><input name="search" id="search" type="submit" value="{% trans %}Find Your Match{% endtrans %}"></div>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <div id="faces_container">
+                <div class="wrap">
+                    <div id="faces_init_data" class="hidden">
+                        {#
+                        {% for user in users %}
+                            <div class="item">
+                                <input type="hidden" class="url" value="{{ user.getMainPhoto.getFaceWebPath }}">
+                                <input type="hidden" class="username" value="{{ user.username }}">
+                                <input type="hidden" class="age" value="{{ user.age }}">
+                            </div>
+                        {%endfor %}#}
+
+
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img1">
+                            <input type="hidden" class="url" value="/images/img1.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img2">
+                            <input type="hidden" class="url" value="/images/img2.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img3">
+                            <input type="hidden" class="url" value="/images/img3.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img4">
+                            <input type="hidden" class="url" value="/images/img4.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img5">
+                            <input type="hidden" class="url" value="/images/img5.png">
+                        </div>
+
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img6">
+                            <input type="hidden" class="url" value="/images/img6.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img7">
+                            <input type="hidden" class="url" value="/images/img7.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img8">
+                            <input type="hidden" class="url" value="/images/img8.png">
+                        </div>
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img9">
+                            <input type="hidden" class="url" value="/images/img9.png">
+                        </div>
+                        {#
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img10">
+                            <input type="hidden" class="url" value="/images/img10.png">
+                        </div>
+                        #}
+                        <div class="item">
+                            <input type="hidden" class="faceImageName" value="img11">
+                            <input type="hidden" class="url" value="/images/img11.png">
+                        </div>
+                    </div>
+
+
+                    <div class="face_wrapper first"><img class="face" alt=""></div>
+                    <div class="face_wrapper second"><img class="face" alt=""></div>
+                    <div class="face_wrapper third"><img class="face" alt=""></div>
+                    <div class="face_wrapper fourth"><img class="face" alt=""></div>
+                    <div class="face_wrapper fifth"><img class="face" alt=""></div>
+                </div>
+            </div>
+
+            <script src="{{ asset('js/faces.js') }}"></script>
+            <input type="hidden" id="sign_up_path" value="{{ path('sign_up') }}">
+
+        </div>
+        <!-- Blog section -->
+        <div class="blog_section">
+            <div class="wrap">
+                <{{ homePageBlocks[3].headerType }}>{{ homePageBlocks[3].name }}</{{ homePageBlocks[3].headerType }}>
+                <ul class="blogul clearfix">
+                    {% for article in articles %}
+                    <li>
+                        <div class="blog_img">
+                            <a href="{{ path('magazine_article', {'uri': article.uri }) }}">
+                                <img alt="blog1" src="{{ article.getFileWebPath }}" />
+                            </a>
+                        </div>
+                        <h5><a href="{{ path('magazine_article', {'uri': article.uri }) }}">{{ article.name }}</a></h5>
+                        <p>
+                            {% if article.brief|length > 127 %}
+                                {{ article.brief|slice(0,126) }}...
+                            {% else %}
+                                {{ article.brief }}
+                            {% endif %}
+                        </p>
+                        <a class="rmore" href="{{ path('magazine_article', {'uri': article.uri }) }}">Read More >></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- sugar daddy section -->
+        <div class="sugar_daddysec">
+            <div class="wrap">
+                <div class="sd_left">
+
+                    <{{ homePageBlocks[5].headerType }}>{{ homePageBlocks[5].name }}</{{ homePageBlocks[5].headerType }}>
+
+                    <div class="sd_mid clearfix">
+                        <div class="sd_app">
+                            <a href="https://itunes.apple.com/au/app/nyrichdate-ny-richdate/id1212778974?mt=8">{% trans %}Get it on App Store{% endtrans %}</a>
+                            <a href="https://itunes.apple.com/au/app/nyrichdate-ny-richdate/id1212778974?mt=8" target="_blank">
+                                <img alt="appstore" src="/images/appstore.png" />
+                                {#<span class="coming-soon">Coming Soon</span>#}
+                            </a>
+                        </div>
+                        <div class="sd_gplay">
+                            <a href="https://play.google.com/store/apps/details?id=com.nyrd">{% trans %}Get it on Google Play{% endtrans %}</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.nyrd" target="_blank"><img alt="appstore" src="/images/gplay.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="sd_bot">
+                        <a href="">{% trans %}Or visit the mobile site{% endtrans %}</a>
+                        <div class="app_but"><a href="{{ path('sign_up') }}">{% trans %}Join Free Today!{% endtrans %}</a></div>
+                    </div>
+
+                </div>
+                <div class="sd_right"><img alt="nymobile" src="/images/nymobile.png" />
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+
+        <!-- end -->
+    </div>
+    <!-- end -->
+
+
+{% endblock %}

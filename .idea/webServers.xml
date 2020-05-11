@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c974853-79a2-492b-bf39-0bdb642b8bc2" name="nysd" url="https://www.nyrichdate.com/">
+        <fileTransfer host="82.166.213.13" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="578bdf98-4183-488d-bb5a-478fddb7cea9" name="D4D" url="http://dating4disabled.com">
+        <fileTransfer host="dating4disabled.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="6b3c1db7-734b-4765-acf8-81060f81aa75" name="holyland" url="http://holyland4jesus.com">
+        <fileTransfer host="holyland4jesus.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2e61fc4a-3f06-4e39-b1fc-7ab5443e21a7" name="orbah" url="http://80.178.161.107">
+        <fileTransfer host="80.178.161.107" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

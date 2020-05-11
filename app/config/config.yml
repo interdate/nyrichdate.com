@@ -1,0 +1,299 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
+    app.locales: en|ru|es|zh|ja|de
+    app.locales_array: [en, ru, es, zh, ja, de]
+
+framework:
+    #esi:             ~
+    translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
+    http_method_override: true
+    assets: ~
+
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    globals:
+        messenger: "@messenger"
+        #langs:
+        #    - {prefix: en, name: English}
+        #    - {prefix: ru, name: Русский}
+        #    - {prefix: es, name: Español}
+        default_lang:  en
+        langs:
+            en: English
+            ru: Русский
+            es: Español
+            zh: 中文
+            ja: 日本語
+            de: Deutsche
+
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #     path:     "%database_path%"
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            gedmo_translatable:
+                type: annotation
+                prefix: Gedmo\Translatable\Entity
+                dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
+                alias: GedmoTranslatable # (optional) it will default to the name set for the mapping
+                is_bundle: false
+            gedmo_translator:
+                type: annotation
+                prefix: Gedmo\Translator\Entity
+                dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
+                alias: GedmoTranslator # (optional) it will default to the name set for the mapping
+                is_bundle: false
+        dql:
+            numeric_functions:
+                get_distance: AppBundle\Dql\Functions\DistanceMysqlFunction
+
+
+
+
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+
+jms_translation:
+    configs:
+        app:
+            dirs: ["%kernel.root_dir%", "%kernel.root_dir%/../src"]
+            output_dir: "%kernel.root_dir%/Resources/translations"
+            ignored_domains: [routes]
+            excluded_names: ["*TestCase.php", "*Test.php"]
+            excluded_dirs: [cache, data, logs]
+            extractors: [jms_i18n_routing]
+
+
+jms_i18n_routing:
+    default_locale: "%locale%"
+    locales: "%app.locales_array%"
+    strategy: prefix_except_default
+
+
+stof_doctrine_extensions:
+    default_locale: "%locale%"
+    translation_fallback: true
+    orm:
+        default:
+            translatable: true
+
+knp_doctrine_behaviors:
+    translatable: true
+
+a2lix_translation_form:
+    #locale_provider: default       # [1]
+    locales: "%app.locales_array%"          # [1-a]
+    default_locale: "%locale%"             # [1-b]
+    #required_locales: [fr]         # [1-c]
+    manager_registry: doctrine      # [2]
+    templating: "A2lixTranslationFormBundle::default.html.twig"      # [3]
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+
+sonata_translation:
+    locales: "%app.locales_array%"
+    default_locale: "%locale%"
+    # here enable the types you need
+    gedmo:
+        enabled: true
+    knplabs:
+        enabled: true
+    #phpcr:
+    #    enabled: true
+
+sonata_admin:
+    templates:
+        layout: sonata_admin/layout.html.twig
+        edit:                AppBundle:CRUD:edit.html.twig
+
+liip_imagine:
+    resolvers:
+       default:
+          web_path:
+              web_root: "%kernel.root_dir%/../public_html/"
+
+    loaders:
+        default:
+            filesystem:
+                data_root: "%kernel.root_dir%/../public_html/"
+
+    filter_sets:
+        cache: ~
+        optimize_original:
+            quality: 75
+            filters:
+                thumbnail: { size: [800, 800], mode: inset }
+                #auto_rotate: ~
+                #rotate:
+                #    angle: 90
+                #    degree: true
+        face:
+            quality: 100
+
+        optimize_face:
+            quality: 75
+            filters:
+                thumbnail: { size: [150, 150], mode: inset }
+                #auto_rotate: ~
+
+        circle_article_image:
+            quality: 75
+            filters:
+                thumbnail: { size: [202, 202], mode: inset }
+
+        rotate_r:
+            quality: 100
+            filters:
+                rotate:
+                    angle: 90
+
+        rotate_l:
+            quality: 100
+            filters:
+                rotate:
+                    angle: -90
+
+
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+    bundles:        [ ]
+    filters:
+        cssrewrite: ~
+
+# Nelmio CORS Configuration
+nelmio_cors:
+    defaults:
+        allow_credentials: false
+        allow_origin: ['*']
+        allow_headers: ['*']
+        allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+        max_age: 3600
+        hosts: []
+        origin_regex: false
+
+# FOSRest Configuration
+fos_rest:
+    param_fetcher_listener: true
+    body_listener:
+        decoders:
+            json: fos_rest.decoder.json
+    format_listener: true
+
+        #enabled: true
+        #rules:
+        #    - { path: '^/open_api', priorities: ['json'], fallback_format: json, prefer_extension: false }
+
+        #    - { path: '^/api/doc', priorities: ['text/html', '*/*'], fallback_format: html, prefer_extension: true }
+        #    - { path: '^/', priorities: ['text/html', '*/*'], fallback_format: html, prefer_extension: true }
+        #    - { path: '^/api', priorities: ['json'], fallback_format: json, prefer_extension: false }
+    view:
+        view_response_listener: 'force'
+    #body_listener: true
+    #format_listener:
+    #    rules:
+    #        - { path: '^/', priorities: ['json'], fallback_format: json, prefer_extension: false }
+   # param_fetcher_listener: true
+    #view:
+    #    view_response_listener: 'force'
+    #    formats:
+           # json: true
+    routing_loader:
+            default_format: json
+
+nelmio_api_doc: ~
+
+
+doc_doc_doc_nexmo:
+    api_key: "eadca325"
+    api_secret: "5e5205c0"
+
+
+mobile_detect:
+    redirect:
+        full:
+            is_enabled: false            # default false
+            host: http://site.com       # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        mobile:
+            is_enabled: false            # default false
+            host: http://m.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        tablet:
+            is_enabled: false            # default false
+            host: http://t.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        detect_tablet_as_mobile: true   # default false
+    switch_device_view:
+        save_referer_path: true        # default true
+                                        # true  redirectUrl = http://site.com/current/path?currentQuery=string
+                                        # false redirectUrl = http://site.com
+    service:
+        mobile_detector: mobile_detect.mobile_detector.default
+    cookie_key: "device_view"                     # default
+    cookie_expire_datetime_modifier: "+1 month"   # default
+    switch_param: "device_view"                   # default
+    #device_view_class: "SunCat\MobileDetectBundle\Helper\DeviceView"
+    #request_response_listener_class: "SunCat\MobileDetectBundle\EventListener\RequestResponseListener"
+    #twig_extension_class: "SunCat\MobileDetectBundle\Twig\Extension\MobileDetectExtension"

@@ -1,0 +1,420 @@
+<style>
+    .hover-popup{ cursor: pointer; }
+    .title.full-data .dropdown.icon.up{
+        -webkit-transform: translateY(60%) rotate(180deg);
+        transform: translateY(60%) rotate(180deg);
+    }
+    .fullData .ui.basic.right.pointing.label:before {
+        top: 50%;
+        right: -1px;
+        -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+        transform: translateX(50%) translateY(-50%) rotate(45deg);
+        left: auto;
+        bottom: auto;
+    }
+    .fullData .ui.labeled.button{
+        margin-bottom: 0.25em;
+    }
+    .fullData .ui.labeled.button > .button{
+        background: #e0e1e2 none;
+    }
+    .kfModal{
+        width: 90%;
+    }
+    .view{
+        min-height: 40px;
+    }
+    .edit textarea{
+        border-radius: 5px;
+        border: 1px grey solid;
+    }
+    #ui-datepicker-div{
+        z-index: 9999999999 !important;
+    }
+    .ui.form ul{
+        padding-left: 20px;
+        color: red;
+    }
+</style>
+<script>
+
+    jQuery(document).ready(function ($) {
+        $('.ui.dropdown').dropdown();
+        $('.title.full-data').click(function () {
+            $(this).parents('tr').next().toggleClass('hidden');
+            $(this).find('i').toggleClass('up');
+        });
+        $('.view').dblclick(function () {
+           $(this).addClass('hidden');
+           $(this).parents('td').find('.edit').removeClass('hidden');
+            $(this).parents('td').find('.edit textarea').focus();
+        });
+        $('.edit .button.cn').click(function () {
+            $(this).parents('td').find('.edit').addClass('hidden');
+            $(this).parents('td').find('.view').removeClass('hidden');
+        });
+        $('.edit .button.ok').click(function () {
+            var textarea = $(this).parents('td').find('.edit textarea');
+            $.ajax({
+                url: '/admin/users/user/history/edit',
+                type: 'Post',
+                data: {
+                    id: textarea.attr('history'),
+                    field: 'note',
+                    value: textarea.val()
+                },
+                error: function(response){
+                    console.log("Error:" + JSON.stringify(response));
+                },
+                success: function(response){
+                    //thisObj.parents('tr').remove();
+                }
+            });
+            $(this).parents('td').find('.edit').addClass('hidden');
+            $(this).parents('td').find('.view').text(textarea.val()).removeClass('hidden');
+        });
+        $('#pay_form .calendar input').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '-1:+10',
+            defaultDate:'y-m-d',
+            dateFormat: 'yy-mm-dd',
+        });
+        $('#form_period').change(function(){
+            var dateObj1 = $(this).parents('.fields').find('.start-date input[type="text"]');
+            var dateObj2 = $(this).parents('.fields').find('.end-date input[type="text"]');
+            var period = 1;
+            switch ($(this).val()) {
+                case "1":
+                    period = 12;
+                break;
+                case "2":
+                    period = 6;
+                break;
+                case "3":
+                    period = 3;
+                break;
+                case "4":
+                    period = 1;
+                break;
+                case "5":
+                    period = '2weeks';
+                break;
+            }
+            setDatePeriods(dateObj1, dateObj2, period, '%Y-%mm-%dd');
+        });
+        $('.removeSubscription').click(function () {
+            if(confirm('Are you sure?')) {
+                var id = $('#form_id').val();
+                $.ajax({
+                    url: '/admin/users/user/' + id + '/subscription',
+                    type: 'Get',
+                    data: {
+                        'remove': 1
+                    },
+                    error: function (response) {
+                        console.log("Error:" + JSON.stringify(response));
+                    },
+                    success: function (response) {
+                        $('#subscr').html(response).kfModal();
+                        $('#subscr .menu .item').tab();
+                        $('#global_dimmer').addClass("disabled").find('.loader').addClass("disabled");
+                    }
+                });
+            }
+        });
+        //transition hidden
+        $('.ui.message .close').click(function () {
+           $(this).parents('.message').transition('fade');
+        });
+    });
+    function sendPayForm(){
+        var data = $('#pay_form').serialize();
+        var id = $('#form_id').val();
+        $.ajax({
+            url: '/admin/users/user/' + id + '/subscription',
+            type: 'Post',
+            data: data,
+            error: function(response){
+                console.log("Error:" + JSON.stringify(response));
+            },
+            success: function(response){
+                $('#subscr').html(response).kfModal();
+                $('#subscr .menu .item').tab();
+                $('#global_dimmer').addClass("disabled").find('.loader').addClass("disabled");
+            }
+        });
+    }
+</script>
+
+<h1 class="ui header left">
+    <i class="user icon"></i>
+    <div class="content">
+        <span class="username">{{ user.username }}</span>
+        <div class="sub header">User Subscriptions</div>
+    </div>
+</h1>
+{% if user.isPaying or (user.startSubscription and user.endSubscription) %}
+<div class="left ui header" style="padding: 5px 10px 5px 20px">
+    <div class="content">
+        <div class="sub header" style="text-align: center; font-weight: bold;">Start Subscriptions</div>
+        <div class="username">{{ user.startSubscription|date('d/m/Y H:i:s') }}</div>
+
+    </div>
+</div>
+<div class="left ui header" style="padding: 5px 10px">
+    <div class="content">
+        <div class="sub header" style="text-align: center; font-weight: bold;">End Subscriptions</div>
+        <div class="username">{{ user.endSubscription|date('d/m/Y H:i:s') }}</div>
+
+    </div>
+</div>
+{% endif %}
+
+<div class="right close">
+    <i class="icon remove circle olive big " onclick="$.kfModal.close();"></i>
+</div>
+
+<div class="clear"></div>
+
+<div class="ui divider"></div>
+{% if save == '2' %}
+    <div class="ui negative message">
+        <i class="close icon"></i>
+        <div class="header">
+            User subscription was removed successful.
+        </div>
+    </div>
+{% endif %}
+{% if save == '3' %}
+    <div class="ui negative message">
+        <i class="close icon"></i>
+        <div class="header">
+            Subscription is not saved. User subscription only for man.
+        </div>
+    </div>
+{% endif %}
+<div class="ui secondary menu">
+    <a class="item active" data-tab="1">
+        Add subscription
+    </a>
+    <a class="item" data-tab="2">
+        History
+    </a>
+</div>
+<div class="ui tab segment active" data-tab="1">
+    {% if save == '1' %}
+        <div class="ui success message">
+            <i class="close icon"></i>
+            <div class="header">
+                User subscription was saved successful.
+            </div>
+        </div>
+    {% endif %}
+    <div class="ui form">
+    {{ form_start(form, {'attr': {'id': 'pay_form'}}) }}
+    <input type="hidden" id="response" name="res" value="{%if user.action is defined %}{{ user.action }}{% endif %}"/>
+    <input type="hidden" id="payRemove" name="remove" value="0"/>
+    {{ form_widget(form.id) }}
+    <div class="ui three fields">
+        <div class="field">
+            {{ form_label(form.points) }}
+            <div class="ui small input">
+                {{ form_widget(form.points) }}
+            </div>
+            {{ form_errors(form.points) }}
+        </div>
+        <div class="field">
+            {{ form_label(form.transactionId) }}
+            <div class="ui small input">
+                {{ form_widget(form.transactionId) }}
+            </div>
+            {{ form_errors(form.transactionId) }}
+        </div>
+        <div class="field">
+            {{ form_label(form.recurringId) }}
+            <div class="ui small input">
+                {{ form_widget(form.recurringId) }}
+            </div>
+            {{ form_errors(form.recurringId) }}
+        </div>
+    </div>
+    <div class="ui horizontal icon divider"><i class="pin basic icon"></i></div>
+    <div class="ui three fields">
+        <div class="field date1">
+            {{ form_label(form.startSubscription) }}
+            <div class="ui icon input calendar start-date">
+                {{ form_widget(form.startSubscription, { 'attr': {'class': 'payCalendar'}}) }}
+                <i class="calendar icon"></i>
+            </div>
+        </div>
+
+        <div class="field date2">
+            {{ form_label(form.endSubscription) }}
+            <div class="ui icon input calendar end-date">
+                {{ form_widget(form.endSubscription, { 'attr': {'class': 'payCalendar'}}) }}
+                <i class="calendar icon"></i>
+            </div>
+
+        </div>
+
+        <div class="field periodPay">
+            {{ form_label(form.period) }}
+            {{ form_widget(form.period, {'attr': {'class' : 'ui dropdown'}}) }}
+            {{ form_errors(form.period) }}
+            {{ form_errors(form.startSubscription) }}
+            {{ form_errors(form.endSubscription) }}
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="ui horizontal icon divider"><i class="pin basic icon"></i></div>
+    <div class="ui one fields">
+        <div class="field" style="width:100%;">
+            {{ form_label(form.note) }}
+            {{ form_widget(form.note) }}
+            {{ form_errors(form.note) }}
+        </div>
+
+    </div>
+    <div class="field">
+        <div class="right">
+            <div class="ui labeled icon button blue small saveUserPayment" onclick="sendPayForm();">
+                <i class="inverted save icon"></i>
+                Save
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    {{ form_end(form) }}
+    </div>
+</div>
+
+<div class="ui tab segment" data-tab="2">
+    {% if user.paymentHistory|length > 0 %}
+    <table class="ui small table">
+        <thead>
+        <tr>
+            <th colspan="2" style="text-align:center;">Payment Date</th>
+            <th>End Date</th>
+            <th>Transaction ID</th>
+            <th>Recurring Payment ID</th>
+            <th>Full Date</th>
+            <th width="100">Note</th>
+            <th>PayPal Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+    {% for history in user.paymentHistory %}
+        {% if history.parent is null %}
+            <tr>
+                <td colspan="2">{{ history.paymentDate|date('d/m/Y') }}</td>
+                <td>{{ history.getEndDate()|date('d/m/Y') }}</td>
+                <td>{{ history.transactionId }}</td>
+                <td>{{ history.recurringId }}</td>
+                <td>
+                    {% if history.getFullData()|length > 0 %}
+                        <div class="title full-data hover-popup" title="Click for view full data from PayPal">
+                            <i class="dropdown icon"></i>
+                            Data From PayPal
+                        </div>
+                    {% endif %}
+                </td>
+                <td>
+                    <div class="view">
+                        {{ history.note }}
+                    </div>
+                    <div class="edit hidden">
+                        <textarea class="noteEdit" history="{{ history.id }}">{{ history.note }}</textarea>
+                        <div class="ui green button ok">Save</div> <div class="ui grey button cn">Cancel</div>
+                    </div>
+                </td>
+                <td historyId="{{ history.id }}">
+                    <button class="ui button orange suspend">Suspend</button>
+                    <button class="ui button green re-activate">Re-Activate</button>
+                    <button class="ui button red pp-cancel">Cancel</button>
+                </td>
+            </tr>
+            {% if history.getFullData()|length > 0 %}
+                <tr class="hidden fullData">
+                    <td colspan="8">
+                            {% for key, val in history.getFullData() %}
+                                <div class="ui left labeled button" tabindex="0">
+                                    <div class="ui basic pointing right label">
+                                        {{ key }}
+                                    </div>
+                                    <a class="ui button">
+                                        {{ val }}
+                                    </a>
+                                </div>
+                            {% endfor %}
+                    </td>
+                </tr>
+            {% endif %}
+            {% if history.children is defined %}
+
+                {% for childHistory in history.children %}
+                <tr>
+                    <td width="35"></td>
+                    <td>{{ childHistory.paymentDate|date('d/m/Y') }}</td>
+                    <td>{{ history.getEndDate()|date('d/m/Y') }}</td>
+                    <td>{{ childHistory.transactionId }}</td>
+                    <td>{{ childHistory.recurringId }}</td>
+                    <td>{% if childHistory.getFullData()|length > 0 %}
+                        <div class="title full-data hover-popup" title="Click for view full data from PayPal">
+                            <i class="dropdown icon"></i>
+                            Data From PayPal
+                        </div>
+                        {% endif %}</td>
+                    <td>{{ childHistory.note }}</td>
+                    <td historyId="{{ history.id }}">
+                        <button class="ui button orange suspend">Suspend</button>
+                        <button class="ui button green re-activate">Re-Activate</button>
+                        <button class="ui button red pp-cancel">Cancel</button>
+                    </td>
+                </tr>
+                {% if childHistory.getFullData()|length > 0 %}
+                    <tr class="hidden fullData">
+                        <td width="35"></td>
+                        <td colspan="7">
+                            {% for key1, val1 in childHistory.getFullData() %}
+                                <div class="ui left labeled button" tabindex="0">
+                                    <div class="ui basic pointing right label">
+                                        {{ key1 }}
+                                    </div>
+                                    <a class="ui button">
+                                        {{ val1 }}
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="8">
+                    *item_number - user id
+                    *Custom - subscribe id (1. - One year; 2. - Six months; 3. - Three months; 4. - One month; 5. - Two weeks; 6. - One day)
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    {% elseif user.paymentHistory|length == 0 %}
+        This user does not have history
+    {% endif %}
+
+
+</div>
+<div class="right">
+    {% if user.isPaying %}
+        <div class="ui labeled icon button red small close removeSubscription">
+            <i class="inverted cancel basic icon"></i>
+            Remove Subcription
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,22 @@
+<div class="wrap" id="faces_container">
+
+    <div id="faces_init_data" class="hidden">
+        {% for user in users %}
+            <div class="item">
+                <input type="hidden" class="faceImageName" value="{{ user.getMainPhoto.name }}">
+                <input type="hidden" class="url" value="">
+                <input type="hidden" class="username" value="{{ user.username }}">
+                <input type="hidden" class="age" value="{{ user.age }}">
+            </div>
+        {%endfor %}
+    </div>
+
+    <div class="face_wrapper first"><img class="face" alt=""></div>
+    <div class="face_wrapper second"><img class="face" alt=""></div>
+    <div class="face_wrapper third"><img class="face" alt=""></div>
+    <div class="face_wrapper fourth"><img class="face" alt=""></div>
+    <div class="face_wrapper fifth"><img class="face" alt=""></div>
+
+    <script src="{{ asset('js/faces.js') }}"></script>
+    <input type="hidden" id="sign_up_path" value="{{ path('sign_up') }}">
+</div>

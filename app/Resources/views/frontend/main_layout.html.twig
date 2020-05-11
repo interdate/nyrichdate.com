@@ -1,0 +1,816 @@
+{% extends 'base.html.twig' %}
+
+{% set globalSeo = getSeo() %}
+{% set downloadApp = getDownloadApp(app.request) %}
+{% block title %}{{ globalSeo.title|raw }}{% endblock %}
+
+{% block meta %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+	<meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}sugar baby, sugar daddy{% endblock %}">
+    <meta name="google-site-verification" content="DUQe_vA7hUfV_F3stQig1m5LQmLX_TCGH0t9zOsCGEs" />
+{% endblock %}
+
+{% block stylesheets %}
+
+	<link rel="stylesheet" href="{{ asset('libs/semantic-user/dist/semantic.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/style.css?t=3') }}">
+	<link rel="stylesheet" href="{{ asset('css/messenger.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/owl/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/ls/ls.css') }}">
+
+    {% if app.user %}
+
+        <link rel="stylesheet" href="{{ asset('libs/jquery.qtip/jquery.qtip.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('libs/jquery-ui/css/cupertino/jquery-ui-1.10.4.custom.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('libs/emoticons/support/skype/emoticons.css') }}">
+        <link rel="stylesheet" href="{{ asset('libs/lobibox/dist/css/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('libs/lobibox/dist/css/lobibox.css') }}">
+
+    {% endif %}
+
+    <link href="{{ asset('css/perfect-scrollbar.min.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+{% block js %}
+   {# <script src="{{ asset('libs/jquery/jquery-2.1.4.min.js') }}"></script>#}
+    <script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+    <script src="{{ asset('libs/jquery-form/jquery.form.min.js') }}"></script>
+    <script src="{{ asset('libs/semantic-user/dist/semantic.min.js') }}"></script>
+    <script src="{{ asset('js/slick/slick.js') }}"></script>
+
+    <script src="{{ asset('js/owl/owl.carousel.js') }}"></script>
+    <script src="{{ asset('js/all.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/ls/ls.js') }}"></script>
+    <script src="{{ asset('js/jquery.touchSwipe.min.js') }}"></script>
+
+    {% if app.user and app.request.get('_route') != 'sign_up_photo' and app.request.get('_route') != 'sign_up_photos' %}
+
+        <script src="{{ asset('libs/jquery-ui/js/jquery-ui-1.10.4.custom.min.js') }}"></script>
+        <script src="{{ asset('libs/jquery.qtip/jquery.qtip.min.js') }}"></script>
+        <script src="{{ asset('libs/emoticons/lib/emoticons.js') }}"></script>
+        <script src="{{ asset('libs/lobibox/dist/js/notifications.min.js') }}"></script>
+
+        <script src="{{ asset('js/tinyscrollbar.js') }}"></script>
+        <script src="{{ asset('js/perfect-scrollbar-with-mousewheel.min.js') }}"></script>
+        <script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
+
+        <script src="{{ asset('js/messenger.js') }}"></script>
+        <script src="{{ asset('js/jquery.ns-autogrow.min.js') }}"></script>
+
+    {% endif %}
+{#
+    <script src="{{ asset('js/img/exif.js') }}"></script>
+    <script src="{{ asset('js/img/load-image.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-orientation.js') }}"></script>
+#}
+    <script src="{{ asset('js/img/exif.js') }}"></script>
+    <script src="{{ asset('js/img/load-image.all.min.js') }}"></script>
+    {#
+    <script src="{{ asset('js/img/load-image.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-scale.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-meta.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-fetch.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-exif.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-exif-map.js') }}"></script>
+    <script src="{{ asset('js/img/load-image-orientation.js') }}"></script>
+    #}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101282187-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 1071804507 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1071804507"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1071804507');
+    </script>
+
+    <!-- Event snippet for new nyrichdate conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-1071804507/zV9cCMfw1HoQ2-CJ_wM',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
+
+{% endblock %}
+
+{% block body %}
+    {% if not app.user %}
+        <style>
+            @media only screen and (max-width:464px) {
+                .inner_content{
+                    padding-top: 240px;
+                }
+            }
+        </style>
+    {% endif %}
+
+    {% set route = app.request.attributes.get('_route') %}
+    {% set routeParams = app.request.attributes.get('_route_params') %}
+    {% set locale = app.request.locale %}
+
+    <!-- Main Container -->
+    <div class="main_container {% if app.user %}ny_main{% endif %}">
+
+        <!-- header -->
+        <div class="header {% if route != 'homepage' %}inner_header{% endif %}">
+            <!-- header main -->
+            <div class="header-main">
+                <div class="wrap clearfix">
+                    <div class="logo"><a href="{{ path('homepage') }}"><img src="/images/logo.png" alt="NYRichdate, the place that allows you to find sugar daddy or sugar baby in NYC. You can meet perfect match sugar daddy or sugar baby to spend your moments."></a></div>
+                    <div class="header-right-inner">
+
+                        {% if app.user %}
+                            <div class="inner_top_sec">
+                                <a href="/logout">{% trans %}Log Out{% endtrans %}</a>
+                                <div class="user">
+                                    <span class="uname">{% trans %}Hey{% endtrans %} <a href="{{ path('view_user', {id: app.user.id}) }}">{{ app.user.username }}</a></span>
+                                    <span class="upic"{% if app.user.getMainPhoto is not null %} style="background: none;"{% endif %}>
+                                        <img src="{% if app.user.getMainPhoto is not null %}{{ app.user.getMainPhoto.getFaceWebPath }}{% else %}{{ app.user.getNoPhoto }}{% endif %}" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        <div class="inner_head_bot">
+                            {#<div class="lang_nav">
+                                <ul>
+                                    <li><a>{{ langs[locale] }}</a>
+                                        <ul>
+                                            {% for lang, name in langs %}
+                                                {% if lang != locale %}
+                                                    {% if locale == default_lang %}
+                                                        {% set url = '/' ~ lang ~ path(route, routeParams) %}
+                                                    {% else %}
+                                                        {% set url = (lang == default_lang)
+                                                            ? path(route, routeParams)|replace({('/' ~ locale): ''})
+                                                            : path(route, routeParams)|replace({(locale): lang})
+                                                        %}
+                                                    {% endif %}
+                                                    <li><a href="{{ url }}">{{ name }}</a></li>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>#}
+
+                            {% if app.user %}
+                                {% set statistics = getStatistics() %}
+                                {% set settings = getSettings() %}
+                                <div class="inner_menu">
+                                    <div class="tglmenu"></div>
+                                    <ul class="cf">
+                                        <li{% if route == 'contact' %} class="active"{% endif %}><a href="{{ path('contact') }}">{% trans %}Contact Us{% endtrans %}</a></li>
+                                        {% if (settings.isCharge or app.user.id == 455) and app.user.gender.id == 1 and not app.user.isPaying() %}{# and not app.user.is2D() #}
+                                            <li{% if route == 'subscription' or route == 'sign_up_subscription' %} class="active"{% endif %}><a href="{{ path('subscription') }}">Subscription</a></li>
+                                        {% endif %}
+                                        <li{% if route == 'faq' %} class="active"{% endif %}><a href="{{ path('faq') }}">{% trans %}FAQ{% endtrans %}</a></li>
+                                        <li{% if route == 'magazine' %} class="active"{% endif %}><a href="{{ path('magazine') }}">{% trans %}Blog{% endtrans %}</a></li>
+                                        <li{% if route == 'messenger' or route == 'messenger_dialog_open' %} class="active"{% endif %}><a href="{{ path('messenger') }}">{% trans %}Inbox{% endtrans %}</a></li>
+                                        <li{% if route == 'user_homepage' %} class="active"{% endif %}><a href="{{ path('user_homepage') }}">{% trans %}Home{% endtrans %}</a></li>
+                                    </ul>
+                                    <div class="clr"></div>
+                                    <ul class="mobile cf">
+                                        <li>
+                                            {#<div class="lang_nav">
+                                                <select onchange="if($(this).val() != ''){ window.location.href = $(this).val(); }">
+                                                    <option>{{ langs[locale] }}</option>
+                                                    {% for lang, name in langs %}
+                                                        {% if lang != locale %}
+                                                            {% if locale == default_lang %}
+                                                                {% set url = '/' ~ lang ~ path(route, routeParams) %}
+                                                            {% else %}
+                                                                {% set url = (lang == default_lang)
+                                                                ? path(route, routeParams)|replace({('/' ~ locale): ''})
+                                                                : path(route, routeParams)|replace({(locale): lang})
+                                                                %}
+                                                            {% endif %}
+                                                            <option value="{{ url }}">{{ name }}</option>
+                                                        {% endif %}
+                                                    {% endfor %}
+
+
+                                                </select>
+                                            </div>#}
+
+                                            <div class="settings-icon black ui circular icon button right mini">
+                                                <i class="setting big icon"></i>
+                                            </div>
+
+                                            <ul class="submenu" style="transform:translate(-400px,0);">
+                                                <li>
+                                                    <button class="ui inverted black right button back-btn mini icon labeled"><i class="left chevron icon"></i>{% trans %}Back{% endtrans %}</button>
+                                                </li>
+                                                <li{% if route == 'user_profile' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_profile') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon edit-profile big"></i></div>{% trans %}Edit Profile{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('user_profile', {'tab': 4}) }}">
+                                                        <div class="black ui circular icon button left"><i class="icon edit-photos big"></i></div>{% trans %}Edit Photos{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('view_user', {id: app.user.id}) }}">
+                                                        <div class="black ui circular icon button left"><i class="icon street view big"></i></div>{% trans %}View my profile{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_change_password' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_change_password') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon change-password big"></i></div>{% trans %}Change Password{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_freeze_account' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_freeze_account') }}">
+                                                        <div class="black ui circular icon button left"><i class="freeze-account icon big"></i></div>{% trans %}Freeze Account{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                {#
+                                                <li{% if route == 'user_notifications' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_notifications') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon quickmatch big"></i></div>Edit Notifications
+                                                    </a>
+                                                </li>
+                                                #}
+                                                <li{% if route == 'user_settings' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_settings') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon setting big" style="margin: 0px -1px 0px 0px;"></i></div>{% trans %}Settings{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'contact' %} class="active"{% endif %}>
+                                                    <a href="{{ path('contact') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon mail big" style="margin: -2px -1px 4px 0px;"></i></div>{% trans %}Contact Us{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/logout">
+                                                        <div class="black ui circular icon button left"><i class="sign out icon big" style="margin: 0px -2px 0px 2px;"></i></div>{% trans %}Log Out{% endtrans %}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('user_profile', {'tab': 4}) }}">
+                                                <div class="profile" style="background-image: url({% if app.user.getMainPhoto is not null %}{{ app.user.getMainPhoto.getFaceWebPath }}{% else %}{{ app.user.getNoPhoto }}{% endif %})"></div>
+                                            </a>
+                                        </li>
+                                        <li class="username"><a href="{{ path('view_user', {id: app.user.id}) }}">{{ app.user.username }}</a></li>
+                                        <li{% if route == 'messenger' or route == 'messenger_dialog_open' %} class="active"{% endif %}>
+                                            <a href="{{ path('messenger') }}">
+                                                <div class="black ui circular icon button left"><i class="activity icon big"></i></div>
+                                                <div class="menu-num inbox_count"><span>23</span></div>{% trans %}Inbox{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="openPopup();return false;">
+                                                <div class="black ui circular icon button left"><i class="matches icon big"></i></div>{% trans %}The Arena{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li{% if route == 'user_notifications' %} class="active"{% endif %}>
+                                            <a href="{{ path('user_notifications') }}">
+                                                <div class="black ui circular icon button left"><i class="quickmatch icon big"></i></div>
+                                                <div class="menu-num arena_count"><span>23</span></div>{% trans %}Notifications{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li class="contacts">
+                                            <a href="#">
+                                                <div class="black ui circular icon button left">
+                                                    <i class="icon bar chart big"></i>
+                                                </div>
+                                                {% trans %}Contacts{% endtrans %}
+                                                <div class="right icon ui black" style="margin-top: 5px;">
+                                                    <i class="icon angle right big"></i>
+                                                </div>
+                                            </a>
+                                            <ul class="submenu" style="transform:translate(-400px,0);">
+                                                <li>
+                                                    <button class="ui inverted black right button back-btn mini icon labeled"><i class="left chevron icon"></i>{% trans %}Back{% endtrans %}</button>
+
+                                                </li>
+                                                <li{% if route == 'user_list_viewed' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_list_viewed') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon viewed big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.viewed %} hidden{% endif %}"><span>{{ statistics.viewed }}</span></div>{% trans %}Viewed{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_viewed_me' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_list_viewed_me') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon viewed-me big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.viewedMe %} hidden{% endif %}"><span>{{ statistics.viewedMe }}</span></div>{% trans %}Viewed Me{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_connected' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_list_connected') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon contacted big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.connected %} hidden{% endif %}"><span>{{ statistics.connected }}</span></div>{% trans %}Contacted{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_connected_me' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_list_connected_me') }}">
+                                                        <div class="black ui circular icon button left"><i class="contacted-me icon big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.connectedMe %} hidden{% endif %}"><span>{{ statistics.connectedMe }}</span></div>{% trans %}Contacted Me{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_favorited' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_manage_list_favorited') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon favorited big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.favorited %} hidden{% endif %}"><span>{{ statistics.favorited }}</span></div>{% trans %}Favorited{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_favorited_me' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_list_favorited_me') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon favorited-me big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.favoritedMe %} hidden{% endif %}"><span>{{ statistics.favoritedMe }}</span></div>{% trans %}Favorited Me{% endtrans %}
+                                                    </a>
+                                                </li>
+                                                <li{% if route == 'user_list_black_listed' %} class="active"{% endif %}>
+                                                    <a href="{{ path('user_manage_list_black_listed') }}">
+                                                        <div class="black ui circular icon button left"><i class="icon blocked big"></i></div>
+                                                        <div class="stat menu-num{% if not statistics.blacklisted %} hidden{% endif %}"><span>{{ statistics.blacklisted }}</span></div>{% trans %}Blocked{% endtrans %}
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li{% if route == 'user_mobile_search' %} class="active"{% endif %}>
+                                            <a href="{{ path('user_mobile_search') }}">
+                                                <div class="black ui circular icon button left">
+                                                    <i class="search icon big" style="margin: -2px 0 5px 0;"></i>
+                                                </div>{% trans %}Search{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li{% if route == 'contact' %} class="active"{% endif %}>
+                                            <a href="{{ path('contact') }}">
+                                                <div class="black ui circular icon button left"><i class="icon mail big" style="margin: -2px -1px 4px 0px;"></i></div>{% trans %}Contact Us{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li{% if route == 'faq' %} class="active"{% endif %}>
+                                            <a href="{{ path('faq') }}">
+                                                <div class="black ui circular icon button left"><i class="icon circle outline help big" style="margin: -2px -1px 3px -1px;"></i></div>{% trans %}FAQ{% endtrans %}
+                                            </a>
+                                        </li>
+                                        {% if ((settings.isCharge or app.user.id == 455) and app.user.gender.id == 1 and not app.user.is2D() and not app.user.isPaying()) or app.user.id == 455 %}
+                                            <li{% if route == 'subscription' or route == 'sign_up_subscription' %} class="active"{% endif %}>
+                                                <a href="{{ path('subscription') }}">
+                                                    <div class="black ui circular icon button left">
+                                                        <i class="md-ribbon icon big" style="margin: 0px -1px;"></i>
+                                                    </div>{% trans %}Subscription{% endtrans %}</a>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+
+
+
+                                    {#
+
+                                    <ul class="mobile cf">
+                                        <li{% if route == 'user_homepage' %} class="active"{% endif %}><a href="{{ path('user_homepage') }}">Home</a></li>
+                                        <li{% if route == 'messenger' or route == 'messenger_dialog_open' %} class="active"{% endif %}><a href="{{ path('messenger') }}">Inbox</a></li>
+                                        {/#<li{% if route == 'user_nearme' %} class="active"{% endif %}><a href="#">Near Me</a></li>#/}
+                                        <li{% if route == 'user_mobile_base' %} class="active"{% endif %}><a href="{{ path('user_mobile_base') }}">Welcome</a></li>
+                                        <li{% if route == 'user_mobile_interests' %} class="active"{% endif %}><a href="{{ path('user_mobile_interests') }}">Interests</a></li>
+                                        <li{% if route == 'user_mobile_my_profile' %} class="active"{% endif %}><a href="{{ path('user_mobile_my_profile') }}">My Profile</a></li>
+                                        <li{% if route == 'user_mobile_search' %} class="active"{% endif %}><a href="{{ path('user_mobile_search') }}">Search</a></li>
+                                        <li{% if route == 'magazine' %} class="active"{% endif %}><a href="{{ path('magazine') }}">Blog</a></li>
+                                        <li{% if route == 'faq' %} class="active"{% endif %}><a href="{{ path('faq') }}">FAQ</a></li>
+                                        {/#<li{% if route == 'subscription' %} class="active"{% endif %}><a href="#">Subscription</a></li>#/}
+                                        <li><a href="/logout">Log Out</a></li>
+                                    </ul>
+                                    #}
+                                    <div class="clr"></div>
+                                </div>
+                            {% elseif route != 'sign_up' %}
+                                <div class="clr" style="height:10px"></div>
+                                <div class="login-form clearfix">
+                                    {% if error is defined and error %}
+                                        <div class="ui compact message red loginError">
+
+                                            {% if error.messageKey == 'Account is disabled.' %}
+                                                {% trans %}Account has been blocked by the Administrator{% endtrans %}
+                                            {% else %}
+                                                {% trans %}Incorrect username or password{% endtrans %}
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                    <form action="{{ path('login_check') }}" method="post" id="login_form">
+                                        <div class="lfield"><input name="_username" id="username" type="text" placeholder="Name" value="{% if last_username is defined %}{{ last_username }}{% endif %}" required></div>
+                                        <div class="lfield"><input name="_password" id="password" type="password" placeholder="{% trans %}Password{% endtrans %}" required></div>
+                                        <input type="hidden" name="_target_path" value="{{ path('homepage') }}">
+
+                                        <div class="login-btn btn-first"><input name="login" id="login" type="submit" value="{% trans %}Login{% endtrans %}"></div>
+                                        <div class="login-btn btn-second"><input name="login" id="login" type="submit" value="{% trans %}Login{% endtrans %}"></div>
+                                        <div class="jfree-btn"><input name="jfree" id="jfree" type="button" onclick="window.location.href = '{{ path('sign_up') }}'" value="{% trans %}Join Free{% endtrans %}"></div>
+                                        <div class="clr"></div>
+                                        <p class="fpass"><a href="{{ path('password_recovery') }}">{% trans %}Forgot Password{% endtrans %}</a></p>
+                                        <div class="clr"></div>
+                                    </form>
+                                </div>
+                            {% elseif route == 'sign_up' %}
+                                <div class="inner_menu">
+                                    <div class="tglmenu" style="margin-top: -20px;"></div>
+                                    <ul class="cf">
+                                        <li{% if route == 'contact' %} class="active"{% endif %}><a href="{{ path('contact') }}">{% trans %}Contact Us{% endtrans %}</a></li>
+                                        <li{% if route == 'homepage' %} class="active"{% endif %}><a href="{{ path('homepage') }}">{% trans %}Login{% endtrans %}</a></li>
+                                    </ul>
+                                    <div class="clr"></div>
+                                    <ul class="mobile cf">
+                                        <li{% if route == 'homepage' %} class="active"{% endif %}>
+                                            <a href="{{ path('homepage') }}">
+                                                <div class="black ui circular icon button left"><i class="icon sign in big" style="margin: -2px -1px 4px 0px;"></i></div>{% trans %}Login{% endtrans %}
+                                            </a>
+                                        </li>
+                                        <li{% if route == 'contact' %} class="active"{% endif %}>
+                                            <a href="{{ path('contact') }}">
+                                                <div class="black ui circular icon button left"><i class="icon mail big" style="margin: -2px -1px 4px 0px;"></i></div>{% trans %}Contact Us{% endtrans %}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="clr"></div>
+                                </div>
+                            {% endif %}
+
+                            <div class="clr"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% if route == 'homepage' %}
+                <!-- banner text -->
+
+                <!-- slider -->
+                <div class="hslider">
+                    {% for slide in slides %}
+                        {% if slide.isActive %}
+                            <div class="slider-img" style="background:url({{ slide.getFileWebPath }}) no-repeat center center; background-size:cover;">
+                                <div class="banner-txt">
+                                    {% if slide.name is empty %}
+                                        <{{ slides[0].headerType }}>{{ slides[0].name|raw }}<br>{{ slides[0].content|raw }}</{{ slides[0].headerType }}>
+                                    {% else %}
+                                        <{{ slide.headerType }}>{{ slide.name|raw }}<br>{{ slide.content|raw }}</{{ slide.headerType }}>
+                                    {% endif %}
+                                <div class="join-btn"><a href="{{ path('sign_up') }}">{% trans %}Join Free Today!{% endtrans %}</a></div>
+                            </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="mobilehslider">
+                    <div class="slider-img" style="background:url({{ slides[0].getFileWebPath }}) no-repeat center center; background-size:cover;"></div>
+                </div>
+            {% endif %}
+
+
+        </div>
+
+    {% if route == 'user_homepage' %}
+        <script>
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+
+            function showPosition(position) {
+                $.ajax({
+                    type: "POST",
+                    'url': '/open_api/locations/saves',
+                    dataType: 'json',
+                    data:{"id": "{{ app.user.id }}", "latitude": position.coords.latitude, "longitude" : position.coords.longitude },
+
+                });
+
+            }
+        </script>
+        {#<iframe style="width: 100%;height: 50px;position: fixed;bottom: 0px;" src="https://www.gobaby.co.il/getLocation.php?url=http:/nysd.com"></iframe>#}
+    {% endif %}
+
+        {% block container %}{% endblock %}
+
+        {% set footerBlocks = getFooterBlocks() %}
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="go-top"></div>
+            <div class="wrap">
+                <div class="footer_left clearfix">
+                    {% for block in footerBlocks %}
+                        <div class="fmenu fmenu{{ loop.index }}">
+                            <span>{{ block.name }}</span>
+                            <ul>
+                                {% if loop.index == 2 and not app.user %}
+                                    <li><a href="{{ path('sign_up') }}">{% trans %}Free Sign Up{% endtrans %}</a></li>
+                                {% endif %}
+                                {% for page in block.pages %}
+                                    {% if page.isActive %}
+                                        <li><a href="{{ path('pages_page', {'uri': page.uri}) }}">{{ page.name }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                {% if loop.index == 1 %}
+
+                                    {% if not app.user %}
+                                        {#<li><a href="{{ path('users_public_list') }}">Online</a></li>#}
+                                    {% endif %}
+                                {% endif %}
+                                {% if loop.index == 2 %}
+                                    <li><a href="{{ path('contact') }}">{% trans %}Contact Us{% endtrans %}</a></li>
+                                    <li><a href="{{ path('faq') }}">{% trans %}FAQ{% endtrans %}</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="footer_right">
+                    <div class="footer_apps">
+                        {#<a href="https://itunes.apple.com/au/app/nyrichdate-ny-richdate/id1212778974?mt=8" target="_blank">#}
+                            {#<img alt="appstore" src="/images/footer-appstore.png" />#}
+                            {#<span class="coming-soon">Coming Soon</span>#}
+                        {#</a>#}
+                        <a href="https://play.google.com/store/apps/details?id=com.nyrd" target="_blank"><img alt="gplay" src="/images/footer-gplay.png" /></a>
+                    </div>
+                    <div class="fsocial">
+                        <span>{% trans %}Follow Us{% endtrans %}:</span>
+                        <ul class="clearfix">
+                            <li><a href="https://www.facebook.com/nyrichdate/" target="_blank"><img alt="facebook" src="/images/facebook.png" /></a></li>
+                            <li><a href="https://www.instagram.com/nyrichdate/" target="_blank"><img alt="instagram" src="/images/inst.png" /></a> </li>
+                            {#<li><a href="#" target="_blank"><img alt="twitter" src="/images/twitter.png" /></a></li>#}
+                            {#<li><a href="#" target="_blank"><img alt="instagram" src="/images/instagram.png" /></a></li>#}
+                            {#<li><a href="#" target="_blank"><img alt="gplus" src="/images/gplus.png" /></a></li>#}
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        
+        {% if app.user %}
+            <div class="nmobile_footer">
+                <div class="send_message_area">
+                </div>
+                <ul class="menu-one">
+                    <li><a href="{{ path('user_users_online') }}"><img alt="online" class="online" src="/images/online_ft.png" />{% trans %}Online{% endtrans %}</a></li>
+                    <li onclick="openPopup();return false;"><a href=""><img alt="arena" src="/images/arena_ft.png" />{% trans %}The Arena{% endtrans %}</a></li>
+                    <li onclick="sortByDistance('{{ path('user_search_results') }}'); return false;"><a href=""><i class="icon marker big" style="display: block;margin: 0 auto;font-size: 25px;"></i> {% trans %}Near Me{% endtrans %}</a></li>
+                    <li><a href="{{ path('messenger') }}"><span style="display: none" class="inbox_count">99</span><img alt="inbox" class="inbox" src="/images/inbox_ft.png" />{% trans %}Inbox{% endtrans %}</a></li>
+                    <li class="more-btn menu-left">
+                        <a href="#" onclick="return false;"><i class="ellipsis vertical more icon"></i></a>
+                    </li>
+                </ul>
+                <ul class="menu-two">
+                    <li><a href="{{ path('user_manage_list_favorited') }}"><span{% if not statistics.favorited %} style="display: none;"{% endif %}>{{ statistics.favorited }}</span><img alt="online" class="Favorited" src="/images/menu-icons/favorited.png" />{% trans %}Favorited{% endtrans %}</a></li>
+                    <li><a href="{{ path('user_list_favorited_me') }}"><span{% if not statistics.favoritedMe %} style="display: none;"{% endif %}>{{ statistics.favoritedMe }}</span><img alt="online" class="Favorited Me" src="/images/menu-icons/img-11.png" />{% trans %}Favorited Me{% endtrans %}</a></li>
+                    <li>
+                        <a href="{{ path('user_notifications') }}">
+                            <span style="display: none" class="arena_count">78</span>
+                            <img alt="notifications" class="notifications" src="/images/notifications_ft.png" />
+                            {% trans %}Notifications{% endtrans %}
+                        </a>
+                    </li>
+                    {#<li><a href="{{ path('contact') }}"><i class="icon mail big" style="display: block;margin: 0 auto;font-size: 25px;"></i> {% trans %}Contact Us{% endtrans %}</a></li>#}
+                    <li><a href="{{ path('user_mobile_search') }}"><i class="search icon big"></i>{% trans %}Search{% endtrans %}</a></li>
+                </ul>
+                {#
+                <ul>
+                    <li><a href="{{ path('user_users_online') }}"><img alt="online" class="online" src="/images/online_ft.png" />Online</a></li>
+                    <li onclick="openPopup();return false;"><a href="#"><img alt="arena" src="/images/arena_ft.png" />The Arena</a></li>
+                    <li><a href="{{ path('user_notifications') }}"><span style="display: none" class="arena_count">78</span><img alt="notifications" class="notifications" src="/images/notifications_ft.png" />Notifications</a></li>
+                    <li><a href="{{ path('messenger') }}"><span style="display: none" class="inbox_count">99</span><img alt="inbox" class="inbox" src="/images/inbox_ft.png" />Inbox</a></li>
+                </ul>
+                #}
+            </div>
+        {% endif %}
+
+    </div>
+    <!-- Main Container -->
+
+
+    <div id="popup1" class="popupmainopen">
+
+        <div class="ui active disabled dimmer inverted" id="profile_dimmer">
+            <div class="ui text large loader disabled">{% trans %}Loading{% endtrans %}</div>
+        </div>
+
+        <a class="close" href="#"></a>
+
+
+        <div id="user_data"></div>
+
+    </div>
+    <!-- popup1 -->
+
+    <div class="overlay"></div>
+
+    <div class="ui active disabled dimmer" id="global_dimmer">
+        <div class="ui text large loader disabled">{% trans %}Loading{% endtrans %}</div>
+    </div>
+
+
+
+    {% if app.user %}
+
+        <input type="hidden" id="currentUserId" value="{{ app.user.id }}" />
+        <input type="hidden" id="currentUserImage" value="" />
+
+        <input type="hidden" value="{{ messenger.config.payment.text }}" id="paymentText">
+        <input type="hidden" value="" id="paymentLink">
+        <input type="hidden" value="{{ messenger.config.payment.linkText }}" id="paymentLinkText">
+        <input type="hidden" value="{{ messenger.config.points.linkText }}" id="pointsLinkText">
+        <input type="hidden" value="{{ app.user.apiKey }}" id="apiKey">
+
+        <div class="chatsArea"></div>
+        <div class="popup pgal0">
+            <div class="popup_div">
+                <div class="popup_top cf">
+                    {#<div class="popup_logo"><a href=""><img alt="sugardaddy" src="/images/nlogobig.png" /></a></div>#}
+                    {#<div class="popup_not"><a href="{{ path('user_notifications') }}"><span>{% trans %}Notifications{% endtrans %}</span></a><span style="display: none" class="notno arena_count">32</span></div>#}
+                    <div class="close">
+                        <div class="black circular ui icon button right mini">
+                            <i class="remove big icon"></i>
+                        </div>
+                        {#Remove<img alt="close" src="/images/popupclose.png" />#}
+                    </div>
+                </div>
+                <div class="popup_bot">
+                    <ul class="popslider">
+                        <li class="slid">
+                            <div class="img">
+                                <div class="pop_title"><span>Sheron Hirsh,</span> 32, manhattan</div>
+                                <div class="pop_img" style="background:url(/images/pimg1.png) no-repeat; background-size:cover;"></div>
+                            </div>
+                        </li>
+                        <li class="slid">
+                            <div class="img">
+                                <div class="pop_title"><span>Sheron Hirsh,</span> 32, manhattan</div>
+                                <div class="pop_img" style="background:url(/images/pimg3.png) no-repeat; background-size:cover;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pop_con">
+                        <a href=""><img alt="redthumb" src="/images/redthumb.png" /></a>
+                        <a href=""><img alt="pmsg" src="/images/pmsg.png" /></a>
+                        <a href=""><img alt="thumbgreen" src="/images/thumbgreen.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="templates">
+            <input type="hidden" id="dialogLink" value="{{ path('messenger_dialog_open',{'userId': app.user.id, 'contactId': 'userID'}) }}">
+            <div id="arenaSlideTemplate">
+                <li class="slid" id="[ID]">
+                    <div class="img">
+                        <div class="pop_title">
+                            {# /images/nlogobig.png #}
+                            <a class="logo_pop" href="{{ path('user_homepage') }}"><img alt="sugardaddy" src="/images/logo.png" /></a>
+                            <span><a href="{{ path('view_user', {id: 'userID'}) }}" style="color: inherit;">[USERNAME]</a>,</span> [AGE], [AREA]
+                        </div>
+                        <div class="pop_img" style="background:url([IMAGE]) no-repeat center; background-size:contain;"></div>
+                    </div>
+                </li>
+            </div>
+            <div id="chatTemplate">
+                <div class="chatWindow rounded" id="[CONTACT_ID]">
+                    <div class="header rounded"></div>
+                    <div class="contactName"><a onclick="viewUserProfile([CONTACT_ID], $(this).offset().top)">[CONTACT_NAME]</a></div>
+                    <div class="close rounded"></div> <div class="minimize rounded"></div>
+                    <div class="body">
+                        <br>
+                        <div class="scrollbar1">
+                            <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+                            <div class="viewport">
+                                <div class="overview">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
+            <div id="splashBingoTemplate">
+                <div [ATTRID]="splashBingo">
+                    <div class="wrap">
+                        <div onclick="closeBingo();" class="cancel"></div>
+                        <img class="bingoImg" src="/images/bingo/bingo.png" />
+                        <div class="clear"></div>
+                        <div class="rightPhoto">
+                            <div class="imageBingo" style="background-image:url([Photo1]);"></div>
+                        </div>
+                        <div class="leftPhoto">
+                            <div class="imageBingo" style="background-image:url([Photo2]);"></div>
+                        </div>
+                        <div class="plus"></div>
+                        <div class="clear"></div>
+                        <div class="textSplash">{% trans %}[USERNAME] liked your photo too!{% endtrans %}</div>
+                        <div class="chat" onclick="window.location.href='{{ path('messenger_dialog_open', {'userId': app.user.id, 'contactId':'[CONTACTID]'}) }}';">{% trans %}Send a Message{% endtrans %}</div>
+                        <div class="ignore" onclick="closeBingo();">{% trans %}Keep Going Next / Ignore{% endtrans %}</div>
+                    </div>
+                </div>
+            </div>
+            {#
+            <div id="chatMessageSectionTemplate">
+                <div class="messageSection [DIRECTION]" id="chatMessageSection_[MESSAGE_SECTION_ID]">
+                    <div class="imageWrap pos rounded">
+                        <a onclick="viewUserProfile([PROFILE_ID], $('.contactName').offset().top)"><img alt="" class="userPicture" src="USER_PICTURE"></a>
+                    </div>
+                    <div class="messageWrap pos rounded">
+                        <div class="message">
+                            [MESSAGE]
+                            <div class="clear"></div>
+                            <div class="status">[STATUS]</div>
+                            <div class="dateTime">[DATE_TIME]</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="date"></div>
+                </div>
+                <div class=""></div>
+            </div>
+            #}
+
+            {#
+            <div id="dialogMessageSectionTemplate">
+                <div class="chatbox [DIRECTION] message [STATUS] messageSection" id="dialogMessageSection_[MESSAGE_SECTION_ID]">
+                    <h4>[MESSAGE]</h4>
+                    <div class="timerdiv dateTime">[DATE_TIME]</div>
+                </div>
+            </div>
+            #}
+
+            <div id="emoticonsTemplate" class="hidden">
+                <div class="emoticons_wrapper"></div>
+            </div>
+
+            <div id="dialogMessageSectionTemplate">
+                <div class="msg_text cf [DIRECTION] [STATUS] message messageSection" id="dialogMessageSection_[MESSAGE_SECTION_ID]">
+                    [MESSAGE]
+                    <span class="mdate">[DATE_TIME]</span>
+                </div>
+                <input type="hidden" class="unreadMessage" value="[MESSAGE_SECTION_ID]">
+                <div class="clr"></div>
+            </div>
+
+
+            {#            <div id="messageStatusSent">
+                            <img src="//images/messenger/messageSent.jpg" alt="Sending...">
+                        </div>
+
+                        <div id="messageStatusSaved">
+                            <img src="//images/messenger/messageSaved.jpg" alt="Sent">
+                        </div>
+
+                        <div id="messageStatusRead">
+                            <img src="//images/messenger/messageRead.jpg" alt="Read">
+                        </div>#}
+
+        </div>
+        <div class="ui modal small" id="alert">
+            <i class="close icon"></i>
+            <div class="header">{% trans %}Notification{% endtrans %}</div>
+            <div class="content"></div>
+            <div class="actions">
+                <div class="ui button ok">{% trans %}OK{% endtrans %}</div>
+            </div>
+        </div>
+    {% endif %}
+    {% if downloadApp %}
+    <div class="banner-app-download {% if app.user %}logged{% endif %}">
+    	<div class="close"></div>
+   <a href="{{ downloadApp }}"> 	
+   		<img src="/images/banner.jpg">
+   	</a>
+	</div>
+	{% endif %}
+
+{% endblock %}
+
+
+

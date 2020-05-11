@@ -1,0 +1,235 @@
+<script src="{{ asset('libs/cloudinary/jquery.ui.widget.js') }}"></script>
+<script src="{{ asset('libs/cloudinary/jquery.iframe-transport.js') }}"></script>
+<script src="{{ asset('libs/cloudinary/jquery.fileupload.js') }}"></script>
+<script src="{{ asset('libs/cloudinary/jquery.cloudinary.js') }}"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+        $('.ui.progress').hide();
+
+        $('#photo').change(function(){
+            $(this).closest('form').find('input[type="submit"]').click();
+        });
+
+
+        $('#admin_user_photos_form').ajaxForm({
+            beforeSend: function() {
+                $('.upload_photo button').addClass("loading");
+                $('.ui.progress').show();
+            },
+            uploadProgress: function(event, position, total, percentComplete) {
+
+                $('.ui.progress').progress({
+                    percent: percentComplete,
+                });
+
+                if(percentComplete == 100){
+                    percentComplete = 99;
+                }
+
+                $('#upload_photo_label span').text(percentComplete);
+
+
+            },
+            success: function() {
+                getUserPhotos($('#admin_user_photos_form .userId').val());
+            },
+            complete: function(xhr) {
+                //status.html(xhr.responseText);
+            }
+
+        });
+
+
+
+        $('.photos .ui.checkbox.toggle.main_photo').checkbox({
+            onChecked: function(){
+                setPhotoProperty('isMain', 1, $(this).parents('tr').find('.photoId').val());
+            }/*,
+            onUnchecked: function(){
+                setPhotoProperty('isMain', 0, $(this).parents('tr').find('.photoId').val());
+            },*/
+        });
+
+        $('.photos .ui.checkbox.toggle.valid_photo').checkbox({
+            onChecked: function(){
+                setPhotoProperty('isValid', 1, $(this).parents('tr').find('.photoId').val());
+            },
+            onUnchecked: function(){
+                setPhotoProperty('isValid', 0, $(this).parents('tr').find('.photoId').val());
+            },
+        });
+
+
+
+        $('.photos .delete').click(function(){
+            if(confirm('Delete photo?')){
+                deletePhoto(
+                    $(this).siblings('.photoId').val(),
+                    $(this).parents('table')
+                );
+            }
+        });
+
+        $('.rotate').click(function () {
+            var id = $(this).parents('tr').find('.photoId').val();
+            var rotate = ($(this).hasClass('left-side')) ? 90 : -90;
+            var image = $(this).parents('tr').find('.photo_cont img');
+            rotateImage(id,rotate,image);
+        });
+
+
+    });
+
+</script>
+<style>
+    .photo_cont{
+        position: relative;
+    }
+</style>
+
+<h1 class="ui grey header left">
+    <i class="photo circular icon"></i>
+    <div class="content">
+        <span class="username">{{ user.username }}</span>
+        <div class="sub header">Edit Photos</div>
+    </div>
+</h1>
+
+
+<div class="right close">
+    <i class="icon remove circle olive big " onclick="$.kfModal.close();"></i>
+</div>
+
+<div class="clear"></div>
+
+<div class="ui divider"></div>
+
+<br>
+
+<div class="ui one column centered grid upload_photo">
+    <button class="ui labeled icon green huge button" onclick="$('input[type=file]').click();">
+        <i class="cloud upload icon"></i>
+        Upload Photo
+    </button>
+</div>
+
+<br><br>
+
+<div class="ui indicating progress uploadPhotoProgress">
+    <div class="bar" id="upload_photo_progress"></div>
+    <div class="label" id="upload_photo_label">Uploading: <span>0</span>%</div>
+</div>
+
+<br>
+
+
+
+
+<form id="admin_user_photos_form" action="{{ path('admin_users_user_photos_photo', {'id': user.id}) }}" method="post" enctype="multipart/form-data">
+    <input type="hidden" class="userId" value="{{ user.id }}">
+    <input type="hidden" id="save_photo_url" value="{{ path('user_photo') }}">
+    <input type="hidden" id="photos_url" value="{{ path('user_profile', {'tab': 4}) }}">
+    <input type="hidden" id="mainPhotoAlreadyExists" value="{% if user.photos|length %}1{% else %}0{% endif %}">
+    <input type="file" name="photo" id="photo" class="hidden">
+    <input type="submit" class="hidden">
+</form>
+
+{#<div class="cloudinaryForm hidden">
+    {{ renderedCloudForm|raw }}
+</div>
+
+{% for photo in user.photos %}
+    <input type="hidden" class="photo_name" value="{{ photo.name }}__{{ photo.id }}__{{ photo.isMain }}__{{ photo.isValid }}">
+{% endfor %}
+#}
+
+
+{% for photo in user.photos %}
+
+    <table class="ui celled table olive photo">
+        <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Main</th>
+            <th>Approved</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="photo_cont">
+                <img src="{{ photo.getWebPath }}" width="210" height="260">
+                <div class="rotate-buttons">
+                    <div class="ui mini icon button green rotate left-side">
+                        <i class="ion-md-undo alternate icon"></i>
+                    </div>
+                    <div class="ui mini icon button green rotate right-side">
+                        <i class="ion-md-redo icon"></i>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="ui toggle checkbox main_photo">
+                    <input type="radio" name="radio" value="{{ photo.id }}"{{ photo.isMain ? ' checked="checked"' : '' }}>
+                    <label></label>
+                </div>
+            </td>
+            <td>
+                <div class="ui toggle checkbox valid_photo">
+                    <input type="checkbox" value="{{ photo.id }}"{{ photo.isValid ? ' checked="checked"' : '' }}>
+                    <label></label>
+                </div>
+            </td>
+            <td>
+                <i class="trash outline huge link olive icon circular delete"></i>
+                <input type="hidden" class="photoId" value="{{ photo.id }}">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+{% endfor %}
+
+<div id="photo_template" class="hidden">
+
+    <table class="ui celled table olive photo" id="[PHOTO_NAME]">
+        <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Main</th>
+            <th>Approved</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="photo_cont"></td>
+                <td>
+                    <div class="ui toggle checkbox main_photo">
+                        <input type="radio" name="radio" value="[PHOTO_ID]" [MAIN]>
+                        <label></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="ui toggle checkbox valid_photo">
+                        <input type="checkbox" value="[PHOTO_ID]" [valid]>
+                        <label></label>
+                    </div>
+                </td>
+                <td>
+                    <i class="trash outline huge link olive icon circular delete"></i>
+                    <input type="hidden" class="photoId" value="[PHOTO_ID]">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
